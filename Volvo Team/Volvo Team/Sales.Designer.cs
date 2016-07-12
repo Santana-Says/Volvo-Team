@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabInventory = new System.Windows.Forms.TabPage();
             this.btnTrade = new System.Windows.Forms.Button();
             this.btnBuyNow = new System.Windows.Forms.Button();
             this.lblMpgHwInfo = new System.Windows.Forms.Label();
@@ -45,6 +45,8 @@
             this.lblSeatCap = new System.Windows.Forms.Label();
             this.lblCapacity = new System.Windows.Forms.Label();
             this.lblModelName = new System.Windows.Forms.Label();
+            this.picFrontView = new System.Windows.Forms.PictureBox();
+            this.picSideView = new System.Windows.Forms.PictureBox();
             this.lblHPInfo = new System.Windows.Forms.Label();
             this.lblCylinderInfo = new System.Windows.Forms.Label();
             this.lblEngineInfo = new System.Windows.Forms.Label();
@@ -54,8 +56,18 @@
             this.lblMSRPInfo = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabTrade = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblMilage = new System.Windows.Forms.Label();
+            this.lblModel = new System.Windows.Forms.Label();
+            this.lblMake = new System.Windows.Forms.Label();
+            this.lblYear = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabCustomer = new System.Windows.Forms.TabPage();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtZip = new System.Windows.Forms.TextBox();
             this.txtCity = new System.Windows.Forms.TextBox();
@@ -68,36 +80,24 @@
             this.lblCity = new System.Windows.Forms.Label();
             this.lblSAddress = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.picFrontView = new System.Windows.Forms.PictureBox();
-            this.picSideView = new System.Windows.Forms.PictureBox();
+            this.tabAddOn = new System.Windows.Forms.TabPage();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblYear = new System.Windows.Forms.Label();
-            this.lblMake = new System.Windows.Forms.Label();
-            this.lblModel = new System.Windows.Forms.Label();
-            this.lblMilage = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabControl2.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
+            this.tabInventory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFrontView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSideView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.tabTrade.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabCustomer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl2
             // 
-            this.tabControl2.Controls.Add(this.tabPage2);
-            this.tabControl2.Controls.Add(this.tabPage3);
-            this.tabControl2.Controls.Add(this.tabPage4);
-            this.tabControl2.Controls.Add(this.tabPage5);
+            this.tabControl2.Controls.Add(this.tabInventory);
+            this.tabControl2.Controls.Add(this.tabTrade);
+            this.tabControl2.Controls.Add(this.tabCustomer);
+            this.tabControl2.Controls.Add(this.tabAddOn);
             this.tabControl2.Location = new System.Drawing.Point(-3, 41);
             this.tabControl2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.tabControl2.Name = "tabControl2";
@@ -105,43 +105,43 @@
             this.tabControl2.Size = new System.Drawing.Size(890, 561);
             this.tabControl2.TabIndex = 8;
             // 
-            // tabPage2
+            // tabInventory
             // 
-            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tabPage2.Controls.Add(this.btnTrade);
-            this.tabPage2.Controls.Add(this.btnBuyNow);
-            this.tabPage2.Controls.Add(this.lblMpgHwInfo);
-            this.tabPage2.Controls.Add(this.lblMpgHw);
-            this.tabPage2.Controls.Add(this.lblMpgCityInfo);
-            this.tabPage2.Controls.Add(this.lblMpgCity);
-            this.tabPage2.Controls.Add(this.lblFuelEconomy);
-            this.tabPage2.Controls.Add(this.lblFuelInfo);
-            this.tabPage2.Controls.Add(this.lblFuelCap);
-            this.tabPage2.Controls.Add(this.lblCargoInfo);
-            this.tabPage2.Controls.Add(this.lblCargo);
-            this.tabPage2.Controls.Add(this.lblSeatInfo);
-            this.tabPage2.Controls.Add(this.lblSeatCap);
-            this.tabPage2.Controls.Add(this.lblCapacity);
-            this.tabPage2.Controls.Add(this.lblModelName);
-            this.tabPage2.Controls.Add(this.picFrontView);
-            this.tabPage2.Controls.Add(this.picSideView);
-            this.tabPage2.Controls.Add(this.lblHPInfo);
-            this.tabPage2.Controls.Add(this.lblCylinderInfo);
-            this.tabPage2.Controls.Add(this.lblEngineInfo);
-            this.tabPage2.Controls.Add(this.lblHorsepower);
-            this.tabPage2.Controls.Add(this.lblCylinders);
-            this.tabPage2.Controls.Add(this.lblEngineDesc);
-            this.tabPage2.Controls.Add(this.lblMSRPInfo);
-            this.tabPage2.Controls.Add(this.label15);
-            this.tabPage2.Controls.Add(this.label16);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.tabPage2.Size = new System.Drawing.Size(882, 535);
-            this.tabPage2.TabIndex = 0;
-            this.tabPage2.Text = "Car Inventory";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabInventory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabInventory.Controls.Add(this.btnTrade);
+            this.tabInventory.Controls.Add(this.btnBuyNow);
+            this.tabInventory.Controls.Add(this.lblMpgHwInfo);
+            this.tabInventory.Controls.Add(this.lblMpgHw);
+            this.tabInventory.Controls.Add(this.lblMpgCityInfo);
+            this.tabInventory.Controls.Add(this.lblMpgCity);
+            this.tabInventory.Controls.Add(this.lblFuelEconomy);
+            this.tabInventory.Controls.Add(this.lblFuelInfo);
+            this.tabInventory.Controls.Add(this.lblFuelCap);
+            this.tabInventory.Controls.Add(this.lblCargoInfo);
+            this.tabInventory.Controls.Add(this.lblCargo);
+            this.tabInventory.Controls.Add(this.lblSeatInfo);
+            this.tabInventory.Controls.Add(this.lblSeatCap);
+            this.tabInventory.Controls.Add(this.lblCapacity);
+            this.tabInventory.Controls.Add(this.lblModelName);
+            this.tabInventory.Controls.Add(this.picFrontView);
+            this.tabInventory.Controls.Add(this.picSideView);
+            this.tabInventory.Controls.Add(this.lblHPInfo);
+            this.tabInventory.Controls.Add(this.lblCylinderInfo);
+            this.tabInventory.Controls.Add(this.lblEngineInfo);
+            this.tabInventory.Controls.Add(this.lblHorsepower);
+            this.tabInventory.Controls.Add(this.lblCylinders);
+            this.tabInventory.Controls.Add(this.lblEngineDesc);
+            this.tabInventory.Controls.Add(this.lblMSRPInfo);
+            this.tabInventory.Controls.Add(this.label15);
+            this.tabInventory.Controls.Add(this.label16);
+            this.tabInventory.Location = new System.Drawing.Point(4, 22);
+            this.tabInventory.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tabInventory.Name = "tabInventory";
+            this.tabInventory.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tabInventory.Size = new System.Drawing.Size(882, 535);
+            this.tabInventory.TabIndex = 0;
+            this.tabInventory.Text = "Car Inventory";
+            this.tabInventory.UseVisualStyleBackColor = true;
             // 
             // btnTrade
             // 
@@ -300,6 +300,22 @@
             this.lblModelName.TabIndex = 23;
             this.lblModelName.Text = "S4";
             // 
+            // picFrontView
+            // 
+            this.picFrontView.Location = new System.Drawing.Point(568, 7);
+            this.picFrontView.Name = "picFrontView";
+            this.picFrontView.Size = new System.Drawing.Size(225, 129);
+            this.picFrontView.TabIndex = 22;
+            this.picFrontView.TabStop = false;
+            // 
+            // picSideView
+            // 
+            this.picSideView.Location = new System.Drawing.Point(103, 7);
+            this.picSideView.Name = "picSideView";
+            this.picSideView.Size = new System.Drawing.Size(225, 129);
+            this.picSideView.TabIndex = 21;
+            this.picSideView.TabStop = false;
+            // 
             // lblHPInfo
             // 
             this.lblHPInfo.BackColor = System.Drawing.Color.Transparent;
@@ -392,81 +408,172 @@
             this.label16.TabIndex = 12;
             this.label16.Text = "Engines";
             // 
-            // tabPage3
+            // tabTrade
             // 
-            this.tabPage3.Controls.Add(this.label1);
-            this.tabPage3.Controls.Add(this.textBox1);
-            this.tabPage3.Controls.Add(this.comboBox3);
-            this.tabPage3.Controls.Add(this.comboBox2);
-            this.tabPage3.Controls.Add(this.comboBox1);
-            this.tabPage3.Controls.Add(this.lblMilage);
-            this.tabPage3.Controls.Add(this.lblModel);
-            this.tabPage3.Controls.Add(this.lblMake);
-            this.tabPage3.Controls.Add(this.lblYear);
-            this.tabPage3.Controls.Add(this.pictureBox1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.tabPage3.Size = new System.Drawing.Size(882, 535);
-            this.tabPage3.TabIndex = 1;
-            this.tabPage3.Text = "Trade-In";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabTrade.Controls.Add(this.label1);
+            this.tabTrade.Controls.Add(this.textBox1);
+            this.tabTrade.Controls.Add(this.comboBox3);
+            this.tabTrade.Controls.Add(this.comboBox2);
+            this.tabTrade.Controls.Add(this.comboBox1);
+            this.tabTrade.Controls.Add(this.lblMilage);
+            this.tabTrade.Controls.Add(this.lblModel);
+            this.tabTrade.Controls.Add(this.lblMake);
+            this.tabTrade.Controls.Add(this.lblYear);
+            this.tabTrade.Controls.Add(this.pictureBox1);
+            this.tabTrade.Location = new System.Drawing.Point(4, 22);
+            this.tabTrade.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tabTrade.Name = "tabTrade";
+            this.tabTrade.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tabTrade.Size = new System.Drawing.Size(882, 535);
+            this.tabTrade.TabIndex = 1;
+            this.tabTrade.Text = "Trade-In";
+            this.tabTrade.UseVisualStyleBackColor = true;
             // 
-            // tabPage4
+            // label1
             // 
-            this.tabPage4.Controls.Add(this.txtPhone);
-            this.tabPage4.Controls.Add(this.txtZip);
-            this.tabPage4.Controls.Add(this.txtCity);
-            this.tabPage4.Controls.Add(this.txtSAddress);
-            this.tabPage4.Controls.Add(this.txtName);
-            this.tabPage4.Controls.Add(this.cbState);
-            this.tabPage4.Controls.Add(this.lblPhone);
-            this.tabPage4.Controls.Add(this.lblZip);
-            this.tabPage4.Controls.Add(this.lblState);
-            this.tabPage4.Controls.Add(this.lblCity);
-            this.tabPage4.Controls.Add(this.lblSAddress);
-            this.tabPage4.Controls.Add(this.lblName);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.tabPage4.Size = new System.Drawing.Size(882, 535);
-            this.tabPage4.TabIndex = 2;
-            this.tabPage4.Text = "Cust. Information";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(94, 141);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(428, 31);
+            this.label1.TabIndex = 9;
+            this.label1.Text = " Describe Your Trade-in Vehicle";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(96, 441);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 8;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(96, 370);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.TabIndex = 7;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(96, 299);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 6;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(96, 228);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 5;
+            // 
+            // lblMilage
+            // 
+            this.lblMilage.AutoSize = true;
+            this.lblMilage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMilage.Location = new System.Drawing.Point(96, 406);
+            this.lblMilage.Name = "lblMilage";
+            this.lblMilage.Size = new System.Drawing.Size(64, 20);
+            this.lblMilage.TabIndex = 4;
+            this.lblMilage.Text = "Mileage";
+            // 
+            // lblModel
+            // 
+            this.lblModel.AutoSize = true;
+            this.lblModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModel.Location = new System.Drawing.Point(96, 335);
+            this.lblModel.Name = "lblModel";
+            this.lblModel.Size = new System.Drawing.Size(52, 20);
+            this.lblModel.TabIndex = 3;
+            this.lblModel.Text = "Model";
+            // 
+            // lblMake
+            // 
+            this.lblMake.AutoSize = true;
+            this.lblMake.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMake.Location = new System.Drawing.Point(96, 264);
+            this.lblMake.Name = "lblMake";
+            this.lblMake.Size = new System.Drawing.Size(48, 20);
+            this.lblMake.TabIndex = 2;
+            this.lblMake.Text = "Make";
+            // 
+            // lblYear
+            // 
+            this.lblYear.AutoSize = true;
+            this.lblYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYear.Location = new System.Drawing.Point(96, 193);
+            this.lblYear.Name = "lblYear";
+            this.lblYear.Size = new System.Drawing.Size(43, 20);
+            this.lblYear.TabIndex = 1;
+            this.lblYear.Text = "Year";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Volvo_Team.Properties.Resources.Trade_in;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(882, 126);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tabCustomer
+            // 
+            this.tabCustomer.Controls.Add(this.txtPhone);
+            this.tabCustomer.Controls.Add(this.txtZip);
+            this.tabCustomer.Controls.Add(this.txtCity);
+            this.tabCustomer.Controls.Add(this.txtSAddress);
+            this.tabCustomer.Controls.Add(this.txtName);
+            this.tabCustomer.Controls.Add(this.cbState);
+            this.tabCustomer.Controls.Add(this.lblPhone);
+            this.tabCustomer.Controls.Add(this.lblZip);
+            this.tabCustomer.Controls.Add(this.lblState);
+            this.tabCustomer.Controls.Add(this.lblCity);
+            this.tabCustomer.Controls.Add(this.lblSAddress);
+            this.tabCustomer.Controls.Add(this.lblName);
+            this.tabCustomer.Location = new System.Drawing.Point(4, 22);
+            this.tabCustomer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tabCustomer.Name = "tabCustomer";
+            this.tabCustomer.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tabCustomer.Size = new System.Drawing.Size(882, 535);
+            this.tabCustomer.TabIndex = 2;
+            this.tabCustomer.Text = "Cust. Information";
+            this.tabCustomer.UseVisualStyleBackColor = true;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(170, 341);
+            this.txtPhone.Location = new System.Drawing.Point(219, 390);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(134, 20);
             this.txtPhone.TabIndex = 11;
             // 
             // txtZip
             // 
-            this.txtZip.Location = new System.Drawing.Point(170, 275);
+            this.txtZip.Location = new System.Drawing.Point(219, 324);
             this.txtZip.Name = "txtZip";
             this.txtZip.Size = new System.Drawing.Size(134, 20);
             this.txtZip.TabIndex = 10;
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(170, 162);
+            this.txtCity.Location = new System.Drawing.Point(219, 211);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(212, 20);
             this.txtCity.TabIndex = 8;
             // 
             // txtSAddress
             // 
-            this.txtSAddress.Location = new System.Drawing.Point(170, 101);
+            this.txtSAddress.Location = new System.Drawing.Point(219, 150);
             this.txtSAddress.Name = "txtSAddress";
             this.txtSAddress.Size = new System.Drawing.Size(212, 20);
             this.txtSAddress.TabIndex = 7;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(170, 42);
+            this.txtName.Location = new System.Drawing.Point(219, 91);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(212, 20);
             this.txtName.TabIndex = 6;
@@ -525,7 +632,7 @@
             "WI\tWisconsin",
             "WV\tWest Virginia",
             "WY\tWyoming"});
-            this.cbState.Location = new System.Drawing.Point(170, 216);
+            this.cbState.Location = new System.Drawing.Point(219, 265);
             this.cbState.Name = "cbState";
             this.cbState.Size = new System.Drawing.Size(113, 21);
             this.cbState.TabIndex = 9;
@@ -534,7 +641,7 @@
             // lblPhone
             // 
             this.lblPhone.AutoSize = true;
-            this.lblPhone.Location = new System.Drawing.Point(14, 341);
+            this.lblPhone.Location = new System.Drawing.Point(63, 390);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(81, 13);
             this.lblPhone.TabIndex = 5;
@@ -543,7 +650,7 @@
             // lblZip
             // 
             this.lblZip.AutoSize = true;
-            this.lblZip.Location = new System.Drawing.Point(13, 275);
+            this.lblZip.Location = new System.Drawing.Point(62, 324);
             this.lblZip.Name = "lblZip";
             this.lblZip.Size = new System.Drawing.Size(53, 13);
             this.lblZip.TabIndex = 4;
@@ -552,7 +659,7 @@
             // lblState
             // 
             this.lblState.AutoSize = true;
-            this.lblState.Location = new System.Drawing.Point(14, 216);
+            this.lblState.Location = new System.Drawing.Point(63, 265);
             this.lblState.Name = "lblState";
             this.lblState.Size = new System.Drawing.Size(35, 13);
             this.lblState.TabIndex = 3;
@@ -561,7 +668,7 @@
             // lblCity
             // 
             this.lblCity.AutoSize = true;
-            this.lblCity.Location = new System.Drawing.Point(13, 162);
+            this.lblCity.Location = new System.Drawing.Point(62, 211);
             this.lblCity.Name = "lblCity";
             this.lblCity.Size = new System.Drawing.Size(27, 13);
             this.lblCity.TabIndex = 2;
@@ -570,7 +677,7 @@
             // lblSAddress
             // 
             this.lblSAddress.AutoSize = true;
-            this.lblSAddress.Location = new System.Drawing.Point(13, 101);
+            this.lblSAddress.Location = new System.Drawing.Point(62, 150);
             this.lblSAddress.Name = "lblSAddress";
             this.lblSAddress.Size = new System.Drawing.Size(79, 13);
             this.lblSAddress.TabIndex = 1;
@@ -579,38 +686,22 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(14, 42);
+            this.lblName.Location = new System.Drawing.Point(63, 91);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(38, 13);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name:";
             // 
-            // tabPage5
+            // tabAddOn
             // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.tabPage5.Size = new System.Drawing.Size(882, 535);
-            this.tabPage5.TabIndex = 3;
-            this.tabPage5.Text = "Add-Ons";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // picFrontView
-            // 
-            this.picFrontView.Location = new System.Drawing.Point(568, 7);
-            this.picFrontView.Name = "picFrontView";
-            this.picFrontView.Size = new System.Drawing.Size(225, 129);
-            this.picFrontView.TabIndex = 22;
-            this.picFrontView.TabStop = false;
-            // 
-            // picSideView
-            // 
-            this.picSideView.Location = new System.Drawing.Point(103, 7);
-            this.picSideView.Name = "picSideView";
-            this.picSideView.Size = new System.Drawing.Size(225, 129);
-            this.picSideView.TabIndex = 21;
-            this.picSideView.TabStop = false;
+            this.tabAddOn.Location = new System.Drawing.Point(4, 22);
+            this.tabAddOn.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tabAddOn.Name = "tabAddOn";
+            this.tabAddOn.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tabAddOn.Size = new System.Drawing.Size(882, 535);
+            this.tabAddOn.TabIndex = 3;
+            this.tabAddOn.Text = "Add-Ons";
+            this.tabAddOn.UseVisualStyleBackColor = true;
             // 
             // pictureBox4
             // 
@@ -624,97 +715,6 @@
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Volvo_Team.Properties.Resources.Trade_in;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(882, 126);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lblYear
-            // 
-            this.lblYear.AutoSize = true;
-            this.lblYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYear.Location = new System.Drawing.Point(96, 193);
-            this.lblYear.Name = "lblYear";
-            this.lblYear.Size = new System.Drawing.Size(43, 20);
-            this.lblYear.TabIndex = 1;
-            this.lblYear.Text = "Year";
-            // 
-            // lblMake
-            // 
-            this.lblMake.AutoSize = true;
-            this.lblMake.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMake.Location = new System.Drawing.Point(96, 264);
-            this.lblMake.Name = "lblMake";
-            this.lblMake.Size = new System.Drawing.Size(48, 20);
-            this.lblMake.TabIndex = 2;
-            this.lblMake.Text = "Make";
-            // 
-            // lblModel
-            // 
-            this.lblModel.AutoSize = true;
-            this.lblModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModel.Location = new System.Drawing.Point(96, 335);
-            this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(52, 20);
-            this.lblModel.TabIndex = 3;
-            this.lblModel.Text = "Model";
-            // 
-            // lblMilage
-            // 
-            this.lblMilage.AutoSize = true;
-            this.lblMilage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMilage.Location = new System.Drawing.Point(96, 406);
-            this.lblMilage.Name = "lblMilage";
-            this.lblMilage.Size = new System.Drawing.Size(64, 20);
-            this.lblMilage.TabIndex = 4;
-            this.lblMilage.Text = "Mileage";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(96, 228);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(96, 299);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 6;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(96, 370);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 7;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(96, 441);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(94, 141);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(428, 31);
-            this.label1.TabIndex = 9;
-            this.label1.Text = " Describe Your Trade-in Vehicle";
-            // 
             // Sales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -725,16 +725,16 @@
             this.Name = "Sales";
             this.Text = "Sales";
             this.tabControl2.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
+            this.tabInventory.ResumeLayout(false);
+            this.tabInventory.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFrontView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSideView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.tabTrade.ResumeLayout(false);
+            this.tabTrade.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabCustomer.ResumeLayout(false);
+            this.tabCustomer.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -742,7 +742,7 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabInventory;
         private System.Windows.Forms.Button btnTrade;
         private System.Windows.Forms.Button btnBuyNow;
         private System.Windows.Forms.Label lblMpgHwInfo;
@@ -769,8 +769,8 @@
         private System.Windows.Forms.Label lblMSRPInfo;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabTrade;
+        private System.Windows.Forms.TabPage tabCustomer;
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.TextBox txtZip;
         private System.Windows.Forms.TextBox txtCity;
@@ -783,7 +783,7 @@
         private System.Windows.Forms.Label lblCity;
         private System.Windows.Forms.Label lblSAddress;
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabAddOn;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;

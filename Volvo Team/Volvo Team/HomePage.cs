@@ -16,5 +16,20 @@ namespace Volvo_Team
         {
             InitializeComponent();
         }
+
+        private void picBoxTrade_Click(object sender, EventArgs e)
+        {
+            Sales salesForm = new Sales();
+            
+            HomePage.ActiveForm.Hide();
+            salesForm.Show();
+        }
+
+        private void picBoxInventory_Click(object sender, EventArgs e)
+        {
+            Sales salesForm = new Sales();
+            HomePage.ActiveForm.Hide();
+            salesForm.Show();
+        }
     }
 }
