@@ -63,6 +63,16 @@ namespace Volvo_Team.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cust_info {
+            get {
+                object obj = ResourceManager.GetObject("cust info", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap s90_1 {
             get {
                 object obj = ResourceManager.GetObject("s90-1", resourceCulture);
@@ -96,6 +106,16 @@ namespace Volvo_Team.Properties {
         internal static System.Drawing.Bitmap Trade_in {
             get {
                 object obj = ResourceManager.GetObject("Trade-in", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trade_in_value {
+            get {
+                object obj = ResourceManager.GetObject("trade-in-value", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
