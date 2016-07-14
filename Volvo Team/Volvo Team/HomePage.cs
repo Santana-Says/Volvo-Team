@@ -20,7 +20,6 @@ namespace Volvo_Team
         private void picBoxTrade_Click(object sender, EventArgs e)
         {
             Sales salesForm = new Sales();
-            
             HomePage.ActiveForm.Hide();
             salesForm.Show();
         }

@@ -16,5 +16,20 @@ namespace Volvo_Team
         {
             InitializeComponent();
         }
+
+        private void btnBuyNow_Click(object sender, EventArgs e)
+        {
+            tabControlSales.SelectedTab = tabQuote;
+        }
+
+        private void btnTrade_Click(object sender, EventArgs e)
+        {
+            tabControlSales.SelectedTab = tabTrade;
+        }
+
+        private void btnContinue_Click(object sender, EventArgs e)
+        {
+            tabControlSales.SelectedTab = tabInventory;
+        }
     }
 }
