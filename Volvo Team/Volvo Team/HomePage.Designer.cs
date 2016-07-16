@@ -119,7 +119,8 @@
             this.Controls.Add(this.picBoxTrade);
             this.Controls.Add(this.pictureBox2);
             this.Name = "HomePage";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "HomePage";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxInventory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTrade)).EndInit();
