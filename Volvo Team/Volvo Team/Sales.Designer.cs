@@ -45,6 +45,8 @@
             this.lblSeatCap = new System.Windows.Forms.Label();
             this.lblCapacity = new System.Windows.Forms.Label();
             this.lblModelName = new System.Windows.Forms.Label();
+            this.picFrontView = new System.Windows.Forms.PictureBox();
+            this.picSideView = new System.Windows.Forms.PictureBox();
             this.lblHPInfo = new System.Windows.Forms.Label();
             this.lblCylinderInfo = new System.Windows.Forms.Label();
             this.lblEngineInfo = new System.Windows.Forms.Label();
@@ -55,6 +57,8 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.tabTrade = new System.Windows.Forms.TabPage();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnContinue = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -62,7 +66,29 @@
             this.lblMilage = new System.Windows.Forms.Label();
             this.lblMake = new System.Windows.Forms.Label();
             this.lblYear = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabAddOn = new System.Windows.Forms.TabPage();
+            this.btnQoute = new System.Windows.Forms.Button();
+            this.groupBoxPaint = new System.Windows.Forms.GroupBox();
+            this.radioBtnP2 = new System.Windows.Forms.RadioButton();
+            this.radioBtnP1 = new System.Windows.Forms.RadioButton();
+            this.lblPackagePaint = new System.Windows.Forms.Label();
+            this.groupBoxB = new System.Windows.Forms.GroupBox();
+            this.radioBtnB5 = new System.Windows.Forms.RadioButton();
+            this.radioBtnB3 = new System.Windows.Forms.RadioButton();
+            this.radioBtnB4 = new System.Windows.Forms.RadioButton();
+            this.radioBtnB2 = new System.Windows.Forms.RadioButton();
+            this.radioBtnB1 = new System.Windows.Forms.RadioButton();
+            this.lblPackageB2 = new System.Windows.Forms.Label();
+            this.lblPackageB = new System.Windows.Forms.Label();
+            this.groupBoxA = new System.Windows.Forms.GroupBox();
+            this.radioBtnA3 = new System.Windows.Forms.RadioButton();
+            this.radioBtnA2 = new System.Windows.Forms.RadioButton();
+            this.radioBtnA1 = new System.Windows.Forms.RadioButton();
+            this.lblPackageA2 = new System.Windows.Forms.Label();
+            this.lblPackageA = new System.Windows.Forms.Label();
             this.tabQuote = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtZip = new System.Windows.Forms.TextBox();
             this.txtCity = new System.Windows.Forms.TextBox();
@@ -75,23 +101,20 @@
             this.lblCity = new System.Windows.Forms.Label();
             this.lblSAddress = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.tabAddOn = new System.Windows.Forms.TabPage();
-            this.btnContinue = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.picFrontView = new System.Windows.Forms.PictureBox();
-            this.picSideView = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabControlSales.SuspendLayout();
             this.tabInventory.SuspendLayout();
-            this.tabTrade.SuspendLayout();
-            this.tabQuote.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFrontView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSideView)).BeginInit();
+            this.tabTrade.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabAddOn.SuspendLayout();
+            this.groupBoxPaint.SuspendLayout();
+            this.groupBoxB.SuspendLayout();
+            this.groupBoxA.SuspendLayout();
+            this.tabQuote.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -100,8 +123,8 @@
             // 
             this.tabControlSales.Controls.Add(this.tabInventory);
             this.tabControlSales.Controls.Add(this.tabTrade);
-            this.tabControlSales.Controls.Add(this.tabQuote);
             this.tabControlSales.Controls.Add(this.tabAddOn);
+            this.tabControlSales.Controls.Add(this.tabQuote);
             this.tabControlSales.Location = new System.Drawing.Point(-3, 41);
             this.tabControlSales.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.tabControlSales.Name = "tabControlSales";
@@ -111,6 +134,7 @@
             // 
             // tabInventory
             // 
+            this.tabInventory.BackColor = System.Drawing.Color.Snow;
             this.tabInventory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tabInventory.Controls.Add(this.btnTrade);
             this.tabInventory.Controls.Add(this.btnBuyNow);
@@ -145,7 +169,6 @@
             this.tabInventory.Size = new System.Drawing.Size(882, 535);
             this.tabInventory.TabIndex = 0;
             this.tabInventory.Text = "Car Inventory";
-            this.tabInventory.UseVisualStyleBackColor = true;
             // 
             // btnTrade
             // 
@@ -165,13 +188,13 @@
             this.btnBuyNow.Name = "btnBuyNow";
             this.btnBuyNow.Size = new System.Drawing.Size(145, 55);
             this.btnBuyNow.TabIndex = 38;
-            this.btnBuyNow.Text = "Buy Now";
+            this.btnBuyNow.Text = "Buy";
             this.btnBuyNow.UseVisualStyleBackColor = true;
             this.btnBuyNow.Click += new System.EventHandler(this.btnBuyNow_Click);
             // 
             // lblMpgHwInfo
             // 
-            this.lblMpgHwInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblMpgHwInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblMpgHwInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMpgHwInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblMpgHwInfo.Location = new System.Drawing.Point(731, 372);
@@ -192,7 +215,7 @@
             // 
             // lblMpgCityInfo
             // 
-            this.lblMpgCityInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblMpgCityInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblMpgCityInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMpgCityInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblMpgCityInfo.Location = new System.Drawing.Point(731, 413);
@@ -224,7 +247,7 @@
             // 
             // lblFuelInfo
             // 
-            this.lblFuelInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblFuelInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblFuelInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblFuelInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblFuelInfo.Location = new System.Drawing.Point(731, 209);
@@ -245,7 +268,7 @@
             // 
             // lblCargoInfo
             // 
-            this.lblCargoInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblCargoInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblCargoInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCargoInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblCargoInfo.Location = new System.Drawing.Point(731, 250);
@@ -266,7 +289,7 @@
             // 
             // lblSeatInfo
             // 
-            this.lblSeatInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblSeatInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblSeatInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblSeatInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblSeatInfo.Location = new System.Drawing.Point(731, 291);
@@ -306,9 +329,25 @@
             this.lblModelName.TabIndex = 23;
             this.lblModelName.Text = "S4";
             // 
+            // picFrontView
+            // 
+            this.picFrontView.Location = new System.Drawing.Point(568, 7);
+            this.picFrontView.Name = "picFrontView";
+            this.picFrontView.Size = new System.Drawing.Size(225, 129);
+            this.picFrontView.TabIndex = 22;
+            this.picFrontView.TabStop = false;
+            // 
+            // picSideView
+            // 
+            this.picSideView.Location = new System.Drawing.Point(103, 7);
+            this.picSideView.Name = "picSideView";
+            this.picSideView.Size = new System.Drawing.Size(225, 129);
+            this.picSideView.TabIndex = 21;
+            this.picSideView.TabStop = false;
+            // 
             // lblHPInfo
             // 
-            this.lblHPInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblHPInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblHPInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblHPInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblHPInfo.Location = new System.Drawing.Point(267, 381);
@@ -318,7 +357,7 @@
             // 
             // lblCylinderInfo
             // 
-            this.lblCylinderInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblCylinderInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblCylinderInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCylinderInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblCylinderInfo.Location = new System.Drawing.Point(267, 324);
@@ -328,7 +367,7 @@
             // 
             // lblEngineInfo
             // 
-            this.lblEngineInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblEngineInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblEngineInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblEngineInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblEngineInfo.Location = new System.Drawing.Point(267, 266);
@@ -368,7 +407,7 @@
             // 
             // lblMSRPInfo
             // 
-            this.lblMSRPInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblMSRPInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblMSRPInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMSRPInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblMSRPInfo.Location = new System.Drawing.Point(267, 210);
@@ -400,6 +439,7 @@
             // 
             // tabTrade
             // 
+            this.tabTrade.BackColor = System.Drawing.Color.Snow;
             this.tabTrade.Controls.Add(this.pictureBox3);
             this.tabTrade.Controls.Add(this.btnContinue);
             this.tabTrade.Controls.Add(this.label1);
@@ -417,7 +457,27 @@
             this.tabTrade.Size = new System.Drawing.Size(882, 535);
             this.tabTrade.TabIndex = 1;
             this.tabTrade.Text = "Trade-In";
-            this.tabTrade.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Volvo_Team.Properties.Resources.trade_in_value;
+            this.pictureBox3.Location = new System.Drawing.Point(355, 205);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(409, 229);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 40;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btnContinue
+            // 
+            this.btnContinue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContinue.Location = new System.Drawing.Point(355, 458);
+            this.btnContinue.Name = "btnContinue";
+            this.btnContinue.Size = new System.Drawing.Size(145, 55);
+            this.btnContinue.TabIndex = 39;
+            this.btnContinue.Text = "Continue";
+            this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
             // label1
             // 
@@ -431,6 +491,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.textBox1.Location = new System.Drawing.Point(124, 414);
             this.textBox1.Name = "textBox1";
@@ -439,6 +500,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.Enabled = false;
             this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
@@ -460,6 +522,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 28);
             this.comboBox2.TabIndex = 6;
+            this.comboBox2.SelectedValueChanged += new System.EventHandler(this.comboBox2_SelectedValueChanged);
             // 
             // comboBox1
             // 
@@ -484,6 +547,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 28);
             this.comboBox1.TabIndex = 5;
+            this.comboBox1.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
             // 
             // lblMilage
             // 
@@ -515,8 +579,269 @@
             this.lblYear.TabIndex = 1;
             this.lblYear.Text = "Year";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Volvo_Team.Properties.Resources.Trade_in;
+            this.pictureBox1.Location = new System.Drawing.Point(114, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(650, 152);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tabAddOn
+            // 
+            this.tabAddOn.BackColor = System.Drawing.Color.Snow;
+            this.tabAddOn.Controls.Add(this.btnQoute);
+            this.tabAddOn.Controls.Add(this.groupBoxPaint);
+            this.tabAddOn.Controls.Add(this.groupBoxB);
+            this.tabAddOn.Controls.Add(this.groupBoxA);
+            this.tabAddOn.Location = new System.Drawing.Point(4, 22);
+            this.tabAddOn.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tabAddOn.Name = "tabAddOn";
+            this.tabAddOn.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tabAddOn.Size = new System.Drawing.Size(882, 535);
+            this.tabAddOn.TabIndex = 3;
+            this.tabAddOn.Text = "Add-Ons";
+            // 
+            // btnQoute
+            // 
+            this.btnQoute.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQoute.Location = new System.Drawing.Point(371, 453);
+            this.btnQoute.Name = "btnQoute";
+            this.btnQoute.Size = new System.Drawing.Size(145, 55);
+            this.btnQoute.TabIndex = 39;
+            this.btnQoute.Text = "Continue";
+            this.btnQoute.UseVisualStyleBackColor = true;
+            this.btnQoute.Click += new System.EventHandler(this.btnQoute_Click);
+            // 
+            // groupBoxPaint
+            // 
+            this.groupBoxPaint.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBoxPaint.Controls.Add(this.radioBtnP2);
+            this.groupBoxPaint.Controls.Add(this.radioBtnP1);
+            this.groupBoxPaint.Controls.Add(this.lblPackagePaint);
+            this.groupBoxPaint.Location = new System.Drawing.Point(162, 340);
+            this.groupBoxPaint.Name = "groupBoxPaint";
+            this.groupBoxPaint.Size = new System.Drawing.Size(569, 86);
+            this.groupBoxPaint.TabIndex = 2;
+            this.groupBoxPaint.TabStop = false;
+            // 
+            // radioBtnP2
+            // 
+            this.radioBtnP2.AutoSize = true;
+            this.radioBtnP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnP2.Location = new System.Drawing.Point(357, 49);
+            this.radioBtnP2.Name = "radioBtnP2";
+            this.radioBtnP2.Size = new System.Drawing.Size(110, 20);
+            this.radioBtnP2.TabIndex = 8;
+            this.radioBtnP2.TabStop = true;
+            this.radioBtnP2.Text = "Metallic Finish";
+            this.radioBtnP2.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnP1
+            // 
+            this.radioBtnP1.AutoSize = true;
+            this.radioBtnP1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnP1.Location = new System.Drawing.Point(71, 49);
+            this.radioBtnP1.Name = "radioBtnP1";
+            this.radioBtnP1.Size = new System.Drawing.Size(119, 20);
+            this.radioBtnP1.TabIndex = 7;
+            this.radioBtnP1.TabStop = true;
+            this.radioBtnP1.Text = "Standard Finish";
+            this.radioBtnP1.UseVisualStyleBackColor = true;
+            // 
+            // lblPackagePaint
+            // 
+            this.lblPackagePaint.AutoSize = true;
+            this.lblPackagePaint.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPackagePaint.Location = new System.Drawing.Point(204, 16);
+            this.lblPackagePaint.Name = "lblPackagePaint";
+            this.lblPackagePaint.Size = new System.Drawing.Size(154, 25);
+            this.lblPackagePaint.TabIndex = 7;
+            this.lblPackagePaint.Text = "Paint Options";
+            // 
+            // groupBoxB
+            // 
+            this.groupBoxB.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBoxB.Controls.Add(this.radioBtnB5);
+            this.groupBoxB.Controls.Add(this.radioBtnB3);
+            this.groupBoxB.Controls.Add(this.radioBtnB4);
+            this.groupBoxB.Controls.Add(this.radioBtnB2);
+            this.groupBoxB.Controls.Add(this.radioBtnB1);
+            this.groupBoxB.Controls.Add(this.lblPackageB2);
+            this.groupBoxB.Controls.Add(this.lblPackageB);
+            this.groupBoxB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.groupBoxB.Location = new System.Drawing.Point(487, 25);
+            this.groupBoxB.Name = "groupBoxB";
+            this.groupBoxB.Size = new System.Drawing.Size(284, 299);
+            this.groupBoxB.TabIndex = 1;
+            this.groupBoxB.TabStop = false;
+            this.groupBoxB.Enter += new System.EventHandler(this.groupBoxB_Enter);
+            // 
+            // radioBtnB5
+            // 
+            this.radioBtnB5.AutoCheck = false;
+            this.radioBtnB5.AutoSize = true;
+            this.radioBtnB5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnB5.Location = new System.Drawing.Point(65, 266);
+            this.radioBtnB5.Name = "radioBtnB5";
+            this.radioBtnB5.Size = new System.Drawing.Size(143, 20);
+            this.radioBtnB5.TabIndex = 9;
+            this.radioBtnB5.TabStop = true;
+            this.radioBtnB5.Text = "Automatic Windows";
+            this.radioBtnB5.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnB3
+            // 
+            this.radioBtnB3.AutoCheck = false;
+            this.radioBtnB3.AutoSize = true;
+            this.radioBtnB3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnB3.Location = new System.Drawing.Point(65, 214);
+            this.radioBtnB3.Name = "radioBtnB3";
+            this.radioBtnB3.Size = new System.Drawing.Size(138, 20);
+            this.radioBtnB3.TabIndex = 8;
+            this.radioBtnB3.TabStop = true;
+            this.radioBtnB3.Text = "Rear-ciew Camera";
+            this.radioBtnB3.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnB4
+            // 
+            this.radioBtnB4.AutoCheck = false;
+            this.radioBtnB4.AutoSize = true;
+            this.radioBtnB4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnB4.Location = new System.Drawing.Point(65, 240);
+            this.radioBtnB4.Name = "radioBtnB4";
+            this.radioBtnB4.Size = new System.Drawing.Size(138, 20);
+            this.radioBtnB4.TabIndex = 8;
+            this.radioBtnB4.TabStop = true;
+            this.radioBtnB4.Text = "In-dash Navigation";
+            this.radioBtnB4.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnB2
+            // 
+            this.radioBtnB2.AutoCheck = false;
+            this.radioBtnB2.AutoSize = true;
+            this.radioBtnB2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnB2.Location = new System.Drawing.Point(65, 188);
+            this.radioBtnB2.Name = "radioBtnB2";
+            this.radioBtnB2.Size = new System.Drawing.Size(169, 20);
+            this.radioBtnB2.TabIndex = 5;
+            this.radioBtnB2.TabStop = true;
+            this.radioBtnB2.Text = "Aluminium Alloy Wheels";
+            this.radioBtnB2.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnB1
+            // 
+            this.radioBtnB1.AutoCheck = false;
+            this.radioBtnB1.AutoSize = true;
+            this.radioBtnB1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnB1.Location = new System.Drawing.Point(65, 162);
+            this.radioBtnB1.Name = "radioBtnB1";
+            this.radioBtnB1.Size = new System.Drawing.Size(151, 20);
+            this.radioBtnB1.TabIndex = 4;
+            this.radioBtnB1.TabStop = true;
+            this.radioBtnB1.Text = "Leather/wood Interior";
+            this.radioBtnB1.UseVisualStyleBackColor = true;
+            // 
+            // lblPackageB2
+            // 
+            this.lblPackageB2.AutoSize = true;
+            this.lblPackageB2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPackageB2.Location = new System.Drawing.Point(97, 41);
+            this.lblPackageB2.Name = "lblPackageB2";
+            this.lblPackageB2.Size = new System.Drawing.Size(110, 108);
+            this.lblPackageB2.TabIndex = 3;
+            this.lblPackageB2.Text = "B";
+            // 
+            // lblPackageB
+            // 
+            this.lblPackageB.AutoSize = true;
+            this.lblPackageB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPackageB.Location = new System.Drawing.Point(93, 16);
+            this.lblPackageB.Name = "lblPackageB";
+            this.lblPackageB.Size = new System.Drawing.Size(103, 25);
+            this.lblPackageB.TabIndex = 1;
+            this.lblPackageB.Text = "Package";
+            // 
+            // groupBoxA
+            // 
+            this.groupBoxA.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBoxA.Controls.Add(this.radioBtnA3);
+            this.groupBoxA.Controls.Add(this.radioBtnA2);
+            this.groupBoxA.Controls.Add(this.radioBtnA1);
+            this.groupBoxA.Controls.Add(this.lblPackageA2);
+            this.groupBoxA.Controls.Add(this.lblPackageA);
+            this.groupBoxA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.groupBoxA.Location = new System.Drawing.Point(113, 25);
+            this.groupBoxA.Name = "groupBoxA";
+            this.groupBoxA.Size = new System.Drawing.Size(284, 299);
+            this.groupBoxA.TabIndex = 0;
+            this.groupBoxA.TabStop = false;
+            this.groupBoxA.Enter += new System.EventHandler(this.groupBoxA_Enter);
+            // 
+            // radioBtnA3
+            // 
+            this.radioBtnA3.AutoCheck = false;
+            this.radioBtnA3.AutoSize = true;
+            this.radioBtnA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnA3.Location = new System.Drawing.Point(62, 214);
+            this.radioBtnA3.Name = "radioBtnA3";
+            this.radioBtnA3.Size = new System.Drawing.Size(138, 20);
+            this.radioBtnA3.TabIndex = 6;
+            this.radioBtnA3.TabStop = true;
+            this.radioBtnA3.Text = "Rear-ciew Camera";
+            this.radioBtnA3.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnA2
+            // 
+            this.radioBtnA2.AutoCheck = false;
+            this.radioBtnA2.AutoSize = true;
+            this.radioBtnA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnA2.Location = new System.Drawing.Point(62, 188);
+            this.radioBtnA2.Name = "radioBtnA2";
+            this.radioBtnA2.Size = new System.Drawing.Size(130, 20);
+            this.radioBtnA2.TabIndex = 4;
+            this.radioBtnA2.TabStop = true;
+            this.radioBtnA2.Text = "Standard Wheels";
+            this.radioBtnA2.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnA1
+            // 
+            this.radioBtnA1.AutoCheck = false;
+            this.radioBtnA1.AutoSize = true;
+            this.radioBtnA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnA1.Location = new System.Drawing.Point(62, 162);
+            this.radioBtnA1.Name = "radioBtnA1";
+            this.radioBtnA1.Size = new System.Drawing.Size(124, 20);
+            this.radioBtnA1.TabIndex = 3;
+            this.radioBtnA1.TabStop = true;
+            this.radioBtnA1.Text = "Standard Interior";
+            this.radioBtnA1.UseVisualStyleBackColor = true;
+            // 
+            // lblPackageA2
+            // 
+            this.lblPackageA2.AutoSize = true;
+            this.lblPackageA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPackageA2.Location = new System.Drawing.Point(86, 41);
+            this.lblPackageA2.Name = "lblPackageA2";
+            this.lblPackageA2.Size = new System.Drawing.Size(110, 108);
+            this.lblPackageA2.TabIndex = 2;
+            this.lblPackageA2.Text = "A";
+            // 
+            // lblPackageA
+            // 
+            this.lblPackageA.AutoSize = true;
+            this.lblPackageA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPackageA.Location = new System.Drawing.Point(83, 16);
+            this.lblPackageA.Name = "lblPackageA";
+            this.lblPackageA.Size = new System.Drawing.Size(103, 25);
+            this.lblPackageA.TabIndex = 0;
+            this.lblPackageA.Text = "Package";
+            // 
             // tabQuote
             // 
+            this.tabQuote.BackColor = System.Drawing.Color.Snow;
             this.tabQuote.Controls.Add(this.label2);
             this.tabQuote.Controls.Add(this.txtPhone);
             this.tabQuote.Controls.Add(this.txtZip);
@@ -538,7 +863,16 @@
             this.tabQuote.Size = new System.Drawing.Size(882, 535);
             this.tabQuote.TabIndex = 2;
             this.tabQuote.Text = "Qoute";
-            this.tabQuote.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(54, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(292, 39);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Request a Quote";
             // 
             // txtPhone
             // 
@@ -701,74 +1035,6 @@
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name:";
             // 
-            // tabAddOn
-            // 
-            this.tabAddOn.Location = new System.Drawing.Point(4, 22);
-            this.tabAddOn.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.tabAddOn.Name = "tabAddOn";
-            this.tabAddOn.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.tabAddOn.Size = new System.Drawing.Size(882, 535);
-            this.tabAddOn.TabIndex = 3;
-            this.tabAddOn.Text = "Add-Ons";
-            this.tabAddOn.UseVisualStyleBackColor = true;
-            // 
-            // btnContinue
-            // 
-            this.btnContinue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContinue.Location = new System.Drawing.Point(355, 458);
-            this.btnContinue.Name = "btnContinue";
-            this.btnContinue.Size = new System.Drawing.Size(145, 55);
-            this.btnContinue.TabIndex = 39;
-            this.btnContinue.Text = "Continue";
-            this.btnContinue.UseVisualStyleBackColor = true;
-            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(54, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(292, 39);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Request a Quote";
-            // 
-            // picFrontView
-            // 
-            this.picFrontView.Location = new System.Drawing.Point(568, 7);
-            this.picFrontView.Name = "picFrontView";
-            this.picFrontView.Size = new System.Drawing.Size(225, 129);
-            this.picFrontView.TabIndex = 22;
-            this.picFrontView.TabStop = false;
-            // 
-            // picSideView
-            // 
-            this.picSideView.Location = new System.Drawing.Point(103, 7);
-            this.picSideView.Name = "picSideView";
-            this.picSideView.Size = new System.Drawing.Size(225, 129);
-            this.picSideView.TabIndex = 21;
-            this.picSideView.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Volvo_Team.Properties.Resources.trade_in_value;
-            this.pictureBox3.Location = new System.Drawing.Point(355, 205);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(409, 229);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 40;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Volvo_Team.Properties.Resources.Trade_in;
-            this.pictureBox1.Location = new System.Drawing.Point(114, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(650, 152);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Volvo_Team.Properties.Resources.cust_info;
@@ -782,6 +1048,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::Volvo_Team.Properties.Resources.volvo_logo_scaled;
             this.pictureBox4.Location = new System.Drawing.Point(-3, -1);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -790,6 +1057,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // Sales
             // 
@@ -801,17 +1069,25 @@
             this.Name = "Sales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sales";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Sales_FormClosed);
             this.tabControlSales.ResumeLayout(false);
             this.tabInventory.ResumeLayout(false);
             this.tabInventory.PerformLayout();
-            this.tabTrade.ResumeLayout(false);
-            this.tabTrade.PerformLayout();
-            this.tabQuote.ResumeLayout(false);
-            this.tabQuote.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFrontView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSideView)).EndInit();
+            this.tabTrade.ResumeLayout(false);
+            this.tabTrade.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabAddOn.ResumeLayout(false);
+            this.groupBoxPaint.ResumeLayout(false);
+            this.groupBoxPaint.PerformLayout();
+            this.groupBoxB.ResumeLayout(false);
+            this.groupBoxB.PerformLayout();
+            this.groupBoxA.ResumeLayout(false);
+            this.groupBoxA.PerformLayout();
+            this.tabQuote.ResumeLayout(false);
+            this.tabQuote.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
@@ -876,5 +1152,24 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnQoute;
+        private System.Windows.Forms.GroupBox groupBoxPaint;
+        private System.Windows.Forms.RadioButton radioBtnP2;
+        private System.Windows.Forms.RadioButton radioBtnP1;
+        private System.Windows.Forms.Label lblPackagePaint;
+        private System.Windows.Forms.GroupBox groupBoxB;
+        private System.Windows.Forms.RadioButton radioBtnB5;
+        private System.Windows.Forms.RadioButton radioBtnB3;
+        private System.Windows.Forms.RadioButton radioBtnB4;
+        private System.Windows.Forms.RadioButton radioBtnB2;
+        private System.Windows.Forms.RadioButton radioBtnB1;
+        private System.Windows.Forms.Label lblPackageB2;
+        private System.Windows.Forms.Label lblPackageB;
+        private System.Windows.Forms.GroupBox groupBoxA;
+        private System.Windows.Forms.RadioButton radioBtnA3;
+        private System.Windows.Forms.RadioButton radioBtnA2;
+        private System.Windows.Forms.RadioButton radioBtnA1;
+        private System.Windows.Forms.Label lblPackageA2;
+        private System.Windows.Forms.Label lblPackageA;
     }
 }
