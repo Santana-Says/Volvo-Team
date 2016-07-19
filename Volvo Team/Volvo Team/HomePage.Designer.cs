@@ -55,7 +55,7 @@
             // 
             this.picBoxInventory.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBoxInventory.Image = global::Volvo_Team.Properties.Resources.volvo3;
-            this.picBoxInventory.Location = new System.Drawing.Point(439, 320);
+            this.picBoxInventory.Location = new System.Drawing.Point(439, 310);
             this.picBoxInventory.Name = "picBoxInventory";
             this.picBoxInventory.Size = new System.Drawing.Size(448, 288);
             this.picBoxInventory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -67,7 +67,7 @@
             // 
             this.picBoxTrade.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBoxTrade.Image = global::Volvo_Team.Properties.Resources.volvo1;
-            this.picBoxTrade.Location = new System.Drawing.Point(-3, 320);
+            this.picBoxTrade.Location = new System.Drawing.Point(-3, 310);
             this.picBoxTrade.Name = "picBoxTrade";
             this.picBoxTrade.Size = new System.Drawing.Size(448, 288);
             this.picBoxTrade.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -112,14 +112,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 597);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.picBoxInventory);
             this.Controls.Add(this.picBoxTrade);
-            this.Controls.Add(this.pictureBox2);
             this.Name = "HomePage";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "HomePage";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.HomePage_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxInventory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTrade)).EndInit();
