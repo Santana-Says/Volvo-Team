@@ -40,5 +40,136 @@ namespace Volvo_Team
             horsePower = in4;
             cilynder = in5;
         }
+        // set / get model
+        public string Model
+        {
+            get
+            {
+                return model;
+            }
+            set
+            {
+                model = value;
+            }
+        }
+
+        // set / get engine
+        public string Engine
+        {
+            get
+            {
+                return engine;
+            }
+            set
+            {
+                engine = value;
+            }
+        }
+
+        // set / get msrp
+        public double MSRP
+        {
+            get
+            {
+                return msrp;
+            }
+            set
+            {
+                msrp = value;
+            }
+        }
+
+        // set / get fuel capacity
+        public double FCapacity
+        {
+            get
+            {
+                return fuelCapasity;
+            }
+            set
+            {
+                fuelCapasity = value;
+            }
+        }
+
+        // set / get cargo capacity
+        public double CCapacity
+        {
+            get
+            {
+                return cargoCapasity;
+            }
+            set
+            {
+                cargoCapasity = value;
+            }
+        }
+
+        // set / get fuel highway
+        public int High
+        {
+            get
+            {
+                return FuelHigh;
+            }
+            set
+            {
+                FuelHigh = value;
+            }
+        }
+
+        // set / get fuel city
+        public int City
+        {
+            get
+            {
+                return fuelCity;
+            }
+            set
+            {
+                fuelCity = value;
+            }
+        }
+
+        // set / get Seatting
+        public int Seat
+        {
+            get
+            {
+                return seatingCapacity;
+            }
+            set
+            {
+                seatingCapacity = value;
+            }
+        }
+
+        // set / get horsepower
+        public int Horse
+        {
+            get
+            {
+                return horsePower;
+            }
+            set
+            {
+                horsePower = value;
+            }
+        }
+
+        // set / get cilynder
+        public int Cilynder
+        {
+            get
+            {
+                return cilynder;
+            }
+            set
+            {
+                cilynder = value;
+            }
+        }
     }
+
+
 }

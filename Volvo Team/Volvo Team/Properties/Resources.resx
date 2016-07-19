@@ -133,6 +133,9 @@
   <data name="s90-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\s90-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="vlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="s90-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\s90-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,10 +145,16 @@
   <data name="cust info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cust info.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="left-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\left-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Trade-in" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Trade-in.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="trade-in-value" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trade-in-value.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="right-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\right-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
