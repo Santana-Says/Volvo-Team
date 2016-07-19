@@ -12,11 +12,55 @@ namespace Volvo_Team
 {
     public partial class Sales: Form
     {
+        // variables to be use
+        public int CurrentCar = 1;
+
         public Sales()
         {
             InitializeComponent();
+            DisplayCar(CurrentCar);
+
         }
 
+        // declare 4 instance of CarClass
+        CarClass s60 = new CarClass("S60", "2.0 Liter Turbocharge Direct - Injection", 34150, 17.8, 12, 38, 26, 5, 240, 4);
+        CarClass s80 = new CarClass("S80", "2.0 Liter Turbocharge Direct - Injection", 43450, 18.5, 14.9, 37, 25, 5, 240, 4);
+        CarClass s90 = new CarClass("S90", "In-Line Turbocharge", 46950, 14.5, 13.5, 0, 0, 5, 250, 4);
+        CarClass V60 = new CarClass("V60", "2.5 Turbocharged", 41200, 17.8, 43.8, 28, 20, 5, 250, 5);
+
+
+        //function to display car inforamtion
+        public void DisplayCar(int car)
+        {
+            if (car == 1)
+            {
+                lblModelName.Text = s60.Model;
+                lblMSRPInfo.Text = Convert.ToString(s60.MSRP);
+                lblEngineInfo.Text = s60.Engine;
+            }
+            if (car == 2)
+            {
+                lblModelName.Text = s80.Model;
+                lblMSRPInfo.Text = Convert.ToString(s60.MSRP);
+                lblEngineInfo.Text = s60.Engine;
+            }
+            if (car == 3)
+            {
+                lblModelName.Text = s90.Model;
+                lblMSRPInfo.Text = Convert.ToString(s60.MSRP);
+                lblEngineInfo.Text = s60.Engine;
+            }
+            if (car == 4)
+            {
+                lblModelName.Text = V60.Model;
+                lblMSRPInfo.Text = Convert.ToString(s60.MSRP);
+                lblEngineInfo.Text = s60.Engine;
+            }
+
+        }
+
+        //show firs car in inventory
+        
         //inventory to add-on
         private void btnBuyNow_Click(object sender, EventArgs e)
         {
@@ -93,6 +137,32 @@ namespace Volvo_Team
             groupBoxA.Enabled = false;
         }
 
-        
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            if(CurrentCar < 5)
+            {
+                CurrentCar++;
+            }
+            if(CurrentCar == 5)
+            {
+                CurrentCar = 1;
+            }
+
+            DisplayCar(CurrentCar);
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            if (CurrentCar > 0)
+            {
+                CurrentCar--;
+            }
+            if (CurrentCar == 0)
+            {
+                CurrentCar = 4;
+            }
+
+            DisplayCar(CurrentCar);
+        }
     }
 }
