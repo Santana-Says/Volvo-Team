@@ -23,10 +23,10 @@ namespace Volvo_Team
         }
 
         // declare 4 instance of CarClass
-        CarClass s60 = new CarClass("S60", "2.0 Liter Turbocharge Direct - Injection", 34150, 17.8, 12, 38, 26, 5, 240, 4);
-        CarClass s80 = new CarClass("S80", "2.0 Liter Turbocharge Direct - Injection", 43450, 18.5, 14.9, 37, 25, 5, 240, 4);
-        CarClass s90 = new CarClass("S90", "In-Line Turbocharge", 46950, 14.5, 13.5, 0, 0, 5, 250, 4);
-        CarClass V60 = new CarClass("V60", "2.5 Turbocharged", 41200, 17.8, 43.8, 28, 20, 5, 250, 5);
+        CarClass s60 = new CarClass("S60", "2.0 Liter", 34150, 17.8, 12, 38, 26, 5, 240, 4);
+        CarClass s80 = new CarClass("S80", "2.0 Liter", 43450, 18.5, 14.9, 37, 25, 5, 240, 4);
+        CarClass s90 = new CarClass("S90", "In-Line ", 46950, 14.5, 13.5, 39, 26, 5, 250, 4);
+        CarClass v60 = new CarClass("V60", "2.5 Liter", 41200, 17.8, 43.8, 28, 20, 5, 250, 5);
 
 
         //function to display car inforamtion
@@ -35,31 +35,59 @@ namespace Volvo_Team
             if (car == 1)
             {
                 lblModelName.Text = s60.Model;
-                lblMSRPInfo.Text = Convert.ToString(s60.MSRP);
+                lblMSRPInfo.Text = s60.msrp.ToString("C");
                 lblEngineInfo.Text = s60.Engine;
+                lblCylinderInfo.Text = Convert.ToString(s60.cylinder);
+                lblHPInfo.Text = Convert.ToString(s60.horsePower);
+                lblFuelInfo.Text = Convert.ToString(s60.fuelCapacity);
+                lblCargoInfo.Text = Convert.ToString(s60.cargoCapacity);
+                lblSeatInfo.Text = Convert.ToString(s60.seatingCapacity);
+                lblMpgCityInfo.Text = Convert.ToString(s60.fuelCity);
+                lblMpgHwInfo.Text = Convert.ToString(s60.FuelHigh);
             }
             if (car == 2)
             {
                 lblModelName.Text = s80.Model;
-                lblMSRPInfo.Text = Convert.ToString(s60.MSRP);
-                lblEngineInfo.Text = s60.Engine;
+                lblMSRPInfo.Text = s80.msrp.ToString("C");
+                lblEngineInfo.Text = s80.Engine;
+                lblCylinderInfo.Text = Convert.ToString(s80.cylinder);
+                lblHPInfo.Text = Convert.ToString(s80.horsePower);
+                lblFuelInfo.Text = Convert.ToString(s80.fuelCapacity);
+                lblCargoInfo.Text = Convert.ToString(s80.cargoCapacity);
+                lblSeatInfo.Text = Convert.ToString(s80.seatingCapacity);
+                lblMpgCityInfo.Text = Convert.ToString(s80.fuelCity);
+                lblMpgHwInfo.Text = Convert.ToString(s80.FuelHigh);
             }
             if (car == 3)
             {
                 lblModelName.Text = s90.Model;
-                lblMSRPInfo.Text = Convert.ToString(s60.MSRP);
-                lblEngineInfo.Text = s60.Engine;
+                lblMSRPInfo.Text = s90.msrp.ToString("C");
+                lblEngineInfo.Text = s90.Engine;
+                lblCylinderInfo.Text = Convert.ToString(s90.cylinder);
+                lblHPInfo.Text = Convert.ToString(s90.horsePower);
+                lblFuelInfo.Text = Convert.ToString(s90.fuelCapacity);
+                lblCargoInfo.Text = Convert.ToString(s90.cargoCapacity);
+                lblSeatInfo.Text = Convert.ToString(s90.seatingCapacity);
+                lblMpgCityInfo.Text = Convert.ToString(s90.fuelCity);
+                lblMpgHwInfo.Text = Convert.ToString(s90.FuelHigh);
             }
             if (car == 4)
             {
-                lblModelName.Text = V60.Model;
-                lblMSRPInfo.Text = Convert.ToString(s60.MSRP);
-                lblEngineInfo.Text = s60.Engine;
+                lblModelName.Text = v60.Model;
+                lblMSRPInfo.Text = v60.msrp.ToString("C");
+                lblEngineInfo.Text = v60.Engine;
+                lblCylinderInfo.Text = Convert.ToString(v60.cylinder);
+                lblHPInfo.Text = Convert.ToString(v60.horsePower);
+                lblFuelInfo.Text = Convert.ToString(v60.fuelCapacity);
+                lblCargoInfo.Text = Convert.ToString(v60.cargoCapacity);
+                lblSeatInfo.Text = Convert.ToString(v60.seatingCapacity);
+                lblMpgCityInfo.Text = Convert.ToString(v60.fuelCity);
+                lblMpgHwInfo.Text = Convert.ToString(v60.FuelHigh);
             }
 
         }
 
-        //show firs car in inventory
+        //show first car in inventory
         
         //inventory to add-on
         private void btnBuyNow_Click(object sender, EventArgs e)
@@ -117,7 +145,7 @@ namespace Volvo_Team
             Application.Exit();
         }
 
-        //select all radio buttons per groupBox
+        //select all radio buttons per groupBox and disable the other package
         private void groupBoxA_Enter(object sender, EventArgs e)
         {
             radioBtnA1.Checked = true;
@@ -125,6 +153,11 @@ namespace Volvo_Team
             radioBtnA3.Checked = true;
 
             groupBoxB.Enabled = false;
+
+            s60.package = "Package A";
+            s80.package = "Package A";
+            s90.package = "Package A";
+            v60.package = "Package A";
         }
         private void groupBoxB_Enter(object sender, EventArgs e)
         {
@@ -135,6 +168,11 @@ namespace Volvo_Team
             radioBtnB5.Checked = true;
 
             groupBoxA.Enabled = false;
+
+            s60.package = "Package B";
+            s80.package = "Package B";
+            s90.package = "Package B";
+            v60.package = "Package B";
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -163,6 +201,38 @@ namespace Volvo_Team
             }
 
             DisplayCar(CurrentCar);
+        }
+
+        private void groupBoxPaint_Enter(object sender, EventArgs e)
+        {
+            if (radioBtnP1.Checked)
+            {
+                s60.paint = "Standard Finish";
+                s80.paint = "Standard Finish";
+                s90.paint = "Standard Finish";
+                v60.paint = "Standard Finish";
+            }
+            else
+            {
+                s60.paint = "Metallic Finish";
+                s80.paint = "Metallic Finish";
+                s90.paint = "Metallic Finish";
+                v60.paint = "Metallic Finish";
+            }
+        }
+
+        //Quote to MyAccount
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tabControlSales.SelectedTab = tabAccount;
+            lblWelcomeName.Text = txtName.Text;
+            //lblAccountNum.Text = 
+            lblQuoteMSRPNum.Text = lblMSRPInfo.Text;
+            //lblQuotePackageNum.Text = 
+            //lblQuoteFinishNum.Text = 
+            //lblQuoteTradeNum.Text = 
+            //lblQuotePromoPromo.Text = 
+            //lblQuoteEstNum.Text = 
         }
     }
 }
