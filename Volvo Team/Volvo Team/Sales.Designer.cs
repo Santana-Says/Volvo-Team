@@ -30,6 +30,8 @@
         {
             this.tabControlSales = new System.Windows.Forms.TabControl();
             this.tabInventory = new System.Windows.Forms.TabPage();
+            this.picBoxArrowR = new System.Windows.Forms.PictureBox();
+            this.picBoxArrowL = new System.Windows.Forms.PictureBox();
             this.btnTrade = new System.Windows.Forms.Button();
             this.btnBuyNow = new System.Windows.Forms.Button();
             this.lblMpgHwInfo = new System.Windows.Forms.Label();
@@ -45,6 +47,8 @@
             this.lblSeatCap = new System.Windows.Forms.Label();
             this.lblCapacity = new System.Windows.Forms.Label();
             this.lblModelName = new System.Windows.Forms.Label();
+            this.picFrontView = new System.Windows.Forms.PictureBox();
+            this.picSideView = new System.Windows.Forms.PictureBox();
             this.lblHPInfo = new System.Windows.Forms.Label();
             this.lblCylinderInfo = new System.Windows.Forms.Label();
             this.lblEngineInfo = new System.Windows.Forms.Label();
@@ -55,14 +59,16 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.tabTrade = new System.Windows.Forms.TabPage();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnContinue = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtBoxMilage = new System.Windows.Forms.TextBox();
+            this.comboBoxMake = new System.Windows.Forms.ComboBox();
+            this.comboBoxYear = new System.Windows.Forms.ComboBox();
             this.lblMilage = new System.Windows.Forms.Label();
             this.lblMake = new System.Windows.Forms.Label();
             this.lblYear = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabAddOn = new System.Windows.Forms.TabPage();
             this.btnQoute = new System.Windows.Forms.Button();
             this.groupBoxPaint = new System.Windows.Forms.GroupBox();
@@ -84,6 +90,7 @@
             this.lblPackageA2 = new System.Windows.Forms.Label();
             this.lblPackageA = new System.Windows.Forms.Label();
             this.tabQuote = new System.Windows.Forms.TabPage();
+            this.buttonAccount = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtZip = new System.Windows.Forms.TextBox();
@@ -97,59 +104,52 @@
             this.lblCity = new System.Windows.Forms.Label();
             this.lblSAddress = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.eventLog1 = new System.Diagnostics.EventLog();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.picFrontView = new System.Windows.Forms.PictureBox();
-            this.picSideView = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabAccount = new System.Windows.Forms.TabPage();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.picBoxMyAcc = new System.Windows.Forms.PictureBox();
-            this.lblCarModel = new System.Windows.Forms.Label();
-            this.lblWelcome = new System.Windows.Forms.Label();
-            this.lblAccount = new System.Windows.Forms.Label();
-            this.lbl = new System.Windows.Forms.Label();
-            this.lblAccountNum = new System.Windows.Forms.Label();
-            this.lblWelcomeName = new System.Windows.Forms.Label();
-            this.lblQuoteMSRP = new System.Windows.Forms.Label();
-            this.lblQuotePackage = new System.Windows.Forms.Label();
-            this.lblQuoteFinish = new System.Windows.Forms.Label();
-            this.lblQuoteTrade = new System.Windows.Forms.Label();
-            this.lblQuotePromo = new System.Windows.Forms.Label();
-            this.lblQuoteEst = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblQuoteEstNum = new System.Windows.Forms.Label();
+            this.lblQuotePromoNum = new System.Windows.Forms.Label();
+            this.lblQuoteTradeNum = new System.Windows.Forms.Label();
             this.lblQuoteFinishNum = new System.Windows.Forms.Label();
             this.lblQuotePackageNum = new System.Windows.Forms.Label();
             this.lblQuoteMSRPNum = new System.Windows.Forms.Label();
-            this.lblQuotePromoNum = new System.Windows.Forms.Label();
-            this.lblQuoteTradeNum = new System.Windows.Forms.Label();
-            this.lblQuoteEstNum = new System.Windows.Forms.Label();
-            this.buttonAccount = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblQuoteEst = new System.Windows.Forms.Label();
+            this.lblQuotePromo = new System.Windows.Forms.Label();
+            this.lblQuoteTrade = new System.Windows.Forms.Label();
+            this.lblQuoteFinish = new System.Windows.Forms.Label();
+            this.lblQuotePackage = new System.Windows.Forms.Label();
+            this.lblQuoteMSRP = new System.Windows.Forms.Label();
+            this.lblWelcomeName = new System.Windows.Forms.Label();
+            this.lblAccountNum = new System.Windows.Forms.Label();
+            this.lbl = new System.Windows.Forms.Label();
+            this.lblAccount = new System.Windows.Forms.Label();
+            this.lblWelcome = new System.Windows.Forms.Label();
+            this.lblCarModel = new System.Windows.Forms.Label();
+            this.picBoxMyAcc = new System.Windows.Forms.PictureBox();
+            this.eventLog1 = new System.Diagnostics.EventLog();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabControlSales.SuspendLayout();
             this.tabInventory.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxArrowR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxArrowL)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFrontView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSideView)).BeginInit();
             this.tabTrade.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabAddOn.SuspendLayout();
             this.groupBoxPaint.SuspendLayout();
             this.groupBoxB.SuspendLayout();
             this.groupBoxA.SuspendLayout();
             this.tabQuote.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFrontView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSideView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabAccount.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMyAcc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlSales
@@ -170,8 +170,8 @@
             // 
             this.tabInventory.BackColor = System.Drawing.Color.Snow;
             this.tabInventory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.tabInventory.Controls.Add(this.pictureBox6);
-            this.tabInventory.Controls.Add(this.pictureBox5);
+            this.tabInventory.Controls.Add(this.picBoxArrowR);
+            this.tabInventory.Controls.Add(this.picBoxArrowL);
             this.tabInventory.Controls.Add(this.btnTrade);
             this.tabInventory.Controls.Add(this.btnBuyNow);
             this.tabInventory.Controls.Add(this.lblMpgHwInfo);
@@ -205,6 +205,30 @@
             this.tabInventory.Size = new System.Drawing.Size(882, 535);
             this.tabInventory.TabIndex = 0;
             this.tabInventory.Text = "Car Inventory";
+            // 
+            // picBoxArrowR
+            // 
+            this.picBoxArrowR.Image = global::Volvo_Team.Properties.Resources.right_normal;
+            this.picBoxArrowR.Location = new System.Drawing.Point(771, 462);
+            this.picBoxArrowR.Margin = new System.Windows.Forms.Padding(2);
+            this.picBoxArrowR.Name = "picBoxArrowR";
+            this.picBoxArrowR.Size = new System.Drawing.Size(58, 55);
+            this.picBoxArrowR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxArrowR.TabIndex = 41;
+            this.picBoxArrowR.TabStop = false;
+            this.picBoxArrowR.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // picBoxArrowL
+            // 
+            this.picBoxArrowL.Image = global::Volvo_Team.Properties.Resources.left_normal;
+            this.picBoxArrowL.Location = new System.Drawing.Point(33, 462);
+            this.picBoxArrowL.Margin = new System.Windows.Forms.Padding(2);
+            this.picBoxArrowL.Name = "picBoxArrowL";
+            this.picBoxArrowL.Size = new System.Drawing.Size(58, 55);
+            this.picBoxArrowL.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxArrowL.TabIndex = 40;
+            this.picBoxArrowL.TabStop = false;
+            this.picBoxArrowL.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // btnTrade
             // 
@@ -370,6 +394,22 @@
             this.lblModelName.TabIndex = 23;
             this.lblModelName.Text = "S40";
             // 
+            // picFrontView
+            // 
+            this.picFrontView.Location = new System.Drawing.Point(553, 9);
+            this.picFrontView.Name = "picFrontView";
+            this.picFrontView.Size = new System.Drawing.Size(225, 129);
+            this.picFrontView.TabIndex = 22;
+            this.picFrontView.TabStop = false;
+            // 
+            // picSideView
+            // 
+            this.picSideView.Location = new System.Drawing.Point(88, 9);
+            this.picSideView.Name = "picSideView";
+            this.picSideView.Size = new System.Drawing.Size(225, 129);
+            this.picSideView.TabIndex = 21;
+            this.picSideView.TabStop = false;
+            // 
             // lblHPInfo
             // 
             this.lblHPInfo.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -472,9 +512,9 @@
             this.tabTrade.Controls.Add(this.pictureBox3);
             this.tabTrade.Controls.Add(this.btnContinue);
             this.tabTrade.Controls.Add(this.label1);
-            this.tabTrade.Controls.Add(this.textBox1);
-            this.tabTrade.Controls.Add(this.comboBox2);
-            this.tabTrade.Controls.Add(this.comboBox1);
+            this.tabTrade.Controls.Add(this.txtBoxMilage);
+            this.tabTrade.Controls.Add(this.comboBoxMake);
+            this.tabTrade.Controls.Add(this.comboBoxYear);
             this.tabTrade.Controls.Add(this.lblMilage);
             this.tabTrade.Controls.Add(this.lblMake);
             this.tabTrade.Controls.Add(this.lblYear);
@@ -486,6 +526,16 @@
             this.tabTrade.Size = new System.Drawing.Size(882, 535);
             this.tabTrade.TabIndex = 1;
             this.tabTrade.Text = "Trade-In";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Volvo_Team.Properties.Resources.trade_in_value;
+            this.pictureBox3.Location = new System.Drawing.Point(355, 205);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(409, 229);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 40;
+            this.pictureBox3.TabStop = false;
             // 
             // btnContinue
             // 
@@ -508,21 +558,22 @@
             this.label1.TabIndex = 9;
             this.label1.Text = " Describe Your Trade-in Vehicle";
             // 
-            // textBox1
+            // txtBoxMilage
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox1.Location = new System.Drawing.Point(124, 414);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 8;
+            this.txtBoxMilage.Enabled = false;
+            this.txtBoxMilage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtBoxMilage.Location = new System.Drawing.Point(124, 414);
+            this.txtBoxMilage.Name = "txtBoxMilage";
+            this.txtBoxMilage.Size = new System.Drawing.Size(100, 26);
+            this.txtBoxMilage.TabIndex = 8;
+            this.txtBoxMilage.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // comboBox2
+            // comboBoxMake
             // 
-            this.comboBox2.Enabled = false;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBoxMake.Enabled = false;
+            this.comboBoxMake.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.comboBoxMake.FormattingEnabled = true;
+            this.comboBoxMake.Items.AddRange(new object[] {
             "Acura",
             "Audi",
             "BMW",
@@ -537,17 +588,17 @@
             "Toyota",
             "Volkswagon",
             "Volvo"});
-            this.comboBox2.Location = new System.Drawing.Point(124, 315);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 28);
-            this.comboBox2.TabIndex = 6;
-            this.comboBox2.SelectedValueChanged += new System.EventHandler(this.comboBox2_SelectedValueChanged);
+            this.comboBoxMake.Location = new System.Drawing.Point(124, 315);
+            this.comboBoxMake.Name = "comboBoxMake";
+            this.comboBoxMake.Size = new System.Drawing.Size(121, 28);
+            this.comboBoxMake.TabIndex = 6;
+            this.comboBoxMake.SelectedValueChanged += new System.EventHandler(this.comboBox2_SelectedValueChanged);
             // 
-            // comboBox1
+            // comboBoxYear
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.comboBoxYear.FormattingEnabled = true;
+            this.comboBoxYear.Items.AddRange(new object[] {
             "2015",
             "2014",
             "2013",
@@ -557,16 +608,12 @@
             "2009",
             "2008",
             "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002"});
-            this.comboBox1.Location = new System.Drawing.Point(124, 216);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
+            "2006"});
+            this.comboBoxYear.Location = new System.Drawing.Point(124, 216);
+            this.comboBoxYear.Name = "comboBoxYear";
+            this.comboBoxYear.Size = new System.Drawing.Size(121, 28);
+            this.comboBoxYear.TabIndex = 5;
+            this.comboBoxYear.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
             // 
             // lblMilage
             // 
@@ -597,6 +644,16 @@
             this.lblYear.Size = new System.Drawing.Size(43, 20);
             this.lblYear.TabIndex = 1;
             this.lblYear.Text = "Year";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Volvo_Team.Properties.Resources.Trade_in;
+            this.pictureBox1.Location = new System.Drawing.Point(114, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(650, 152);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // tabAddOn
             // 
@@ -875,6 +932,17 @@
             this.tabQuote.TabIndex = 2;
             this.tabQuote.Text = "Qoute";
             // 
+            // buttonAccount
+            // 
+            this.buttonAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAccount.Location = new System.Drawing.Point(370, 467);
+            this.buttonAccount.Name = "buttonAccount";
+            this.buttonAccount.Size = new System.Drawing.Size(145, 55);
+            this.buttonAccount.TabIndex = 40;
+            this.buttonAccount.Text = "Continue";
+            this.buttonAccount.UseVisualStyleBackColor = true;
+            this.buttonAccount.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -1046,70 +1114,6 @@
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name:";
             // 
-            // eventLog1
-            // 
-            this.eventLog1.SynchronizingObject = this;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Volvo_Team.Properties.Resources.right_normal;
-            this.pictureBox6.Location = new System.Drawing.Point(771, 462);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(58, 55);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 41;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Volvo_Team.Properties.Resources.left_normal;
-            this.pictureBox5.Location = new System.Drawing.Point(33, 462);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(58, 55);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 40;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // picFrontView
-            // 
-            this.picFrontView.Location = new System.Drawing.Point(553, 9);
-            this.picFrontView.Name = "picFrontView";
-            this.picFrontView.Size = new System.Drawing.Size(225, 129);
-            this.picFrontView.TabIndex = 22;
-            this.picFrontView.TabStop = false;
-            // 
-            // picSideView
-            // 
-            this.picSideView.Location = new System.Drawing.Point(88, 9);
-            this.picSideView.Name = "picSideView";
-            this.picSideView.Size = new System.Drawing.Size(225, 129);
-            this.picSideView.TabIndex = 21;
-            this.picSideView.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Volvo_Team.Properties.Resources.trade_in_value;
-            this.pictureBox3.Location = new System.Drawing.Point(355, 205);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(409, 229);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 40;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Volvo_Team.Properties.Resources.Trade_in;
-            this.pictureBox1.Location = new System.Drawing.Point(114, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(650, 152);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Volvo_Team.Properties.Resources.cust_info;
@@ -1132,20 +1136,6 @@
             this.tabAccount.TabIndex = 4;
             this.tabAccount.Text = "My Account";
             this.tabAccount.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = global::Volvo_Team.Properties.Resources.volvo_logo_scaled;
-            this.pictureBox4.Location = new System.Drawing.Point(-3, -1);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(890, 39);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // groupBox1
             // 
@@ -1177,143 +1167,77 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // picBoxMyAcc
+            // lblQuoteEstNum
             // 
-            this.picBoxMyAcc.Location = new System.Drawing.Point(30, 127);
-            this.picBoxMyAcc.Name = "picBoxMyAcc";
-            this.picBoxMyAcc.Size = new System.Drawing.Size(275, 228);
-            this.picBoxMyAcc.TabIndex = 1;
-            this.picBoxMyAcc.TabStop = false;
+            this.lblQuoteEstNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuoteEstNum.ForeColor = System.Drawing.Color.YellowGreen;
+            this.lblQuoteEstNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblQuoteEstNum.Location = new System.Drawing.Point(517, 308);
+            this.lblQuoteEstNum.Name = "lblQuoteEstNum";
+            this.lblQuoteEstNum.Size = new System.Drawing.Size(116, 20);
+            this.lblQuoteEstNum.TabIndex = 21;
+            this.lblQuoteEstNum.Text = "Estimate";
+            this.lblQuoteEstNum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lblCarModel
+            // lblQuotePromoNum
             // 
-            this.lblCarModel.AutoSize = true;
-            this.lblCarModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCarModel.Location = new System.Drawing.Point(32, 24);
-            this.lblCarModel.Name = "lblCarModel";
-            this.lblCarModel.Size = new System.Drawing.Size(239, 55);
-            this.lblCarModel.TabIndex = 2;
-            this.lblCarModel.Text = "2016 S60";
+            this.lblQuotePromoNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuotePromoNum.ForeColor = System.Drawing.Color.Red;
+            this.lblQuotePromoNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblQuotePromoNum.Location = new System.Drawing.Point(517, 264);
+            this.lblQuotePromoNum.Name = "lblQuotePromoNum";
+            this.lblQuotePromoNum.Size = new System.Drawing.Size(116, 20);
+            this.lblQuotePromoNum.TabIndex = 20;
+            this.lblQuotePromoNum.Text = "Promo";
+            this.lblQuotePromoNum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lblWelcome
+            // lblQuoteTradeNum
             // 
-            this.lblWelcome.AutoSize = true;
-            this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcome.Location = new System.Drawing.Point(368, 24);
-            this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(122, 25);
-            this.lblWelcome.TabIndex = 3;
-            this.lblWelcome.Text = "Welcome, ";
+            this.lblQuoteTradeNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuoteTradeNum.ForeColor = System.Drawing.Color.Red;
+            this.lblQuoteTradeNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblQuoteTradeNum.Location = new System.Drawing.Point(517, 244);
+            this.lblQuoteTradeNum.Name = "lblQuoteTradeNum";
+            this.lblQuoteTradeNum.Size = new System.Drawing.Size(116, 20);
+            this.lblQuoteTradeNum.TabIndex = 19;
+            this.lblQuoteTradeNum.Text = "Trade-in";
+            this.lblQuoteTradeNum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lblAccount
+            // lblQuoteFinishNum
             // 
-            this.lblAccount.AutoSize = true;
-            this.lblAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccount.Location = new System.Drawing.Point(369, 59);
-            this.lblAccount.Name = "lblAccount";
-            this.lblAccount.Size = new System.Drawing.Size(65, 20);
-            this.lblAccount.TabIndex = 4;
-            this.lblAccount.Text = "Acct #:";
+            this.lblQuoteFinishNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuoteFinishNum.ForeColor = System.Drawing.Color.YellowGreen;
+            this.lblQuoteFinishNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblQuoteFinishNum.Location = new System.Drawing.Point(539, 203);
+            this.lblQuoteFinishNum.Name = "lblQuoteFinishNum";
+            this.lblQuoteFinishNum.Size = new System.Drawing.Size(94, 20);
+            this.lblQuoteFinishNum.TabIndex = 18;
+            this.lblQuoteFinishNum.Text = "Finish";
+            this.lblQuoteFinishNum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lbl
+            // lblQuotePackageNum
             // 
-            this.lbl.AutoSize = true;
-            this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl.Location = new System.Drawing.Point(369, 127);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(137, 20);
-            this.lbl.TabIndex = 5;
-            this.lbl.Text = "Quote Summary";
+            this.lblQuotePackageNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuotePackageNum.ForeColor = System.Drawing.Color.YellowGreen;
+            this.lblQuotePackageNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblQuotePackageNum.Location = new System.Drawing.Point(517, 183);
+            this.lblQuotePackageNum.Name = "lblQuotePackageNum";
+            this.lblQuotePackageNum.Size = new System.Drawing.Size(116, 20);
+            this.lblQuotePackageNum.TabIndex = 17;
+            this.lblQuotePackageNum.Text = "Package";
+            this.lblQuotePackageNum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lblAccountNum
+            // lblQuoteMSRPNum
             // 
-            this.lblAccountNum.AutoSize = true;
-            this.lblAccountNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccountNum.Location = new System.Drawing.Point(440, 59);
-            this.lblAccountNum.Name = "lblAccountNum";
-            this.lblAccountNum.Size = new System.Drawing.Size(81, 20);
-            this.lblAccountNum.TabIndex = 6;
-            this.lblAccountNum.Text = "12345678";
-            // 
-            // lblWelcomeName
-            // 
-            this.lblWelcomeName.AutoSize = true;
-            this.lblWelcomeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWelcomeName.Location = new System.Drawing.Point(479, 24);
-            this.lblWelcomeName.Name = "lblWelcomeName";
-            this.lblWelcomeName.Size = new System.Drawing.Size(163, 25);
-            this.lblWelcomeName.TabIndex = 7;
-            this.lblWelcomeName.Text = "Jeffrey Santana";
-            // 
-            // lblQuoteMSRP
-            // 
-            this.lblQuoteMSRP.AutoSize = true;
-            this.lblQuoteMSRP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuoteMSRP.Location = new System.Drawing.Point(423, 163);
-            this.lblQuoteMSRP.Name = "lblQuoteMSRP";
-            this.lblQuoteMSRP.Size = new System.Drawing.Size(55, 20);
-            this.lblQuoteMSRP.TabIndex = 8;
-            this.lblQuoteMSRP.Text = "MSRP";
-            // 
-            // lblQuotePackage
-            // 
-            this.lblQuotePackage.AutoSize = true;
-            this.lblQuotePackage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuotePackage.Location = new System.Drawing.Point(423, 183);
-            this.lblQuotePackage.Name = "lblQuotePackage";
-            this.lblQuotePackage.Size = new System.Drawing.Size(71, 20);
-            this.lblQuotePackage.TabIndex = 9;
-            this.lblQuotePackage.Text = "Package";
-            // 
-            // lblQuoteFinish
-            // 
-            this.lblQuoteFinish.AutoSize = true;
-            this.lblQuoteFinish.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuoteFinish.Location = new System.Drawing.Point(423, 203);
-            this.lblQuoteFinish.Name = "lblQuoteFinish";
-            this.lblQuoteFinish.Size = new System.Drawing.Size(51, 20);
-            this.lblQuoteFinish.TabIndex = 10;
-            this.lblQuoteFinish.Text = "Finish";
-            // 
-            // lblQuoteTrade
-            // 
-            this.lblQuoteTrade.AutoSize = true;
-            this.lblQuoteTrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuoteTrade.Location = new System.Drawing.Point(423, 244);
-            this.lblQuoteTrade.Name = "lblQuoteTrade";
-            this.lblQuoteTrade.Size = new System.Drawing.Size(67, 20);
-            this.lblQuoteTrade.TabIndex = 11;
-            this.lblQuoteTrade.Text = "Trade-in";
-            // 
-            // lblQuotePromo
-            // 
-            this.lblQuotePromo.AutoSize = true;
-            this.lblQuotePromo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuotePromo.Location = new System.Drawing.Point(423, 264);
-            this.lblQuotePromo.Name = "lblQuotePromo";
-            this.lblQuotePromo.Size = new System.Drawing.Size(55, 20);
-            this.lblQuotePromo.TabIndex = 12;
-            this.lblQuotePromo.Text = "Promo";
-            // 
-            // lblQuoteEst
-            // 
-            this.lblQuoteEst.AutoSize = true;
-            this.lblQuoteEst.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuoteEst.Location = new System.Drawing.Point(423, 308);
-            this.lblQuoteEst.Name = "lblQuoteEst";
-            this.lblQuoteEst.Size = new System.Drawing.Size(72, 20);
-            this.lblQuoteEst.TabIndex = 13;
-            this.lblQuoteEst.Text = "Estimate";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(423, 284);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(229, 20);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "--------------------------------------------";
+            this.lblQuoteMSRPNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuoteMSRPNum.ForeColor = System.Drawing.Color.YellowGreen;
+            this.lblQuoteMSRPNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblQuoteMSRPNum.Location = new System.Drawing.Point(517, 163);
+            this.lblQuoteMSRPNum.Name = "lblQuoteMSRPNum";
+            this.lblQuoteMSRPNum.Size = new System.Drawing.Size(116, 20);
+            this.lblQuoteMSRPNum.TabIndex = 16;
+            this.lblQuoteMSRPNum.Text = "MSRP";
+            this.lblQuoteMSRPNum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label11
             // 
@@ -1325,88 +1249,161 @@
             this.label11.TabIndex = 15;
             this.label11.Text = "--------------------------------------------";
             // 
-            // lblQuoteFinishNum
+            // label10
             // 
-            this.lblQuoteFinishNum.AutoSize = true;
-            this.lblQuoteFinishNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuoteFinishNum.ForeColor = System.Drawing.Color.YellowGreen;
-            this.lblQuoteFinishNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblQuoteFinishNum.Location = new System.Drawing.Point(562, 203);
-            this.lblQuoteFinishNum.Name = "lblQuoteFinishNum";
-            this.lblQuoteFinishNum.Size = new System.Drawing.Size(51, 20);
-            this.lblQuoteFinishNum.TabIndex = 18;
-            this.lblQuoteFinishNum.Text = "Finish";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(423, 284);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(229, 20);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "--------------------------------------------";
             // 
-            // lblQuotePackageNum
+            // lblQuoteEst
             // 
-            this.lblQuotePackageNum.AutoSize = true;
-            this.lblQuotePackageNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuotePackageNum.ForeColor = System.Drawing.Color.YellowGreen;
-            this.lblQuotePackageNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblQuotePackageNum.Location = new System.Drawing.Point(562, 183);
-            this.lblQuotePackageNum.Name = "lblQuotePackageNum";
-            this.lblQuotePackageNum.Size = new System.Drawing.Size(71, 20);
-            this.lblQuotePackageNum.TabIndex = 17;
-            this.lblQuotePackageNum.Text = "Package";
+            this.lblQuoteEst.AutoSize = true;
+            this.lblQuoteEst.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuoteEst.Location = new System.Drawing.Point(423, 308);
+            this.lblQuoteEst.Name = "lblQuoteEst";
+            this.lblQuoteEst.Size = new System.Drawing.Size(72, 20);
+            this.lblQuoteEst.TabIndex = 13;
+            this.lblQuoteEst.Text = "Estimate";
             // 
-            // lblQuoteMSRPNum
+            // lblQuotePromo
             // 
-            this.lblQuoteMSRPNum.AutoSize = true;
-            this.lblQuoteMSRPNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuoteMSRPNum.ForeColor = System.Drawing.Color.YellowGreen;
-            this.lblQuoteMSRPNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblQuoteMSRPNum.Location = new System.Drawing.Point(562, 163);
-            this.lblQuoteMSRPNum.Name = "lblQuoteMSRPNum";
-            this.lblQuoteMSRPNum.Size = new System.Drawing.Size(55, 20);
-            this.lblQuoteMSRPNum.TabIndex = 16;
-            this.lblQuoteMSRPNum.Text = "MSRP";
+            this.lblQuotePromo.AutoSize = true;
+            this.lblQuotePromo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuotePromo.Location = new System.Drawing.Point(423, 264);
+            this.lblQuotePromo.Name = "lblQuotePromo";
+            this.lblQuotePromo.Size = new System.Drawing.Size(55, 20);
+            this.lblQuotePromo.TabIndex = 12;
+            this.lblQuotePromo.Text = "Promo";
             // 
-            // lblQuotePromoNum
+            // lblQuoteTrade
             // 
-            this.lblQuotePromoNum.AutoSize = true;
-            this.lblQuotePromoNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuotePromoNum.ForeColor = System.Drawing.Color.Red;
-            this.lblQuotePromoNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblQuotePromoNum.Location = new System.Drawing.Point(562, 264);
-            this.lblQuotePromoNum.Name = "lblQuotePromoNum";
-            this.lblQuotePromoNum.Size = new System.Drawing.Size(55, 20);
-            this.lblQuotePromoNum.TabIndex = 20;
-            this.lblQuotePromoNum.Text = "Promo";
+            this.lblQuoteTrade.AutoSize = true;
+            this.lblQuoteTrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuoteTrade.Location = new System.Drawing.Point(423, 244);
+            this.lblQuoteTrade.Name = "lblQuoteTrade";
+            this.lblQuoteTrade.Size = new System.Drawing.Size(67, 20);
+            this.lblQuoteTrade.TabIndex = 11;
+            this.lblQuoteTrade.Text = "Trade-in";
             // 
-            // lblQuoteTradeNum
+            // lblQuoteFinish
             // 
-            this.lblQuoteTradeNum.AutoSize = true;
-            this.lblQuoteTradeNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuoteTradeNum.ForeColor = System.Drawing.Color.Red;
-            this.lblQuoteTradeNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblQuoteTradeNum.Location = new System.Drawing.Point(562, 244);
-            this.lblQuoteTradeNum.Name = "lblQuoteTradeNum";
-            this.lblQuoteTradeNum.Size = new System.Drawing.Size(67, 20);
-            this.lblQuoteTradeNum.TabIndex = 19;
-            this.lblQuoteTradeNum.Text = "Trade-in";
+            this.lblQuoteFinish.AutoSize = true;
+            this.lblQuoteFinish.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuoteFinish.Location = new System.Drawing.Point(423, 203);
+            this.lblQuoteFinish.Name = "lblQuoteFinish";
+            this.lblQuoteFinish.Size = new System.Drawing.Size(51, 20);
+            this.lblQuoteFinish.TabIndex = 10;
+            this.lblQuoteFinish.Text = "Finish";
             // 
-            // lblQuoteEstNum
+            // lblQuotePackage
             // 
-            this.lblQuoteEstNum.AutoSize = true;
-            this.lblQuoteEstNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuoteEstNum.ForeColor = System.Drawing.Color.YellowGreen;
-            this.lblQuoteEstNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblQuoteEstNum.Location = new System.Drawing.Point(562, 308);
-            this.lblQuoteEstNum.Name = "lblQuoteEstNum";
-            this.lblQuoteEstNum.Size = new System.Drawing.Size(72, 20);
-            this.lblQuoteEstNum.TabIndex = 21;
-            this.lblQuoteEstNum.Text = "Estimate";
+            this.lblQuotePackage.AutoSize = true;
+            this.lblQuotePackage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuotePackage.Location = new System.Drawing.Point(423, 183);
+            this.lblQuotePackage.Name = "lblQuotePackage";
+            this.lblQuotePackage.Size = new System.Drawing.Size(71, 20);
+            this.lblQuotePackage.TabIndex = 9;
+            this.lblQuotePackage.Text = "Package";
             // 
-            // buttonAccount
+            // lblQuoteMSRP
             // 
-            this.buttonAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAccount.Location = new System.Drawing.Point(370, 467);
-            this.buttonAccount.Name = "buttonAccount";
-            this.buttonAccount.Size = new System.Drawing.Size(145, 55);
-            this.buttonAccount.TabIndex = 40;
-            this.buttonAccount.Text = "Continue";
-            this.buttonAccount.UseVisualStyleBackColor = true;
-            this.buttonAccount.Click += new System.EventHandler(this.button1_Click);
+            this.lblQuoteMSRP.AutoSize = true;
+            this.lblQuoteMSRP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuoteMSRP.Location = new System.Drawing.Point(423, 163);
+            this.lblQuoteMSRP.Name = "lblQuoteMSRP";
+            this.lblQuoteMSRP.Size = new System.Drawing.Size(55, 20);
+            this.lblQuoteMSRP.TabIndex = 8;
+            this.lblQuoteMSRP.Text = "MSRP";
+            // 
+            // lblWelcomeName
+            // 
+            this.lblWelcomeName.AutoSize = true;
+            this.lblWelcomeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcomeName.Location = new System.Drawing.Point(479, 24);
+            this.lblWelcomeName.Name = "lblWelcomeName";
+            this.lblWelcomeName.Size = new System.Drawing.Size(163, 25);
+            this.lblWelcomeName.TabIndex = 7;
+            this.lblWelcomeName.Text = "Jeffrey Santana";
+            // 
+            // lblAccountNum
+            // 
+            this.lblAccountNum.AutoSize = true;
+            this.lblAccountNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccountNum.Location = new System.Drawing.Point(440, 59);
+            this.lblAccountNum.Name = "lblAccountNum";
+            this.lblAccountNum.Size = new System.Drawing.Size(81, 20);
+            this.lblAccountNum.TabIndex = 6;
+            this.lblAccountNum.Text = "12345678";
+            // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.Location = new System.Drawing.Point(369, 127);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(137, 20);
+            this.lbl.TabIndex = 5;
+            this.lbl.Text = "Quote Summary";
+            // 
+            // lblAccount
+            // 
+            this.lblAccount.AutoSize = true;
+            this.lblAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccount.Location = new System.Drawing.Point(369, 59);
+            this.lblAccount.Name = "lblAccount";
+            this.lblAccount.Size = new System.Drawing.Size(65, 20);
+            this.lblAccount.TabIndex = 4;
+            this.lblAccount.Text = "Acct #:";
+            // 
+            // lblWelcome
+            // 
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.Location = new System.Drawing.Point(368, 24);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(122, 25);
+            this.lblWelcome.TabIndex = 3;
+            this.lblWelcome.Text = "Welcome, ";
+            // 
+            // lblCarModel
+            // 
+            this.lblCarModel.AutoSize = true;
+            this.lblCarModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCarModel.Location = new System.Drawing.Point(32, 24);
+            this.lblCarModel.Name = "lblCarModel";
+            this.lblCarModel.Size = new System.Drawing.Size(239, 55);
+            this.lblCarModel.TabIndex = 2;
+            this.lblCarModel.Text = "2016 S60";
+            // 
+            // picBoxMyAcc
+            // 
+            this.picBoxMyAcc.Location = new System.Drawing.Point(30, 127);
+            this.picBoxMyAcc.Name = "picBoxMyAcc";
+            this.picBoxMyAcc.Size = new System.Drawing.Size(275, 228);
+            this.picBoxMyAcc.TabIndex = 1;
+            this.picBoxMyAcc.TabStop = false;
+            // 
+            // eventLog1
+            // 
+            this.eventLog1.SynchronizingObject = this;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Image = global::Volvo_Team.Properties.Resources.volvo_logo_scaled;
+            this.pictureBox4.Location = new System.Drawing.Point(-3, -1);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(890, 39);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 7;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // Sales
             // 
@@ -1422,8 +1419,14 @@
             this.tabControlSales.ResumeLayout(false);
             this.tabInventory.ResumeLayout(false);
             this.tabInventory.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxArrowR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxArrowL)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFrontView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSideView)).EndInit();
             this.tabTrade.ResumeLayout(false);
             this.tabTrade.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabAddOn.ResumeLayout(false);
             this.groupBoxPaint.ResumeLayout(false);
             this.groupBoxPaint.PerformLayout();
@@ -1433,19 +1436,13 @@
             this.groupBoxA.PerformLayout();
             this.tabQuote.ResumeLayout(false);
             this.tabQuote.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFrontView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSideView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabAccount.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxMyAcc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1497,9 +1494,9 @@
         private System.Windows.Forms.TabPage tabAddOn;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtBoxMilage;
+        private System.Windows.Forms.ComboBox comboBoxMake;
+        private System.Windows.Forms.ComboBox comboBoxYear;
         private System.Windows.Forms.Label lblMilage;
         private System.Windows.Forms.Label lblMake;
         private System.Windows.Forms.Label lblYear;
@@ -1527,9 +1524,9 @@
         private System.Windows.Forms.RadioButton radioBtnA1;
         private System.Windows.Forms.Label lblPackageA2;
         private System.Windows.Forms.Label lblPackageA;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox picBoxArrowL;
         private System.Diagnostics.EventLog eventLog1;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox picBoxArrowR;
         private System.Windows.Forms.TabPage tabAccount;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblWelcomeName;

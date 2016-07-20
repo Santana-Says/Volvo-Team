@@ -13,7 +13,7 @@ namespace Volvo_Team
     public partial class Sales: Form
     {
         // variables to be use
-        public int CurrentCar = 1;
+        public int CurrentCar = 1, paint = 0, package = 0, tradeIn = 0, promo = 0, estimate = 0;
 
         public Sales()
         {
@@ -117,12 +117,12 @@ namespace Volvo_Team
         //trade in section
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
-            comboBox2.Enabled = true;
+            comboBoxMake.Enabled = true;
         }
 
         private void comboBox2_SelectedValueChanged(object sender, EventArgs e)
         {
-            textBox1.Enabled = true;
+            txtBoxMilage.Enabled = true;
         }
 
         //for homepage to pick which tab to enter
@@ -154,10 +154,8 @@ namespace Volvo_Team
 
             groupBoxB.Enabled = false;
 
-            s60.package = "Package A";
-            s80.package = "Package A";
-            s90.package = "Package A";
-            v60.package = "Package A";
+            lblQuotePackage.Text = "Package A";
+            lblQuotePackageNum.Text = package.ToString("C");
         }
         private void groupBoxB_Enter(object sender, EventArgs e)
         {
@@ -169,10 +167,9 @@ namespace Volvo_Team
 
             groupBoxA.Enabled = false;
 
-            s60.package = "Package B";
-            s80.package = "Package B";
-            s90.package = "Package B";
-            v60.package = "Package B";
+            package = 2200;
+            lblQuotePackage.Text = "Package B";
+            lblQuotePackageNum.Text = package.ToString("C");
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -207,30 +204,45 @@ namespace Volvo_Team
         {
             if (radioBtnP1.Checked)
             {
-                s60.paint = "Standard Finish";
-                s80.paint = "Standard Finish";
-                s90.paint = "Standard Finish";
-                v60.paint = "Standard Finish";
+                lblQuoteFinish.Text = "Standard Finish";
+                lblQuoteFinishNum.Text = paint.ToString("C");
             }
             else
             {
-                s60.paint = "Metallic Finish";
-                s80.paint = "Metallic Finish";
-                s90.paint = "Metallic Finish";
-                v60.paint = "Metallic Finish";
+                paint = 600;
+                lblQuoteFinish.Text = "Metallic Finish";
+                lblQuoteFinishNum.Text = paint.ToString("C");
             }
         }
+
+        private void tradeInVal()
+        {
+            int milageVal = 0, yearVal = 0;
+
+            if (int.Parse(txtBoxMilage.Text) >= 35000)
+                milageVal = 10000;
+            else if (int.Parse(txtBoxMilage.Text) >= 15000)
+                milageVal = 5000;
+            else
+                milageVal = 2000;
+
+            yearVal = 1000 * (2016 - int.Parse(comboBoxYear.Text));
+
+            tradeIn = 30000 - yearVal - milageVal;
+        }
+
+        //private int quoteEst()
 
         //Quote to MyAccount
         private void button1_Click(object sender, EventArgs e)
         {
+            tradeInVal();
+
             tabControlSales.SelectedTab = tabAccount;
             lblWelcomeName.Text = txtName.Text;
             //lblAccountNum.Text = 
             lblQuoteMSRPNum.Text = lblMSRPInfo.Text;
-            //lblQuotePackageNum.Text = 
-            //lblQuoteFinishNum.Text = 
-            //lblQuoteTradeNum.Text = 
+            lblQuoteTradeNum.Text = tradeIn.ToString("C");
             //lblQuotePromoPromo.Text = 
             //lblQuoteEstNum.Text = 
         }
