@@ -18,73 +18,34 @@ namespace Volvo_Team
         public Sales()
         {
             InitializeComponent();
+            newCars();
             DisplayCar(CurrentCar);
 
         }
 
         // declare 4 instance of CarClass
-        CarClass s60 = new CarClass("S60", "2.0 Liter", 34150, 17.8, 12, 38, 26, 5, 240, 4);
-        CarClass s80 = new CarClass("S80", "2.0 Liter", 43450, 18.5, 14.9, 37, 25, 5, 240, 4);
-        CarClass s90 = new CarClass("S90", "In-Line ", 46950, 14.5, 13.5, 39, 26, 5, 250, 4);
-        CarClass v60 = new CarClass("V60", "2.5 Liter", 41200, 17.8, 43.8, 28, 20, 5, 250, 5);
-
+        CarClass[] carList = new CarClass[4];
+        private void newCars()
+        {
+            carList[0] = new CarClass("S60", "2.0 Liter", 34150, 17.8, 12, 38, 26, 5, 240, 4);
+            carList[1] = new CarClass("S80", "2.0 Liter", 43450, 18.5, 14.9, 37, 25, 5, 240, 4);
+            carList[2] = new CarClass("S90", "In-Line ", 46950, 14.5, 13.5, 39, 26, 5, 250, 4);
+            carList[3] = new CarClass("V60", "2.5 Liter", 41200, 17.8, 43.8, 28, 20, 5, 250, 5);
+        }
 
         //function to display car inforamtion
         public void DisplayCar(int car)
-        {
-            if (car == 1)
-            {
-                lblModelName.Text = s60.Model;
-                lblMSRPInfo.Text = s60.msrp.ToString("C");
-                lblEngineInfo.Text = s60.Engine;
-                lblCylinderInfo.Text = Convert.ToString(s60.cylinder);
-                lblHPInfo.Text = Convert.ToString(s60.horsePower);
-                lblFuelInfo.Text = Convert.ToString(s60.fuelCapacity);
-                lblCargoInfo.Text = Convert.ToString(s60.cargoCapacity);
-                lblSeatInfo.Text = Convert.ToString(s60.seatingCapacity);
-                lblMpgCityInfo.Text = Convert.ToString(s60.fuelCity);
-                lblMpgHwInfo.Text = Convert.ToString(s60.FuelHigh);
-            }
-            if (car == 2)
-            {
-                lblModelName.Text = s80.Model;
-                lblMSRPInfo.Text = s80.msrp.ToString("C");
-                lblEngineInfo.Text = s80.Engine;
-                lblCylinderInfo.Text = Convert.ToString(s80.cylinder);
-                lblHPInfo.Text = Convert.ToString(s80.horsePower);
-                lblFuelInfo.Text = Convert.ToString(s80.fuelCapacity);
-                lblCargoInfo.Text = Convert.ToString(s80.cargoCapacity);
-                lblSeatInfo.Text = Convert.ToString(s80.seatingCapacity);
-                lblMpgCityInfo.Text = Convert.ToString(s80.fuelCity);
-                lblMpgHwInfo.Text = Convert.ToString(s80.FuelHigh);
-            }
-            if (car == 3)
-            {
-                lblModelName.Text = s90.Model;
-                lblMSRPInfo.Text = s90.msrp.ToString("C");
-                lblEngineInfo.Text = s90.Engine;
-                lblCylinderInfo.Text = Convert.ToString(s90.cylinder);
-                lblHPInfo.Text = Convert.ToString(s90.horsePower);
-                lblFuelInfo.Text = Convert.ToString(s90.fuelCapacity);
-                lblCargoInfo.Text = Convert.ToString(s90.cargoCapacity);
-                lblSeatInfo.Text = Convert.ToString(s90.seatingCapacity);
-                lblMpgCityInfo.Text = Convert.ToString(s90.fuelCity);
-                lblMpgHwInfo.Text = Convert.ToString(s90.FuelHigh);
-            }
-            if (car == 4)
-            {
-                lblModelName.Text = v60.Model;
-                lblMSRPInfo.Text = v60.msrp.ToString("C");
-                lblEngineInfo.Text = v60.Engine;
-                lblCylinderInfo.Text = Convert.ToString(v60.cylinder);
-                lblHPInfo.Text = Convert.ToString(v60.horsePower);
-                lblFuelInfo.Text = Convert.ToString(v60.fuelCapacity);
-                lblCargoInfo.Text = Convert.ToString(v60.cargoCapacity);
-                lblSeatInfo.Text = Convert.ToString(v60.seatingCapacity);
-                lblMpgCityInfo.Text = Convert.ToString(v60.fuelCity);
-                lblMpgHwInfo.Text = Convert.ToString(v60.FuelHigh);
-            }
-
+        {            
+                lblModelName.Text = carList[car-1].Model;
+                lblMSRPInfo.Text = carList[car-1].msrp.ToString("C");
+                lblEngineInfo.Text = carList[car-1].Engine;
+                lblCylinderInfo.Text = Convert.ToString(carList[car-1].cylinder);
+                lblHPInfo.Text = Convert.ToString(carList[car-1].horsePower);
+                lblFuelInfo.Text = Convert.ToString(carList[car-1].fuelCapacity);
+                lblCargoInfo.Text = Convert.ToString(carList[car-1].cargoCapacity);
+                lblSeatInfo.Text = Convert.ToString(carList[car-1].seatingCapacity);
+                lblMpgCityInfo.Text = Convert.ToString(carList[car-1].fuelCity);
+                lblMpgHwInfo.Text = Convert.ToString(carList[car-1].FuelHigh);
         }
 
         //show first car in inventory
