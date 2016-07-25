@@ -30,6 +30,8 @@
         {
             this.tabControlSales = new System.Windows.Forms.TabControl();
             this.tabInventory = new System.Windows.Forms.TabPage();
+            this.picBoxArrowR = new System.Windows.Forms.PictureBox();
+            this.picBoxArrowL = new System.Windows.Forms.PictureBox();
             this.btnTrade = new System.Windows.Forms.Button();
             this.btnBuyNow = new System.Windows.Forms.Button();
             this.lblMpgHwInfo = new System.Windows.Forms.Label();
@@ -45,6 +47,8 @@
             this.lblSeatCap = new System.Windows.Forms.Label();
             this.lblCapacity = new System.Windows.Forms.Label();
             this.lblModelName = new System.Windows.Forms.Label();
+            this.picFrontView = new System.Windows.Forms.PictureBox();
+            this.picSideView = new System.Windows.Forms.PictureBox();
             this.lblHPInfo = new System.Windows.Forms.Label();
             this.lblCylinderInfo = new System.Windows.Forms.Label();
             this.lblEngineInfo = new System.Windows.Forms.Label();
@@ -55,14 +59,39 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.tabTrade = new System.Windows.Forms.TabPage();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnContinue = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtBoxMilage = new System.Windows.Forms.TextBox();
+            this.comboBoxMake = new System.Windows.Forms.ComboBox();
+            this.comboBoxYear = new System.Windows.Forms.ComboBox();
             this.lblMilage = new System.Windows.Forms.Label();
             this.lblMake = new System.Windows.Forms.Label();
             this.lblYear = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabAddOn = new System.Windows.Forms.TabPage();
+            this.btnQoute = new System.Windows.Forms.Button();
+            this.groupBoxPaint = new System.Windows.Forms.GroupBox();
+            this.radioBtnP2 = new System.Windows.Forms.RadioButton();
+            this.radioBtnP1 = new System.Windows.Forms.RadioButton();
+            this.lblPackagePaint = new System.Windows.Forms.Label();
+            this.groupBoxB = new System.Windows.Forms.GroupBox();
+            this.radioBtnB5 = new System.Windows.Forms.RadioButton();
+            this.radioBtnB3 = new System.Windows.Forms.RadioButton();
+            this.radioBtnB4 = new System.Windows.Forms.RadioButton();
+            this.radioBtnB2 = new System.Windows.Forms.RadioButton();
+            this.radioBtnB1 = new System.Windows.Forms.RadioButton();
+            this.lblPackageB2 = new System.Windows.Forms.Label();
+            this.lblPackageB = new System.Windows.Forms.Label();
+            this.groupBoxA = new System.Windows.Forms.GroupBox();
+            this.radioBtnA3 = new System.Windows.Forms.RadioButton();
+            this.radioBtnA2 = new System.Windows.Forms.RadioButton();
+            this.radioBtnA1 = new System.Windows.Forms.RadioButton();
+            this.lblPackageA2 = new System.Windows.Forms.Label();
+            this.lblPackageA = new System.Windows.Forms.Label();
             this.tabQuote = new System.Windows.Forms.TabPage();
+            this.buttonAccount = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtZip = new System.Windows.Forms.TextBox();
             this.txtCity = new System.Windows.Forms.TextBox();
@@ -75,24 +104,51 @@
             this.lblCity = new System.Windows.Forms.Label();
             this.lblSAddress = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.tabAddOn = new System.Windows.Forms.TabPage();
-            this.btnContinue = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.picFrontView = new System.Windows.Forms.PictureBox();
-            this.picSideView = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.tabAccount = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblQuoteEstNum = new System.Windows.Forms.Label();
+            this.lblQuotePromoNum = new System.Windows.Forms.Label();
+            this.lblQuoteTradeNum = new System.Windows.Forms.Label();
+            this.lblQuoteFinishNum = new System.Windows.Forms.Label();
+            this.lblQuotePackageNum = new System.Windows.Forms.Label();
+            this.lblQuoteMSRPNum = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.lblQuoteEst = new System.Windows.Forms.Label();
+            this.lblQuotePromo = new System.Windows.Forms.Label();
+            this.lblQuoteTrade = new System.Windows.Forms.Label();
+            this.lblQuoteFinish = new System.Windows.Forms.Label();
+            this.lblQuotePackage = new System.Windows.Forms.Label();
+            this.lblQuoteMSRP = new System.Windows.Forms.Label();
+            this.lblWelcomeName = new System.Windows.Forms.Label();
+            this.lblAccountNum = new System.Windows.Forms.Label();
+            this.lbl = new System.Windows.Forms.Label();
+            this.lblAccount = new System.Windows.Forms.Label();
+            this.lblWelcome = new System.Windows.Forms.Label();
+            this.lblCarModel = new System.Windows.Forms.Label();
+            this.picBoxMyAcc = new System.Windows.Forms.PictureBox();
+            this.eventLog1 = new System.Diagnostics.EventLog();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tabControlSales.SuspendLayout();
             this.tabInventory.SuspendLayout();
-            this.tabTrade.SuspendLayout();
-            this.tabQuote.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxArrowR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxArrowL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFrontView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSideView)).BeginInit();
+            this.tabTrade.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabAddOn.SuspendLayout();
+            this.groupBoxPaint.SuspendLayout();
+            this.groupBoxB.SuspendLayout();
+            this.groupBoxA.SuspendLayout();
+            this.tabQuote.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tabAccount.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMyAcc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,8 +156,9 @@
             // 
             this.tabControlSales.Controls.Add(this.tabInventory);
             this.tabControlSales.Controls.Add(this.tabTrade);
-            this.tabControlSales.Controls.Add(this.tabQuote);
             this.tabControlSales.Controls.Add(this.tabAddOn);
+            this.tabControlSales.Controls.Add(this.tabQuote);
+            this.tabControlSales.Controls.Add(this.tabAccount);
             this.tabControlSales.Location = new System.Drawing.Point(-3, 41);
             this.tabControlSales.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.tabControlSales.Name = "tabControlSales";
@@ -111,7 +168,10 @@
             // 
             // tabInventory
             // 
+            this.tabInventory.BackColor = System.Drawing.Color.Snow;
             this.tabInventory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabInventory.Controls.Add(this.picBoxArrowR);
+            this.tabInventory.Controls.Add(this.picBoxArrowL);
             this.tabInventory.Controls.Add(this.btnTrade);
             this.tabInventory.Controls.Add(this.btnBuyNow);
             this.tabInventory.Controls.Add(this.lblMpgHwInfo);
@@ -145,7 +205,30 @@
             this.tabInventory.Size = new System.Drawing.Size(882, 535);
             this.tabInventory.TabIndex = 0;
             this.tabInventory.Text = "Car Inventory";
-            this.tabInventory.UseVisualStyleBackColor = true;
+            // 
+            // picBoxArrowR
+            // 
+            this.picBoxArrowR.Image = global::Volvo_Team.Properties.Resources.right_normal;
+            this.picBoxArrowR.Location = new System.Drawing.Point(771, 462);
+            this.picBoxArrowR.Margin = new System.Windows.Forms.Padding(2);
+            this.picBoxArrowR.Name = "picBoxArrowR";
+            this.picBoxArrowR.Size = new System.Drawing.Size(58, 55);
+            this.picBoxArrowR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxArrowR.TabIndex = 41;
+            this.picBoxArrowR.TabStop = false;
+            this.picBoxArrowR.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // picBoxArrowL
+            // 
+            this.picBoxArrowL.Image = global::Volvo_Team.Properties.Resources.left_normal;
+            this.picBoxArrowL.Location = new System.Drawing.Point(33, 462);
+            this.picBoxArrowL.Margin = new System.Windows.Forms.Padding(2);
+            this.picBoxArrowL.Name = "picBoxArrowL";
+            this.picBoxArrowL.Size = new System.Drawing.Size(58, 55);
+            this.picBoxArrowL.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxArrowL.TabIndex = 40;
+            this.picBoxArrowL.TabStop = false;
+            this.picBoxArrowL.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // btnTrade
             // 
@@ -165,19 +248,20 @@
             this.btnBuyNow.Name = "btnBuyNow";
             this.btnBuyNow.Size = new System.Drawing.Size(145, 55);
             this.btnBuyNow.TabIndex = 38;
-            this.btnBuyNow.Text = "Buy Now";
+            this.btnBuyNow.Text = "Buy";
             this.btnBuyNow.UseVisualStyleBackColor = true;
             this.btnBuyNow.Click += new System.EventHandler(this.btnBuyNow_Click);
             // 
             // lblMpgHwInfo
             // 
-            this.lblMpgHwInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblMpgHwInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblMpgHwInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMpgHwInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblMpgHwInfo.Location = new System.Drawing.Point(731, 372);
             this.lblMpgHwInfo.Name = "lblMpgHwInfo";
             this.lblMpgHwInfo.Size = new System.Drawing.Size(61, 20);
             this.lblMpgHwInfo.TabIndex = 37;
+            this.lblMpgHwInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMpgHw
             // 
@@ -192,13 +276,14 @@
             // 
             // lblMpgCityInfo
             // 
-            this.lblMpgCityInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblMpgCityInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblMpgCityInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMpgCityInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblMpgCityInfo.Location = new System.Drawing.Point(731, 413);
             this.lblMpgCityInfo.Name = "lblMpgCityInfo";
             this.lblMpgCityInfo.Size = new System.Drawing.Size(61, 20);
             this.lblMpgCityInfo.TabIndex = 35;
+            this.lblMpgCityInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMpgCity
             // 
@@ -224,13 +309,14 @@
             // 
             // lblFuelInfo
             // 
-            this.lblFuelInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblFuelInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblFuelInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblFuelInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblFuelInfo.Location = new System.Drawing.Point(731, 209);
             this.lblFuelInfo.Name = "lblFuelInfo";
             this.lblFuelInfo.Size = new System.Drawing.Size(61, 20);
             this.lblFuelInfo.TabIndex = 30;
+            this.lblFuelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblFuelCap
             // 
@@ -245,13 +331,14 @@
             // 
             // lblCargoInfo
             // 
-            this.lblCargoInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblCargoInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblCargoInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCargoInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblCargoInfo.Location = new System.Drawing.Point(731, 250);
             this.lblCargoInfo.Name = "lblCargoInfo";
             this.lblCargoInfo.Size = new System.Drawing.Size(61, 20);
             this.lblCargoInfo.TabIndex = 28;
+            this.lblCargoInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblCargo
             // 
@@ -266,13 +353,14 @@
             // 
             // lblSeatInfo
             // 
-            this.lblSeatInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblSeatInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblSeatInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblSeatInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblSeatInfo.Location = new System.Drawing.Point(731, 291);
             this.lblSeatInfo.Name = "lblSeatInfo";
             this.lblSeatInfo.Size = new System.Drawing.Size(61, 20);
             this.lblSeatInfo.TabIndex = 26;
+            this.lblSeatInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblSeatCap
             // 
@@ -300,41 +388,60 @@
             // 
             this.lblModelName.AutoSize = true;
             this.lblModelName.Font = new System.Drawing.Font("Modern No. 20", 71.99999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModelName.Location = new System.Drawing.Point(381, 38);
+            this.lblModelName.Location = new System.Drawing.Point(348, 40);
             this.lblModelName.Name = "lblModelName";
-            this.lblModelName.Size = new System.Drawing.Size(136, 98);
+            this.lblModelName.Size = new System.Drawing.Size(180, 98);
             this.lblModelName.TabIndex = 23;
-            this.lblModelName.Text = "S4";
+            this.lblModelName.Text = "S40";
+            // 
+            // picFrontView
+            // 
+            this.picFrontView.Location = new System.Drawing.Point(553, 9);
+            this.picFrontView.Name = "picFrontView";
+            this.picFrontView.Size = new System.Drawing.Size(225, 129);
+            this.picFrontView.TabIndex = 22;
+            this.picFrontView.TabStop = false;
+            // 
+            // picSideView
+            // 
+            this.picSideView.Location = new System.Drawing.Point(88, 9);
+            this.picSideView.Name = "picSideView";
+            this.picSideView.Size = new System.Drawing.Size(225, 129);
+            this.picSideView.TabIndex = 21;
+            this.picSideView.TabStop = false;
             // 
             // lblHPInfo
             // 
-            this.lblHPInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblHPInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblHPInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblHPInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblHPInfo.Location = new System.Drawing.Point(267, 381);
             this.lblHPInfo.Name = "lblHPInfo";
-            this.lblHPInfo.Size = new System.Drawing.Size(61, 20);
+            this.lblHPInfo.Size = new System.Drawing.Size(97, 20);
             this.lblHPInfo.TabIndex = 20;
+            this.lblHPInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblCylinderInfo
             // 
-            this.lblCylinderInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblCylinderInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblCylinderInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCylinderInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblCylinderInfo.Location = new System.Drawing.Point(267, 324);
             this.lblCylinderInfo.Name = "lblCylinderInfo";
-            this.lblCylinderInfo.Size = new System.Drawing.Size(61, 20);
+            this.lblCylinderInfo.Size = new System.Drawing.Size(97, 20);
             this.lblCylinderInfo.TabIndex = 19;
+            this.lblCylinderInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblEngineInfo
             // 
-            this.lblEngineInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblEngineInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblEngineInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblEngineInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblEngineInfo.Location = new System.Drawing.Point(267, 266);
             this.lblEngineInfo.Name = "lblEngineInfo";
-            this.lblEngineInfo.Size = new System.Drawing.Size(61, 20);
+            this.lblEngineInfo.Size = new System.Drawing.Size(97, 20);
             this.lblEngineInfo.TabIndex = 18;
+            this.lblEngineInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblHorsepower
             // 
@@ -368,13 +475,14 @@
             // 
             // lblMSRPInfo
             // 
-            this.lblMSRPInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblMSRPInfo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblMSRPInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMSRPInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblMSRPInfo.Location = new System.Drawing.Point(267, 210);
             this.lblMSRPInfo.Name = "lblMSRPInfo";
-            this.lblMSRPInfo.Size = new System.Drawing.Size(61, 20);
+            this.lblMSRPInfo.Size = new System.Drawing.Size(97, 20);
             this.lblMSRPInfo.TabIndex = 14;
+            this.lblMSRPInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label15
             // 
@@ -400,12 +508,13 @@
             // 
             // tabTrade
             // 
+            this.tabTrade.BackColor = System.Drawing.Color.Snow;
             this.tabTrade.Controls.Add(this.pictureBox3);
             this.tabTrade.Controls.Add(this.btnContinue);
             this.tabTrade.Controls.Add(this.label1);
-            this.tabTrade.Controls.Add(this.textBox1);
-            this.tabTrade.Controls.Add(this.comboBox2);
-            this.tabTrade.Controls.Add(this.comboBox1);
+            this.tabTrade.Controls.Add(this.txtBoxMilage);
+            this.tabTrade.Controls.Add(this.comboBoxMake);
+            this.tabTrade.Controls.Add(this.comboBoxYear);
             this.tabTrade.Controls.Add(this.lblMilage);
             this.tabTrade.Controls.Add(this.lblMake);
             this.tabTrade.Controls.Add(this.lblYear);
@@ -417,7 +526,27 @@
             this.tabTrade.Size = new System.Drawing.Size(882, 535);
             this.tabTrade.TabIndex = 1;
             this.tabTrade.Text = "Trade-In";
-            this.tabTrade.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Volvo_Team.Properties.Resources.trade_in_value;
+            this.pictureBox3.Location = new System.Drawing.Point(355, 205);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(409, 229);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 40;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btnContinue
+            // 
+            this.btnContinue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContinue.Location = new System.Drawing.Point(355, 458);
+            this.btnContinue.Name = "btnContinue";
+            this.btnContinue.Size = new System.Drawing.Size(145, 55);
+            this.btnContinue.TabIndex = 39;
+            this.btnContinue.Text = "Continue";
+            this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
             // label1
             // 
@@ -429,19 +558,22 @@
             this.label1.TabIndex = 9;
             this.label1.Text = " Describe Your Trade-in Vehicle";
             // 
-            // textBox1
+            // txtBoxMilage
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox1.Location = new System.Drawing.Point(124, 414);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 8;
+            this.txtBoxMilage.Enabled = false;
+            this.txtBoxMilage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtBoxMilage.Location = new System.Drawing.Point(124, 414);
+            this.txtBoxMilage.Name = "txtBoxMilage";
+            this.txtBoxMilage.Size = new System.Drawing.Size(100, 26);
+            this.txtBoxMilage.TabIndex = 8;
+            this.txtBoxMilage.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // comboBox2
+            // comboBoxMake
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBoxMake.Enabled = false;
+            this.comboBoxMake.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.comboBoxMake.FormattingEnabled = true;
+            this.comboBoxMake.Items.AddRange(new object[] {
             "Acura",
             "Audi",
             "BMW",
@@ -456,16 +588,17 @@
             "Toyota",
             "Volkswagon",
             "Volvo"});
-            this.comboBox2.Location = new System.Drawing.Point(124, 315);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 28);
-            this.comboBox2.TabIndex = 6;
+            this.comboBoxMake.Location = new System.Drawing.Point(124, 315);
+            this.comboBoxMake.Name = "comboBoxMake";
+            this.comboBoxMake.Size = new System.Drawing.Size(121, 28);
+            this.comboBoxMake.TabIndex = 6;
+            this.comboBoxMake.SelectedValueChanged += new System.EventHandler(this.comboBox2_SelectedValueChanged);
             // 
-            // comboBox1
+            // comboBoxYear
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.comboBoxYear.FormattingEnabled = true;
+            this.comboBoxYear.Items.AddRange(new object[] {
             "2015",
             "2014",
             "2013",
@@ -475,15 +608,12 @@
             "2009",
             "2008",
             "2007",
-            "2006",
-            "2005",
-            "2004",
-            "2003",
-            "2002"});
-            this.comboBox1.Location = new System.Drawing.Point(124, 216);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 5;
+            "2006"});
+            this.comboBoxYear.Location = new System.Drawing.Point(124, 216);
+            this.comboBoxYear.Name = "comboBoxYear";
+            this.comboBoxYear.Size = new System.Drawing.Size(121, 28);
+            this.comboBoxYear.TabIndex = 5;
+            this.comboBoxYear.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
             // 
             // lblMilage
             // 
@@ -515,8 +645,271 @@
             this.lblYear.TabIndex = 1;
             this.lblYear.Text = "Year";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Volvo_Team.Properties.Resources.Trade_in;
+            this.pictureBox1.Location = new System.Drawing.Point(114, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(650, 152);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tabAddOn
+            // 
+            this.tabAddOn.BackColor = System.Drawing.Color.Snow;
+            this.tabAddOn.Controls.Add(this.btnQoute);
+            this.tabAddOn.Controls.Add(this.groupBoxPaint);
+            this.tabAddOn.Controls.Add(this.groupBoxB);
+            this.tabAddOn.Controls.Add(this.groupBoxA);
+            this.tabAddOn.Location = new System.Drawing.Point(4, 22);
+            this.tabAddOn.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tabAddOn.Name = "tabAddOn";
+            this.tabAddOn.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.tabAddOn.Size = new System.Drawing.Size(882, 535);
+            this.tabAddOn.TabIndex = 3;
+            this.tabAddOn.Text = "Add-Ons";
+            // 
+            // btnQoute
+            // 
+            this.btnQoute.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQoute.Location = new System.Drawing.Point(371, 453);
+            this.btnQoute.Name = "btnQoute";
+            this.btnQoute.Size = new System.Drawing.Size(145, 55);
+            this.btnQoute.TabIndex = 39;
+            this.btnQoute.Text = "Continue";
+            this.btnQoute.UseVisualStyleBackColor = true;
+            this.btnQoute.Click += new System.EventHandler(this.btnQoute_Click);
+            // 
+            // groupBoxPaint
+            // 
+            this.groupBoxPaint.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBoxPaint.Controls.Add(this.radioBtnP2);
+            this.groupBoxPaint.Controls.Add(this.radioBtnP1);
+            this.groupBoxPaint.Controls.Add(this.lblPackagePaint);
+            this.groupBoxPaint.Location = new System.Drawing.Point(162, 340);
+            this.groupBoxPaint.Name = "groupBoxPaint";
+            this.groupBoxPaint.Size = new System.Drawing.Size(569, 86);
+            this.groupBoxPaint.TabIndex = 2;
+            this.groupBoxPaint.TabStop = false;
+            this.groupBoxPaint.Enter += new System.EventHandler(this.groupBoxPaint_Enter);
+            // 
+            // radioBtnP2
+            // 
+            this.radioBtnP2.AutoSize = true;
+            this.radioBtnP2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnP2.Location = new System.Drawing.Point(357, 49);
+            this.radioBtnP2.Name = "radioBtnP2";
+            this.radioBtnP2.Size = new System.Drawing.Size(110, 20);
+            this.radioBtnP2.TabIndex = 8;
+            this.radioBtnP2.TabStop = true;
+            this.radioBtnP2.Text = "Metallic Finish";
+            this.radioBtnP2.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnP1
+            // 
+            this.radioBtnP1.AutoSize = true;
+            this.radioBtnP1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnP1.Location = new System.Drawing.Point(71, 49);
+            this.radioBtnP1.Name = "radioBtnP1";
+            this.radioBtnP1.Size = new System.Drawing.Size(119, 20);
+            this.radioBtnP1.TabIndex = 7;
+            this.radioBtnP1.TabStop = true;
+            this.radioBtnP1.Text = "Standard Finish";
+            this.radioBtnP1.UseVisualStyleBackColor = true;
+            // 
+            // lblPackagePaint
+            // 
+            this.lblPackagePaint.AutoSize = true;
+            this.lblPackagePaint.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPackagePaint.Location = new System.Drawing.Point(204, 16);
+            this.lblPackagePaint.Name = "lblPackagePaint";
+            this.lblPackagePaint.Size = new System.Drawing.Size(154, 25);
+            this.lblPackagePaint.TabIndex = 7;
+            this.lblPackagePaint.Text = "Paint Options";
+            // 
+            // groupBoxB
+            // 
+            this.groupBoxB.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBoxB.Controls.Add(this.radioBtnB5);
+            this.groupBoxB.Controls.Add(this.radioBtnB3);
+            this.groupBoxB.Controls.Add(this.radioBtnB4);
+            this.groupBoxB.Controls.Add(this.radioBtnB2);
+            this.groupBoxB.Controls.Add(this.radioBtnB1);
+            this.groupBoxB.Controls.Add(this.lblPackageB2);
+            this.groupBoxB.Controls.Add(this.lblPackageB);
+            this.groupBoxB.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.groupBoxB.Location = new System.Drawing.Point(487, 25);
+            this.groupBoxB.Name = "groupBoxB";
+            this.groupBoxB.Size = new System.Drawing.Size(284, 299);
+            this.groupBoxB.TabIndex = 1;
+            this.groupBoxB.TabStop = false;
+            this.groupBoxB.Enter += new System.EventHandler(this.groupBoxB_Enter);
+            // 
+            // radioBtnB5
+            // 
+            this.radioBtnB5.AutoCheck = false;
+            this.radioBtnB5.AutoSize = true;
+            this.radioBtnB5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnB5.Location = new System.Drawing.Point(65, 266);
+            this.radioBtnB5.Name = "radioBtnB5";
+            this.radioBtnB5.Size = new System.Drawing.Size(143, 20);
+            this.radioBtnB5.TabIndex = 9;
+            this.radioBtnB5.TabStop = true;
+            this.radioBtnB5.Text = "Automatic Windows";
+            this.radioBtnB5.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnB3
+            // 
+            this.radioBtnB3.AutoCheck = false;
+            this.radioBtnB3.AutoSize = true;
+            this.radioBtnB3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnB3.Location = new System.Drawing.Point(65, 214);
+            this.radioBtnB3.Name = "radioBtnB3";
+            this.radioBtnB3.Size = new System.Drawing.Size(138, 20);
+            this.radioBtnB3.TabIndex = 8;
+            this.radioBtnB3.TabStop = true;
+            this.radioBtnB3.Text = "Rear-ciew Camera";
+            this.radioBtnB3.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnB4
+            // 
+            this.radioBtnB4.AutoCheck = false;
+            this.radioBtnB4.AutoSize = true;
+            this.radioBtnB4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnB4.Location = new System.Drawing.Point(65, 240);
+            this.radioBtnB4.Name = "radioBtnB4";
+            this.radioBtnB4.Size = new System.Drawing.Size(138, 20);
+            this.radioBtnB4.TabIndex = 8;
+            this.radioBtnB4.TabStop = true;
+            this.radioBtnB4.Text = "In-dash Navigation";
+            this.radioBtnB4.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnB2
+            // 
+            this.radioBtnB2.AutoCheck = false;
+            this.radioBtnB2.AutoSize = true;
+            this.radioBtnB2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnB2.Location = new System.Drawing.Point(65, 188);
+            this.radioBtnB2.Name = "radioBtnB2";
+            this.radioBtnB2.Size = new System.Drawing.Size(169, 20);
+            this.radioBtnB2.TabIndex = 5;
+            this.radioBtnB2.TabStop = true;
+            this.radioBtnB2.Text = "Aluminium Alloy Wheels";
+            this.radioBtnB2.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnB1
+            // 
+            this.radioBtnB1.AutoCheck = false;
+            this.radioBtnB1.AutoSize = true;
+            this.radioBtnB1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnB1.Location = new System.Drawing.Point(65, 162);
+            this.radioBtnB1.Name = "radioBtnB1";
+            this.radioBtnB1.Size = new System.Drawing.Size(151, 20);
+            this.radioBtnB1.TabIndex = 4;
+            this.radioBtnB1.TabStop = true;
+            this.radioBtnB1.Text = "Leather/wood Interior";
+            this.radioBtnB1.UseVisualStyleBackColor = true;
+            // 
+            // lblPackageB2
+            // 
+            this.lblPackageB2.AutoSize = true;
+            this.lblPackageB2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPackageB2.Location = new System.Drawing.Point(97, 41);
+            this.lblPackageB2.Name = "lblPackageB2";
+            this.lblPackageB2.Size = new System.Drawing.Size(110, 108);
+            this.lblPackageB2.TabIndex = 3;
+            this.lblPackageB2.Text = "B";
+            // 
+            // lblPackageB
+            // 
+            this.lblPackageB.AutoSize = true;
+            this.lblPackageB.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPackageB.Location = new System.Drawing.Point(93, 16);
+            this.lblPackageB.Name = "lblPackageB";
+            this.lblPackageB.Size = new System.Drawing.Size(103, 25);
+            this.lblPackageB.TabIndex = 1;
+            this.lblPackageB.Text = "Package";
+            // 
+            // groupBoxA
+            // 
+            this.groupBoxA.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBoxA.Controls.Add(this.radioBtnA3);
+            this.groupBoxA.Controls.Add(this.radioBtnA2);
+            this.groupBoxA.Controls.Add(this.radioBtnA1);
+            this.groupBoxA.Controls.Add(this.lblPackageA2);
+            this.groupBoxA.Controls.Add(this.lblPackageA);
+            this.groupBoxA.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.groupBoxA.Location = new System.Drawing.Point(113, 25);
+            this.groupBoxA.Name = "groupBoxA";
+            this.groupBoxA.Size = new System.Drawing.Size(284, 299);
+            this.groupBoxA.TabIndex = 0;
+            this.groupBoxA.TabStop = false;
+            this.groupBoxA.Enter += new System.EventHandler(this.groupBoxA_Enter);
+            // 
+            // radioBtnA3
+            // 
+            this.radioBtnA3.AutoCheck = false;
+            this.radioBtnA3.AutoSize = true;
+            this.radioBtnA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnA3.Location = new System.Drawing.Point(62, 214);
+            this.radioBtnA3.Name = "radioBtnA3";
+            this.radioBtnA3.Size = new System.Drawing.Size(138, 20);
+            this.radioBtnA3.TabIndex = 6;
+            this.radioBtnA3.TabStop = true;
+            this.radioBtnA3.Text = "Rear-ciew Camera";
+            this.radioBtnA3.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnA2
+            // 
+            this.radioBtnA2.AutoCheck = false;
+            this.radioBtnA2.AutoSize = true;
+            this.radioBtnA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnA2.Location = new System.Drawing.Point(62, 188);
+            this.radioBtnA2.Name = "radioBtnA2";
+            this.radioBtnA2.Size = new System.Drawing.Size(130, 20);
+            this.radioBtnA2.TabIndex = 4;
+            this.radioBtnA2.TabStop = true;
+            this.radioBtnA2.Text = "Standard Wheels";
+            this.radioBtnA2.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnA1
+            // 
+            this.radioBtnA1.AutoCheck = false;
+            this.radioBtnA1.AutoSize = true;
+            this.radioBtnA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioBtnA1.Location = new System.Drawing.Point(62, 162);
+            this.radioBtnA1.Name = "radioBtnA1";
+            this.radioBtnA1.Size = new System.Drawing.Size(124, 20);
+            this.radioBtnA1.TabIndex = 3;
+            this.radioBtnA1.TabStop = true;
+            this.radioBtnA1.Text = "Standard Interior";
+            this.radioBtnA1.UseVisualStyleBackColor = true;
+            // 
+            // lblPackageA2
+            // 
+            this.lblPackageA2.AutoSize = true;
+            this.lblPackageA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPackageA2.Location = new System.Drawing.Point(86, 41);
+            this.lblPackageA2.Name = "lblPackageA2";
+            this.lblPackageA2.Size = new System.Drawing.Size(110, 108);
+            this.lblPackageA2.TabIndex = 2;
+            this.lblPackageA2.Text = "A";
+            // 
+            // lblPackageA
+            // 
+            this.lblPackageA.AutoSize = true;
+            this.lblPackageA.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPackageA.Location = new System.Drawing.Point(83, 16);
+            this.lblPackageA.Name = "lblPackageA";
+            this.lblPackageA.Size = new System.Drawing.Size(103, 25);
+            this.lblPackageA.TabIndex = 0;
+            this.lblPackageA.Text = "Package";
+            // 
             // tabQuote
             // 
+            this.tabQuote.BackColor = System.Drawing.Color.Snow;
+            this.tabQuote.Controls.Add(this.buttonAccount);
             this.tabQuote.Controls.Add(this.label2);
             this.tabQuote.Controls.Add(this.txtPhone);
             this.tabQuote.Controls.Add(this.txtZip);
@@ -538,7 +931,27 @@
             this.tabQuote.Size = new System.Drawing.Size(882, 535);
             this.tabQuote.TabIndex = 2;
             this.tabQuote.Text = "Qoute";
-            this.tabQuote.UseVisualStyleBackColor = true;
+            // 
+            // buttonAccount
+            // 
+            this.buttonAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAccount.Location = new System.Drawing.Point(370, 467);
+            this.buttonAccount.Name = "buttonAccount";
+            this.buttonAccount.Size = new System.Drawing.Size(145, 55);
+            this.buttonAccount.TabIndex = 40;
+            this.buttonAccount.Text = "Continue";
+            this.buttonAccount.UseVisualStyleBackColor = true;
+            this.buttonAccount.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(54, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(292, 39);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Request a Quote";
             // 
             // txtPhone
             // 
@@ -645,7 +1058,7 @@
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblPhone.Location = new System.Drawing.Point(61, 438);
+            this.lblPhone.Location = new System.Drawing.Point(57, 438);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(119, 20);
             this.lblPhone.TabIndex = 5;
@@ -655,7 +1068,7 @@
             // 
             this.lblZip.AutoSize = true;
             this.lblZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblZip.Location = new System.Drawing.Point(60, 372);
+            this.lblZip.Location = new System.Drawing.Point(56, 379);
             this.lblZip.Name = "lblZip";
             this.lblZip.Size = new System.Drawing.Size(77, 20);
             this.lblZip.TabIndex = 4;
@@ -665,7 +1078,7 @@
             // 
             this.lblState.AutoSize = true;
             this.lblState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblState.Location = new System.Drawing.Point(61, 313);
+            this.lblState.Location = new System.Drawing.Point(57, 320);
             this.lblState.Name = "lblState";
             this.lblState.Size = new System.Drawing.Size(52, 20);
             this.lblState.TabIndex = 3;
@@ -675,7 +1088,7 @@
             // 
             this.lblCity.AutoSize = true;
             this.lblCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblCity.Location = new System.Drawing.Point(60, 259);
+            this.lblCity.Location = new System.Drawing.Point(56, 261);
             this.lblCity.Name = "lblCity";
             this.lblCity.Size = new System.Drawing.Size(39, 20);
             this.lblCity.TabIndex = 2;
@@ -685,7 +1098,7 @@
             // 
             this.lblSAddress.AutoSize = true;
             this.lblSAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblSAddress.Location = new System.Drawing.Point(60, 198);
+            this.lblSAddress.Location = new System.Drawing.Point(56, 202);
             this.lblSAddress.Name = "lblSAddress";
             this.lblSAddress.Size = new System.Drawing.Size(120, 20);
             this.lblSAddress.TabIndex = 1;
@@ -695,93 +1108,293 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblName.Location = new System.Drawing.Point(61, 139);
+            this.lblName.Location = new System.Drawing.Point(57, 143);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(55, 20);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Name:";
             // 
-            // tabAddOn
-            // 
-            this.tabAddOn.Location = new System.Drawing.Point(4, 22);
-            this.tabAddOn.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.tabAddOn.Name = "tabAddOn";
-            this.tabAddOn.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.tabAddOn.Size = new System.Drawing.Size(882, 535);
-            this.tabAddOn.TabIndex = 3;
-            this.tabAddOn.Text = "Add-Ons";
-            this.tabAddOn.UseVisualStyleBackColor = true;
-            // 
-            // btnContinue
-            // 
-            this.btnContinue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContinue.Location = new System.Drawing.Point(355, 458);
-            this.btnContinue.Name = "btnContinue";
-            this.btnContinue.Size = new System.Drawing.Size(145, 55);
-            this.btnContinue.TabIndex = 39;
-            this.btnContinue.Text = "Continue";
-            this.btnContinue.UseVisualStyleBackColor = true;
-            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(54, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(292, 39);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Request a Quote";
-            // 
-            // picFrontView
-            // 
-            this.picFrontView.Location = new System.Drawing.Point(568, 7);
-            this.picFrontView.Name = "picFrontView";
-            this.picFrontView.Size = new System.Drawing.Size(225, 129);
-            this.picFrontView.TabIndex = 22;
-            this.picFrontView.TabStop = false;
-            // 
-            // picSideView
-            // 
-            this.picSideView.Location = new System.Drawing.Point(103, 7);
-            this.picSideView.Name = "picSideView";
-            this.picSideView.Size = new System.Drawing.Size(225, 129);
-            this.picSideView.TabIndex = 21;
-            this.picSideView.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Volvo_Team.Properties.Resources.trade_in_value;
-            this.pictureBox3.Location = new System.Drawing.Point(355, 205);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(409, 229);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 40;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Volvo_Team.Properties.Resources.Trade_in;
-            this.pictureBox1.Location = new System.Drawing.Point(114, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(650, 152);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Volvo_Team.Properties.Resources.cust_info;
-            this.pictureBox2.Location = new System.Drawing.Point(476, 82);
+            this.pictureBox2.Location = new System.Drawing.Point(476, 39);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(376, 409);
+            this.pictureBox2.Size = new System.Drawing.Size(376, 246);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
             // 
+            // tabAccount
+            // 
+            this.tabAccount.BackgroundImage = global::Volvo_Team.Properties.Resources.openroad1;
+            this.tabAccount.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabAccount.Controls.Add(this.groupBox1);
+            this.tabAccount.Location = new System.Drawing.Point(4, 22);
+            this.tabAccount.Name = "tabAccount";
+            this.tabAccount.Padding = new System.Windows.Forms.Padding(3);
+            this.tabAccount.Size = new System.Drawing.Size(882, 535);
+            this.tabAccount.TabIndex = 4;
+            this.tabAccount.Text = "My Account";
+            this.tabAccount.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Snow;
+            this.groupBox1.Controls.Add(this.lblQuoteEstNum);
+            this.groupBox1.Controls.Add(this.lblQuotePromoNum);
+            this.groupBox1.Controls.Add(this.lblQuoteTradeNum);
+            this.groupBox1.Controls.Add(this.lblQuoteFinishNum);
+            this.groupBox1.Controls.Add(this.lblQuotePackageNum);
+            this.groupBox1.Controls.Add(this.lblQuoteMSRPNum);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.lblQuoteEst);
+            this.groupBox1.Controls.Add(this.lblQuotePromo);
+            this.groupBox1.Controls.Add(this.lblQuoteTrade);
+            this.groupBox1.Controls.Add(this.lblQuoteFinish);
+            this.groupBox1.Controls.Add(this.lblQuotePackage);
+            this.groupBox1.Controls.Add(this.lblQuoteMSRP);
+            this.groupBox1.Controls.Add(this.lblWelcomeName);
+            this.groupBox1.Controls.Add(this.lblAccountNum);
+            this.groupBox1.Controls.Add(this.lbl);
+            this.groupBox1.Controls.Add(this.lblAccount);
+            this.groupBox1.Controls.Add(this.lblWelcome);
+            this.groupBox1.Controls.Add(this.lblCarModel);
+            this.groupBox1.Controls.Add(this.picBoxMyAcc);
+            this.groupBox1.Location = new System.Drawing.Point(99, 52);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(666, 402);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            // 
+            // lblQuoteEstNum
+            // 
+            this.lblQuoteEstNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuoteEstNum.ForeColor = System.Drawing.Color.YellowGreen;
+            this.lblQuoteEstNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblQuoteEstNum.Location = new System.Drawing.Point(517, 308);
+            this.lblQuoteEstNum.Name = "lblQuoteEstNum";
+            this.lblQuoteEstNum.Size = new System.Drawing.Size(116, 20);
+            this.lblQuoteEstNum.TabIndex = 21;
+            this.lblQuoteEstNum.Text = "Estimate";
+            this.lblQuoteEstNum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblQuotePromoNum
+            // 
+            this.lblQuotePromoNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuotePromoNum.ForeColor = System.Drawing.Color.Red;
+            this.lblQuotePromoNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblQuotePromoNum.Location = new System.Drawing.Point(517, 264);
+            this.lblQuotePromoNum.Name = "lblQuotePromoNum";
+            this.lblQuotePromoNum.Size = new System.Drawing.Size(116, 20);
+            this.lblQuotePromoNum.TabIndex = 20;
+            this.lblQuotePromoNum.Text = "Promo";
+            this.lblQuotePromoNum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblQuoteTradeNum
+            // 
+            this.lblQuoteTradeNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuoteTradeNum.ForeColor = System.Drawing.Color.Red;
+            this.lblQuoteTradeNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblQuoteTradeNum.Location = new System.Drawing.Point(517, 244);
+            this.lblQuoteTradeNum.Name = "lblQuoteTradeNum";
+            this.lblQuoteTradeNum.Size = new System.Drawing.Size(116, 20);
+            this.lblQuoteTradeNum.TabIndex = 19;
+            this.lblQuoteTradeNum.Text = "Trade-in";
+            this.lblQuoteTradeNum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblQuoteFinishNum
+            // 
+            this.lblQuoteFinishNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuoteFinishNum.ForeColor = System.Drawing.Color.YellowGreen;
+            this.lblQuoteFinishNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblQuoteFinishNum.Location = new System.Drawing.Point(539, 203);
+            this.lblQuoteFinishNum.Name = "lblQuoteFinishNum";
+            this.lblQuoteFinishNum.Size = new System.Drawing.Size(94, 20);
+            this.lblQuoteFinishNum.TabIndex = 18;
+            this.lblQuoteFinishNum.Text = "Finish";
+            this.lblQuoteFinishNum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblQuotePackageNum
+            // 
+            this.lblQuotePackageNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuotePackageNum.ForeColor = System.Drawing.Color.YellowGreen;
+            this.lblQuotePackageNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblQuotePackageNum.Location = new System.Drawing.Point(517, 183);
+            this.lblQuotePackageNum.Name = "lblQuotePackageNum";
+            this.lblQuotePackageNum.Size = new System.Drawing.Size(116, 20);
+            this.lblQuotePackageNum.TabIndex = 17;
+            this.lblQuotePackageNum.Text = "Package";
+            this.lblQuotePackageNum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblQuoteMSRPNum
+            // 
+            this.lblQuoteMSRPNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuoteMSRPNum.ForeColor = System.Drawing.Color.YellowGreen;
+            this.lblQuoteMSRPNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblQuoteMSRPNum.Location = new System.Drawing.Point(517, 163);
+            this.lblQuoteMSRPNum.Name = "lblQuoteMSRPNum";
+            this.lblQuoteMSRPNum.Size = new System.Drawing.Size(116, 20);
+            this.lblQuoteMSRPNum.TabIndex = 16;
+            this.lblQuoteMSRPNum.Text = "MSRP";
+            this.lblQuoteMSRPNum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(423, 224);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(229, 20);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "--------------------------------------------";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(423, 284);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(229, 20);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "--------------------------------------------";
+            // 
+            // lblQuoteEst
+            // 
+            this.lblQuoteEst.AutoSize = true;
+            this.lblQuoteEst.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuoteEst.Location = new System.Drawing.Point(423, 308);
+            this.lblQuoteEst.Name = "lblQuoteEst";
+            this.lblQuoteEst.Size = new System.Drawing.Size(72, 20);
+            this.lblQuoteEst.TabIndex = 13;
+            this.lblQuoteEst.Text = "Estimate";
+            // 
+            // lblQuotePromo
+            // 
+            this.lblQuotePromo.AutoSize = true;
+            this.lblQuotePromo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuotePromo.Location = new System.Drawing.Point(423, 264);
+            this.lblQuotePromo.Name = "lblQuotePromo";
+            this.lblQuotePromo.Size = new System.Drawing.Size(55, 20);
+            this.lblQuotePromo.TabIndex = 12;
+            this.lblQuotePromo.Text = "Promo";
+            // 
+            // lblQuoteTrade
+            // 
+            this.lblQuoteTrade.AutoSize = true;
+            this.lblQuoteTrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuoteTrade.Location = new System.Drawing.Point(423, 244);
+            this.lblQuoteTrade.Name = "lblQuoteTrade";
+            this.lblQuoteTrade.Size = new System.Drawing.Size(67, 20);
+            this.lblQuoteTrade.TabIndex = 11;
+            this.lblQuoteTrade.Text = "Trade-in";
+            // 
+            // lblQuoteFinish
+            // 
+            this.lblQuoteFinish.AutoSize = true;
+            this.lblQuoteFinish.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuoteFinish.Location = new System.Drawing.Point(423, 203);
+            this.lblQuoteFinish.Name = "lblQuoteFinish";
+            this.lblQuoteFinish.Size = new System.Drawing.Size(51, 20);
+            this.lblQuoteFinish.TabIndex = 10;
+            this.lblQuoteFinish.Text = "Finish";
+            // 
+            // lblQuotePackage
+            // 
+            this.lblQuotePackage.AutoSize = true;
+            this.lblQuotePackage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuotePackage.Location = new System.Drawing.Point(423, 183);
+            this.lblQuotePackage.Name = "lblQuotePackage";
+            this.lblQuotePackage.Size = new System.Drawing.Size(71, 20);
+            this.lblQuotePackage.TabIndex = 9;
+            this.lblQuotePackage.Text = "Package";
+            // 
+            // lblQuoteMSRP
+            // 
+            this.lblQuoteMSRP.AutoSize = true;
+            this.lblQuoteMSRP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuoteMSRP.Location = new System.Drawing.Point(423, 163);
+            this.lblQuoteMSRP.Name = "lblQuoteMSRP";
+            this.lblQuoteMSRP.Size = new System.Drawing.Size(55, 20);
+            this.lblQuoteMSRP.TabIndex = 8;
+            this.lblQuoteMSRP.Text = "MSRP";
+            // 
+            // lblWelcomeName
+            // 
+            this.lblWelcomeName.AutoSize = true;
+            this.lblWelcomeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcomeName.Location = new System.Drawing.Point(479, 24);
+            this.lblWelcomeName.Name = "lblWelcomeName";
+            this.lblWelcomeName.Size = new System.Drawing.Size(163, 25);
+            this.lblWelcomeName.TabIndex = 7;
+            this.lblWelcomeName.Text = "Jeffrey Santana";
+            // 
+            // lblAccountNum
+            // 
+            this.lblAccountNum.AutoSize = true;
+            this.lblAccountNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccountNum.Location = new System.Drawing.Point(440, 59);
+            this.lblAccountNum.Name = "lblAccountNum";
+            this.lblAccountNum.Size = new System.Drawing.Size(81, 20);
+            this.lblAccountNum.TabIndex = 6;
+            this.lblAccountNum.Text = "12345678";
+            // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.Location = new System.Drawing.Point(369, 127);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(137, 20);
+            this.lbl.TabIndex = 5;
+            this.lbl.Text = "Quote Summary";
+            // 
+            // lblAccount
+            // 
+            this.lblAccount.AutoSize = true;
+            this.lblAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccount.Location = new System.Drawing.Point(369, 59);
+            this.lblAccount.Name = "lblAccount";
+            this.lblAccount.Size = new System.Drawing.Size(65, 20);
+            this.lblAccount.TabIndex = 4;
+            this.lblAccount.Text = "Acct #:";
+            // 
+            // lblWelcome
+            // 
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcome.Location = new System.Drawing.Point(368, 24);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(122, 25);
+            this.lblWelcome.TabIndex = 3;
+            this.lblWelcome.Text = "Welcome, ";
+            // 
+            // lblCarModel
+            // 
+            this.lblCarModel.AutoSize = true;
+            this.lblCarModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCarModel.Location = new System.Drawing.Point(32, 24);
+            this.lblCarModel.Name = "lblCarModel";
+            this.lblCarModel.Size = new System.Drawing.Size(239, 55);
+            this.lblCarModel.TabIndex = 2;
+            this.lblCarModel.Text = "2016 S60";
+            // 
+            // picBoxMyAcc
+            // 
+            this.picBoxMyAcc.Location = new System.Drawing.Point(30, 127);
+            this.picBoxMyAcc.Name = "picBoxMyAcc";
+            this.picBoxMyAcc.Size = new System.Drawing.Size(275, 228);
+            this.picBoxMyAcc.TabIndex = 1;
+            this.picBoxMyAcc.TabStop = false;
+            // 
+            // eventLog1
+            // 
+            this.eventLog1.SynchronizingObject = this;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::Volvo_Team.Properties.Resources.volvo_logo_scaled;
             this.pictureBox4.Location = new System.Drawing.Point(-3, -1);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -790,6 +1403,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // Sales
             // 
@@ -801,18 +1415,33 @@
             this.Name = "Sales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sales";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Sales_FormClosed);
             this.tabControlSales.ResumeLayout(false);
             this.tabInventory.ResumeLayout(false);
             this.tabInventory.PerformLayout();
-            this.tabTrade.ResumeLayout(false);
-            this.tabTrade.PerformLayout();
-            this.tabQuote.ResumeLayout(false);
-            this.tabQuote.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxArrowR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxArrowL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFrontView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSideView)).EndInit();
+            this.tabTrade.ResumeLayout(false);
+            this.tabTrade.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabAddOn.ResumeLayout(false);
+            this.groupBoxPaint.ResumeLayout(false);
+            this.groupBoxPaint.PerformLayout();
+            this.groupBoxB.ResumeLayout(false);
+            this.groupBoxB.PerformLayout();
+            this.groupBoxA.ResumeLayout(false);
+            this.groupBoxA.PerformLayout();
+            this.tabQuote.ResumeLayout(false);
+            this.tabQuote.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tabAccount.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxMyAcc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
@@ -865,9 +1494,9 @@
         private System.Windows.Forms.TabPage tabAddOn;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtBoxMilage;
+        private System.Windows.Forms.ComboBox comboBoxMake;
+        private System.Windows.Forms.ComboBox comboBoxYear;
         private System.Windows.Forms.Label lblMilage;
         private System.Windows.Forms.Label lblMake;
         private System.Windows.Forms.Label lblYear;
@@ -876,5 +1505,51 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnQoute;
+        private System.Windows.Forms.GroupBox groupBoxPaint;
+        private System.Windows.Forms.RadioButton radioBtnP2;
+        private System.Windows.Forms.RadioButton radioBtnP1;
+        private System.Windows.Forms.Label lblPackagePaint;
+        private System.Windows.Forms.GroupBox groupBoxB;
+        private System.Windows.Forms.RadioButton radioBtnB5;
+        private System.Windows.Forms.RadioButton radioBtnB3;
+        private System.Windows.Forms.RadioButton radioBtnB4;
+        private System.Windows.Forms.RadioButton radioBtnB2;
+        private System.Windows.Forms.RadioButton radioBtnB1;
+        private System.Windows.Forms.Label lblPackageB2;
+        private System.Windows.Forms.Label lblPackageB;
+        private System.Windows.Forms.GroupBox groupBoxA;
+        private System.Windows.Forms.RadioButton radioBtnA3;
+        private System.Windows.Forms.RadioButton radioBtnA2;
+        private System.Windows.Forms.RadioButton radioBtnA1;
+        private System.Windows.Forms.Label lblPackageA2;
+        private System.Windows.Forms.Label lblPackageA;
+        private System.Windows.Forms.PictureBox picBoxArrowL;
+        private System.Diagnostics.EventLog eventLog1;
+        private System.Windows.Forms.PictureBox picBoxArrowR;
+        private System.Windows.Forms.TabPage tabAccount;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblWelcomeName;
+        private System.Windows.Forms.Label lblAccountNum;
+        private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.Label lblAccount;
+        private System.Windows.Forms.Label lblWelcome;
+        private System.Windows.Forms.Label lblCarModel;
+        private System.Windows.Forms.PictureBox picBoxMyAcc;
+        private System.Windows.Forms.Label lblQuoteEstNum;
+        private System.Windows.Forms.Label lblQuotePromoNum;
+        private System.Windows.Forms.Label lblQuoteTradeNum;
+        private System.Windows.Forms.Label lblQuoteFinishNum;
+        private System.Windows.Forms.Label lblQuotePackageNum;
+        private System.Windows.Forms.Label lblQuoteMSRPNum;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblQuoteEst;
+        private System.Windows.Forms.Label lblQuotePromo;
+        private System.Windows.Forms.Label lblQuoteTrade;
+        private System.Windows.Forms.Label lblQuoteFinish;
+        private System.Windows.Forms.Label lblQuotePackage;
+        private System.Windows.Forms.Label lblQuoteMSRP;
+        private System.Windows.Forms.Button buttonAccount;
     }
 }

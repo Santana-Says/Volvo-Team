@@ -21,6 +21,7 @@ namespace Volvo_Team
         {
             Sales salesForm = new Sales();
             HomePage.ActiveForm.Hide();
+            salesForm.changeTabs(1);
             salesForm.Show();
         }
 
@@ -29,6 +30,11 @@ namespace Volvo_Team
             Sales salesForm = new Sales();
             HomePage.ActiveForm.Hide();
             salesForm.Show();
+        }
+
+        private void HomePage_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
