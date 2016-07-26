@@ -13,7 +13,7 @@ namespace Volvo_Team
     public partial class Sales: Form
     {
         // variables to be use
-        public int CurrentCar = 1, paint = 0, package = 0, tradeIn = 0, promo = 0, estimate = 0;
+        public int CurrentCar = 1;
 
         public Sales()
         {
@@ -36,16 +36,21 @@ namespace Volvo_Team
         //function to display car inforamtion
         public void DisplayCar(int car)
         {            
-                lblModelName.Text = carList[car-1].Model;
-                lblMSRPInfo.Text = carList[car-1].msrp.ToString("C");
-                lblEngineInfo.Text = carList[car-1].Engine;
-                lblCylinderInfo.Text = Convert.ToString(carList[car-1].cylinder);
-                lblHPInfo.Text = Convert.ToString(carList[car-1].horsePower);
-                lblFuelInfo.Text = Convert.ToString(carList[car-1].fuelCapacity);
-                lblCargoInfo.Text = Convert.ToString(carList[car-1].cargoCapacity);
-                lblSeatInfo.Text = Convert.ToString(carList[car-1].seatingCapacity);
-                lblMpgCityInfo.Text = Convert.ToString(carList[car-1].fuelCity);
-                lblMpgHwInfo.Text = Convert.ToString(carList[car-1].FuelHigh);
+            lblModelName.Text = carList[car-1].Model;
+            lblMSRPInfo.Text = carList[car-1].msrp.ToString("C");
+            lblEngineInfo.Text = carList[car-1].Engine;
+            lblCylinderInfo.Text = Convert.ToString(carList[car-1].cylinder);
+            lblHPInfo.Text = Convert.ToString(carList[car-1].horsePower);
+            lblFuelInfo.Text = Convert.ToString(carList[car-1].fuelCapacity);
+            lblCargoInfo.Text = Convert.ToString(carList[car-1].cargoCapacity);
+            lblSeatInfo.Text = Convert.ToString(carList[car-1].seatingCapacity);
+            lblMpgCityInfo.Text = Convert.ToString(carList[car-1].fuelCity);
+            lblMpgHwInfo.Text = Convert.ToString(carList[car-1].FuelHigh);
+            picFrontView.Image = Image.FromFile("../../Resources/" + car + "-front.jpg");
+            picSideView.Image = Image.FromFile("../../Resources/" + car + "-side.jpg");
+            variables.selectedCar = car;
+            variables.msrp = carList[car - 1].msrp;
+            variables.model = carList[car - 1].Model;
         }
 
         //show first car in inventory
@@ -109,17 +114,18 @@ namespace Volvo_Team
         //select all radio buttons per groupBox and disable the other package
         private void groupBoxA_Enter(object sender, EventArgs e)
         {
+            variables.package = 2200.0;
             radioBtnA1.Checked = true;
             radioBtnA2.Checked = true;
             radioBtnA3.Checked = true;
 
             groupBoxB.Enabled = false;
 
-            lblQuotePackage.Text = "Package A";
-            lblQuotePackageNum.Text = package.ToString("C");
+            variables.packlbl = "Package A";
         }
         private void groupBoxB_Enter(object sender, EventArgs e)
         {
+            variables.package = 3250.0;
             radioBtnB1.Checked = true;
             radioBtnB2.Checked = true;
             radioBtnB3.Checked = true;
@@ -128,9 +134,44 @@ namespace Volvo_Team
 
             groupBoxA.Enabled = false;
 
-            package = 2200;
-            lblQuotePackage.Text = "Package B";
-            lblQuotePackageNum.Text = package.ToString("C");
+            variables.packlbl = "Package B";
+            
+        }
+
+        private void tabControlSales_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            int car1 = variables.selectedCar;
+            double stotal = 0.0, stotal1 = 0.0, intCalculate = 0.0, finalprice = 0.0;
+            
+            picBoxMyAcc.Image = Image.FromFile("../../Resources/" + car1 + "-angle.jpg");
+            lblCarModel.Text = ("2016 " + variables.model);
+            lblWelcomeName.Text = variables.name;
+            lblQuoteMSRPNum.Text = variables.msrp.ToString("C");
+            lblQuotePackageNum.Text = variables.package.ToString("C");
+            lblQuoteFinishNum.Text = variables.finish.ToString("C");
+            lblQuoteTradeNum.Text = variables.trade.ToString("C");
+            lblQuotePromoNum.Text = variables.promo.ToString("C");
+            lblInterValue.Text = variables.inter.ToString("C");
+            lblQuotePackage.Text = variables.packlbl;
+            lblQuoteFinish.Text = variables.finishlbl;
+
+            
+            //calculate total car cost
+            stotal = variables.msrp + variables.package + variables.finish;
+
+            //deduct trade in value
+            stotal1 = stotal - variables.trade;
+
+            //calculate interest over remaining balance
+            intCalculate = stotal1 * variables.intrate;
+            variables.inter = intCalculate;
+
+            //calculate total price of the car
+            finalprice = stotal1 - variables.promo  + variables.inter;
+            Stotal.Text = stotal.ToString("C");
+            lblQuoteEstNum.Text = finalprice.ToString("C");
+            lblStotal1.Text = stotal1.ToString("C");
+            lblInterValue.Text = variables.inter.ToString("C");
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -165,31 +206,30 @@ namespace Volvo_Team
         {
             if (radioBtnP1.Checked)
             {
-                lblQuoteFinish.Text = "Standard Finish";
-                lblQuoteFinishNum.Text = paint.ToString("C");
+                variables.finish = 0.0;
+                variables.finishlbl = "Standard Finish";
             }
             else
             {
-                paint = 600;
-                lblQuoteFinish.Text = "Metallic Finish";
-                lblQuoteFinishNum.Text = paint.ToString("C");
+                variables.finish = 600.0;
+                variables.finishlbl = "Metallic Finish";   
             }
         }
 
         private void tradeInVal()
         {
-            int milageVal = 0, yearVal = 0;
+            double milageVal = 0.0, yearVal = 0.0;
 
-            if (int.Parse(txtBoxMilage.Text) >= 35000)
+            if (int.Parse(txtBoxMilage.Text) >= 35000.0)
                 milageVal = 10000;
-            else if (int.Parse(txtBoxMilage.Text) >= 15000)
-                milageVal = 5000;
+            else if (int.Parse(txtBoxMilage.Text) >= 15000.0)
+                milageVal = 5000.0;
             else
-                milageVal = 2000;
+                milageVal = 2000.0;
 
-            yearVal = 1000 * (2016 - int.Parse(comboBoxYear.Text));
+            yearVal = 1000.0 * (2016 - int.Parse(comboBoxYear.Text));
 
-            tradeIn = 30000 - yearVal - milageVal;
+            variables.trade = 30000.0 - yearVal - milageVal;
         }
 
         //private int quoteEst()
@@ -198,14 +238,36 @@ namespace Volvo_Team
         private void button1_Click(object sender, EventArgs e)
         {
             tradeInVal();
-
+            if (cash.Checked == true)
+            {
+                variables.promo = 750.0;
+                variables.intrate = 0.0;
+            }
+            if (finance.Checked == true)
+            {
+                variables.promo = 0.0;
+                variables.intrate = 0.07;
+            }
             tabControlSales.SelectedTab = tabAccount;
-            lblWelcomeName.Text = txtName.Text;
-            //lblAccountNum.Text = 
-            lblQuoteMSRPNum.Text = lblMSRPInfo.Text;
-            lblQuoteTradeNum.Text = tradeIn.ToString("C");
-            //lblQuotePromoPromo.Text = 
-            //lblQuoteEstNum.Text = 
         }
+
+        
+    }
+    class variables
+    {
+        public static int selectedCar = 0;
+        public static string name = "";
+        public static double trade = 0.0;
+        public static double promo = 0.0;
+        public static double msrp = 0.0;
+        public static double package = 0.0;
+        public static double finish = 0.0;
+        public static string model = "";
+        public static double inter = 0.0;
+        public static string packlbl = "";
+        public static string finishlbl = "";
+        public static double intrate = 0.0;
+
+
     }
 }
