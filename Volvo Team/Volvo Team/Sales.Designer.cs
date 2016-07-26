@@ -142,6 +142,10 @@
             this.picBoxMyAcc = new System.Windows.Forms.PictureBox();
             this.eventLog1 = new System.Diagnostics.EventLog();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.lblTag = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblTaxValue = new System.Windows.Forms.Label();
+            this.lblTaxText = new System.Windows.Forms.Label();
             this.tabControlSales.SuspendLayout();
             this.tabInventory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxArrowR)).BeginInit();
@@ -607,11 +611,12 @@
             // 
             this.txtBoxMilage.Enabled = false;
             this.txtBoxMilage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtBoxMilage.Location = new System.Drawing.Point(165, 510);
+            this.txtBoxMilage.Location = new System.Drawing.Point(165, 504);
             this.txtBoxMilage.Margin = new System.Windows.Forms.Padding(4);
             this.txtBoxMilage.Name = "txtBoxMilage";
             this.txtBoxMilage.Size = new System.Drawing.Size(132, 30);
             this.txtBoxMilage.TabIndex = 8;
+            this.txtBoxMilage.Text = "0";
             this.txtBoxMilage.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // comboBoxMake
@@ -1267,6 +1272,10 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Snow;
+            this.groupBox1.Controls.Add(this.lblTaxValue);
+            this.groupBox1.Controls.Add(this.lblTaxText);
+            this.groupBox1.Controls.Add(this.lblTag);
+            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.lblStotal1);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label7);
@@ -1297,11 +1306,11 @@
             this.groupBox1.Controls.Add(this.lblWelcome);
             this.groupBox1.Controls.Add(this.lblCarModel);
             this.groupBox1.Controls.Add(this.picBoxMyAcc);
-            this.groupBox1.Location = new System.Drawing.Point(132, 64);
+            this.groupBox1.Location = new System.Drawing.Point(129, 27);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(894, 527);
+            this.groupBox1.Size = new System.Drawing.Size(894, 593);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -1310,7 +1319,7 @@
             this.lblStotal1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStotal1.ForeColor = System.Drawing.Color.YellowGreen;
             this.lblStotal1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblStotal1.Location = new System.Drawing.Point(686, 346);
+            this.lblStotal1.Location = new System.Drawing.Point(707, 346);
             this.lblStotal1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStotal1.Name = "lblStotal1";
             this.lblStotal1.Size = new System.Drawing.Size(155, 25);
@@ -1355,7 +1364,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(566, 447);
+            this.label3.Location = new System.Drawing.Point(566, 500);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(320, 25);
@@ -1367,7 +1376,7 @@
             this.Stotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Stotal.ForeColor = System.Drawing.Color.YellowGreen;
             this.Stotal.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Stotal.Location = new System.Drawing.Point(686, 246);
+            this.Stotal.Location = new System.Drawing.Point(707, 246);
             this.Stotal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Stotal.Name = "Stotal";
             this.Stotal.Size = new System.Drawing.Size(155, 25);
@@ -1391,7 +1400,7 @@
             this.lblInterValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInterValue.ForeColor = System.Drawing.Color.YellowGreen;
             this.lblInterValue.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblInterValue.Location = new System.Drawing.Point(689, 422);
+            this.lblInterValue.Location = new System.Drawing.Point(707, 422);
             this.lblInterValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblInterValue.Name = "lblInterValue";
             this.lblInterValue.Size = new System.Drawing.Size(155, 25);
@@ -1415,7 +1424,7 @@
             this.lblQuoteEstNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuoteEstNum.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lblQuoteEstNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblQuoteEstNum.Location = new System.Drawing.Point(689, 480);
+            this.lblQuoteEstNum.Location = new System.Drawing.Point(707, 531);
             this.lblQuoteEstNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuoteEstNum.Name = "lblQuoteEstNum";
             this.lblQuoteEstNum.Size = new System.Drawing.Size(155, 25);
@@ -1428,7 +1437,7 @@
             this.lblQuotePromoNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuotePromoNum.ForeColor = System.Drawing.Color.Red;
             this.lblQuotePromoNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblQuotePromoNum.Location = new System.Drawing.Point(689, 398);
+            this.lblQuotePromoNum.Location = new System.Drawing.Point(707, 398);
             this.lblQuotePromoNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuotePromoNum.Name = "lblQuotePromoNum";
             this.lblQuotePromoNum.Size = new System.Drawing.Size(155, 25);
@@ -1441,7 +1450,7 @@
             this.lblQuoteTradeNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuoteTradeNum.ForeColor = System.Drawing.Color.Red;
             this.lblQuoteTradeNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblQuoteTradeNum.Location = new System.Drawing.Point(689, 294);
+            this.lblQuoteTradeNum.Location = new System.Drawing.Point(707, 294);
             this.lblQuoteTradeNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuoteTradeNum.Name = "lblQuoteTradeNum";
             this.lblQuoteTradeNum.Size = new System.Drawing.Size(155, 25);
@@ -1454,7 +1463,7 @@
             this.lblQuoteFinishNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuoteFinishNum.ForeColor = System.Drawing.Color.YellowGreen;
             this.lblQuoteFinishNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblQuoteFinishNum.Location = new System.Drawing.Point(719, 206);
+            this.lblQuoteFinishNum.Location = new System.Drawing.Point(737, 206);
             this.lblQuoteFinishNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuoteFinishNum.Name = "lblQuoteFinishNum";
             this.lblQuoteFinishNum.Size = new System.Drawing.Size(125, 25);
@@ -1467,7 +1476,7 @@
             this.lblQuotePackageNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuotePackageNum.ForeColor = System.Drawing.Color.YellowGreen;
             this.lblQuotePackageNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblQuotePackageNum.Location = new System.Drawing.Point(689, 181);
+            this.lblQuotePackageNum.Location = new System.Drawing.Point(707, 181);
             this.lblQuotePackageNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuotePackageNum.Name = "lblQuotePackageNum";
             this.lblQuotePackageNum.Size = new System.Drawing.Size(155, 25);
@@ -1480,7 +1489,7 @@
             this.lblQuoteMSRPNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuoteMSRPNum.ForeColor = System.Drawing.Color.YellowGreen;
             this.lblQuoteMSRPNum.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblQuoteMSRPNum.Location = new System.Drawing.Point(689, 157);
+            this.lblQuoteMSRPNum.Location = new System.Drawing.Point(707, 157);
             this.lblQuoteMSRPNum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuoteMSRPNum.Name = "lblQuoteMSRPNum";
             this.lblQuoteMSRPNum.Size = new System.Drawing.Size(155, 25);
@@ -1492,7 +1501,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(564, 223);
+            this.label11.Location = new System.Drawing.Point(564, 227);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(320, 25);
@@ -1514,7 +1523,7 @@
             // 
             this.lblQuoteEst.AutoSize = true;
             this.lblQuoteEst.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuoteEst.Location = new System.Drawing.Point(566, 480);
+            this.lblQuoteEst.Location = new System.Drawing.Point(566, 531);
             this.lblQuoteEst.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblQuoteEst.Name = "lblQuoteEst";
             this.lblQuoteEst.Size = new System.Drawing.Size(129, 25);
@@ -1661,6 +1670,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.LightSteelBlue;
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.Image = global::Volvo_Team.Properties.Resources.vlogo;
             this.pictureBox4.Location = new System.Drawing.Point(-4, -1);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(7);
             this.pictureBox4.Name = "pictureBox4";
@@ -1669,6 +1679,54 @@
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
+            // lblTag
+            // 
+            this.lblTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTag.ForeColor = System.Drawing.Color.YellowGreen;
+            this.lblTag.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblTag.Location = new System.Drawing.Point(707, 447);
+            this.lblTag.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTag.Name = "lblTag";
+            this.lblTag.Size = new System.Drawing.Size(155, 25);
+            this.lblTag.TabIndex = 32;
+            this.lblTag.Text = "tag";
+            this.lblTag.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(564, 447);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(47, 25);
+            this.label9.TabIndex = 31;
+            this.label9.Text = "Tag";
+            // 
+            // lblTaxValue
+            // 
+            this.lblTaxValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTaxValue.ForeColor = System.Drawing.Color.YellowGreen;
+            this.lblTaxValue.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblTaxValue.Location = new System.Drawing.Point(707, 472);
+            this.lblTaxValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTaxValue.Name = "lblTaxValue";
+            this.lblTaxValue.Size = new System.Drawing.Size(155, 25);
+            this.lblTaxValue.TabIndex = 34;
+            this.lblTaxValue.Text = "tax";
+            this.lblTaxValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblTaxText
+            // 
+            this.lblTaxText.AutoSize = true;
+            this.lblTaxText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTaxText.Location = new System.Drawing.Point(564, 472);
+            this.lblTaxText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTaxText.Name = "lblTaxText";
+            this.lblTaxText.Size = new System.Drawing.Size(47, 25);
+            this.lblTaxText.TabIndex = 33;
+            this.lblTaxText.Text = "Tag";
             // 
             // Sales
             // 
@@ -1831,5 +1889,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblTaxValue;
+        private System.Windows.Forms.Label lblTaxText;
+        private System.Windows.Forms.Label lblTag;
+        private System.Windows.Forms.Label label9;
     }
 }
