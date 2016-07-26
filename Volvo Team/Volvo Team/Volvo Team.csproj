@@ -136,7 +136,40 @@
     <None Include="Resources\openroad.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Volvo Splash.jpg" />
+    <None Include="Resources\1-front.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-side.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-front.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-side.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-front.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-side.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-front.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-side.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-angle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-angle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-angle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-angle.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
