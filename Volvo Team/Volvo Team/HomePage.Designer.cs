@@ -69,6 +69,7 @@
             // picBoxSplash
             // 
             this.picBoxSplash.Image = global::Volvo_Team.Properties.Resources.Volvo_Splash;
+            this.picBoxSplash.InitialImage = null;
             this.picBoxSplash.Location = new System.Drawing.Point(-3, -1);
             this.picBoxSplash.Name = "picBoxSplash";
             this.picBoxSplash.Size = new System.Drawing.Size(890, 599);
