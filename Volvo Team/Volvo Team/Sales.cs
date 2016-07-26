@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace Volvo_Team
 {
@@ -17,6 +18,7 @@ namespace Volvo_Team
 
         public Sales()
         {
+            GenerateRandom();
             InitializeComponent();
             newCars();
             DisplayCar(CurrentCar);
@@ -53,8 +55,18 @@ namespace Volvo_Team
             variables.model = carList[car - 1].Model;
         }
 
+        //random number
+        public void GenerateRandom()
+        {
+            //create a random number
+            Random myRandom = new Random();
+
+            //generate a random number between 1 and 10000
+            variables.account = myRandom.Next(1, 10000);
+        }
+
         //show first car in inventory
-        
+
         //inventory to add-on
         private void btnBuyNow_Click(object sender, EventArgs e)
         {
@@ -114,6 +126,7 @@ namespace Volvo_Team
         //select all radio buttons per groupBox and disable the other package
         private void groupBoxA_Enter(object sender, EventArgs e)
         {
+
             variables.package = 2200.0;
             radioBtnA1.Checked = true;
             radioBtnA2.Checked = true;
@@ -125,16 +138,23 @@ namespace Volvo_Team
         }
         private void groupBoxB_Enter(object sender, EventArgs e)
         {
-            variables.package = 3250.0;
-            radioBtnB1.Checked = true;
-            radioBtnB2.Checked = true;
-            radioBtnB3.Checked = true;
-            radioBtnB4.Checked = true;
-            radioBtnB5.Checked = true;
+            if(variables.selectedCar == 1 || variables.selectedCar == 4)
+            {
+                groupBoxB.Enabled = false;
+            }
+            if (variables.selectedCar == 2 || variables.selectedCar == 3)
+            {
+                variables.package = 3250.0;
+                radioBtnB1.Checked = true;
+                radioBtnB2.Checked = true;
+                radioBtnB3.Checked = true;
+                radioBtnB4.Checked = true;
+                radioBtnB5.Checked = true;
 
-            groupBoxA.Enabled = false;
+                groupBoxA.Enabled = false;
 
-            variables.packlbl = "Package B";
+                variables.packlbl = "Package B";
+            }
             
         }
 
@@ -154,8 +174,9 @@ namespace Volvo_Team
             lblInterValue.Text = variables.inter.ToString("C");
             lblQuotePackage.Text = variables.packlbl;
             lblQuoteFinish.Text = variables.finishlbl;
+            lblAccountNum.Text = variables.account.ToString();
 
-            
+
             //calculate total car cost
             stotal = variables.msrp + variables.package + variables.finish;
 
@@ -166,12 +187,18 @@ namespace Volvo_Team
             intCalculate = stotal1 * variables.intrate;
             variables.inter = intCalculate;
 
+            // calculate taxes
+            variables.taxTotal = stotal1 * variables.taxRate;
             //calculate total price of the car
-            finalprice = stotal1 - variables.promo  + variables.inter;
+            finalprice = stotal1 - variables.promo  + variables.inter + variables.tag + variables.taxTotal;
             Stotal.Text = stotal.ToString("C");
             lblQuoteEstNum.Text = finalprice.ToString("C");
             lblStotal1.Text = stotal1.ToString("C");
             lblInterValue.Text = variables.inter.ToString("C");
+            lblTaxValue.Text = variables.taxTotal.ToString("C");
+            lblTag.Text = variables.tag.ToString("C");
+            lblTaxText.Text = ("Tax " + variables.taxRate * 100 + "%");
+
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -219,17 +246,25 @@ namespace Volvo_Team
         private void tradeInVal()
         {
             double milageVal = 0.0, yearVal = 0.0;
+            
+            if(comboBoxYear.Text == "")
+            {
+                variables.trade = 0.0;
+            }
 
-            if (int.Parse(txtBoxMilage.Text) >= 35000.0)
-                milageVal = 10000;
-            else if (int.Parse(txtBoxMilage.Text) >= 15000.0)
-                milageVal = 5000.0;
-            else
-                milageVal = 2000.0;
+            if (comboBoxYear.Text != "")
+            {
+                if (int.Parse(txtBoxMilage.Text) >= 35000.0)
+                    milageVal = 10000;
+                else if (int.Parse(txtBoxMilage.Text) >= 15000.0)
+                    milageVal = 5000.0;
+                else
+                    milageVal = 2000.0;
 
-            yearVal = 1000.0 * (2016 - int.Parse(comboBoxYear.Text));
+                yearVal = 1000.0 * (2016 - int.Parse(comboBoxYear.Text));
 
-            variables.trade = 30000.0 - yearVal - milageVal;
+                variables.trade = 30000.0 - yearVal - milageVal;
+            }
         }
 
         //private int quoteEst()
@@ -267,7 +302,9 @@ namespace Volvo_Team
         public static string packlbl = "";
         public static string finishlbl = "";
         public static double intrate = 0.0;
-
-
+        public static int account = 0;
+        public static double taxRate = 0.06;
+        public static double taxTotal = 0.0;
+        public static double tag = 325.0;
     }
 }
