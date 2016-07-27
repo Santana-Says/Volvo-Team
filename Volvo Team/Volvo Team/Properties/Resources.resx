@@ -118,38 +118,32 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="1-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1-front.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Trade-in" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Trade-in.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="volvo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\volvo2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="volvo-logo-scaled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\volvo-logo-scaled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="vlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="left-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\left-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="openroad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\openroad.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2-front.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="s90-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\s90-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3-side" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3-side.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1-front.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="volvo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\volvo3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="4-angle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4-angle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1-angle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1-angle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="volvo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\volvo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cust info" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cust info.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="2-side" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2-side.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trade-in-value" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trade-in-value.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="4-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4-front.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,49 +151,58 @@
   <data name="4-side" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4-side.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2-side" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2-side.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="s90-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\s90-3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="trade-in-value" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trade-in-value.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="openroad" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\openroad.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3-front.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="s90-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\s90-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="openroad2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openroad2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volvo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\volvo3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="right-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\right-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="s90-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\s90-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Trade-in" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trade-in.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1-side" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1-side.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3-side" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3-side.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cust info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cust info.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="s90-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\s90-3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volvo-logo-scaled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\volvo-logo-scaled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="openroad1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openroad.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1-angle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1-angle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="s90-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\s90-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2-angle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2-angle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="left-normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\left-normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1-side" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1-side.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3-angle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3-angle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4-angle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4-angle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="volvo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\volvo2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2-front.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3-front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3-front.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2-angle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2-angle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volvo Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Volvo Splash1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
