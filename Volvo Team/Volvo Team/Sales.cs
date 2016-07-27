@@ -63,7 +63,7 @@ namespace Volvo_Team
 
             //generate a random number between 1 and 10000
             variables.account = myRandom.Next(1, 10000);
-        }
+        }        
 
         //show first car in inventory
 
@@ -82,7 +82,15 @@ namespace Volvo_Team
         //trade to inventory
         private void btnContinue_Click(object sender, EventArgs e)
         {
-            tabControlSales.SelectedTab = tabInventory;
+            int tempMile = Convert.ToInt32(txtBoxMilage.Text);
+            if ((comboBoxMake.SelectedItem != null || comboBoxYear.SelectedItem != null) && tempMile<1 )
+            {
+                MessageBox.Show("Please enter a mileage greater than zero for your trade in.");
+            }
+            else
+            {
+                tabControlSales.SelectedTab = tabInventory;
+            }                      
         }
 
         //add-on to quote
@@ -283,11 +291,148 @@ namespace Volvo_Team
                 variables.promo = 0.0;
                 variables.intrate = 0.07;
             }
-            tabControlSales.SelectedTab = tabAccount;
+            if (txtName.Text=="" || txtSAddress.Text=="" || txtCity.Text=="" || cbState.SelectedItem==null || txtZip.Text=="" || cash.Checked==false && finance.Checked==false)
+            {
+                MessageBox.Show("Please fill out the customer information form completely.");
+            }
+            else
+            {
+                tabControlSales.SelectedTab = tabAccount;
+            }
+            
+        }
+        
+        //Zip validation
+        public bool IsValidZip(string zip)
+        {
+            int len = 0;
+
+            len = zip.Length;
+
+            //check the length
+            if (len != 5 && len != 10)
+                return false;
+
+            //check 5 digit zip
+            if (len == 5)
+            {
+                //check if all characters are digits
+                for (int i = 0; i < 5; i++)
+                {
+                    if (!char.IsDigit(zip[i]))
+                        return false;
+                }
+            }
+
+            //check 9 digit zip
+            if (len == 10)
+            {
+                if (zip[5] != '-')
+                    return false;
+
+                for (int i = 0; i < 5; i++)
+                {
+                    if (!char.IsDigit(zip[i]))
+                        return false;
+                }
+
+                for (int i = 6; i < 10; i++)
+                {
+                    if (!char.IsDigit(zip[i]))
+                        return false;
+                }
+            }
+            return true;
         }
 
-        
+        private void txtZip_Leave(object sender, EventArgs e)
+        {
+            if (!IsValidZip(txtZip.Text))
+            {
+                MessageBox.Show("Invalid.  Must be XXXXX-XXXX or XXXXX");
+                //reset focus to the text box
+                txtZip.Focus();
+                //select all to highlight text and type over
+                txtZip.SelectAll();
+            }
+        }
+
+        //mileage validation
+        private void txtBoxMilage_Validating(object sender, CancelEventArgs e)
+        {
+            int tempMiles = Convert.ToInt32(txtBoxMilage.Text);
+            if(tempMiles<1)
+            {
+                MessageBox.Show("Invalid. Must be a mileage greater than zero.");
+                txtBoxMilage.Focus();
+                txtBoxMilage.SelectAll();
+            }
+        }
+
+        //phone number validation
+        public bool IsValidPhone(string phone)
+        {
+            string tempPhone;
+
+            tempPhone = @"^(\()?\d{3}(\))?\s\d{3}\-\d{4}$"; //@^start of the string, $ end of the string, 
+                                                            //\is for an escape sequence, d{n} is n digits, ()? is optional-
+                                                            //surround optional part with ()
+            Regex myreg = new Regex(tempPhone);
+
+            return myreg.IsMatch(phone);
+        }
+
+        private void txtPhone_Validating(object sender, CancelEventArgs e)
+        {
+            if (!IsValidPhone(txtPhone.Text))
+            {
+                MessageBox.Show("Invalid Phone Number.  Must be (XXX) XXX-XXXX or XXX XXX-XXXX");
+                txtPhone.Focus();
+                txtPhone.SelectAll();
+            }
+        }
+
+        //name validation
+        public bool isValidName(string name)
+        {
+            string tempName;
+            tempName = @"^[A-Z]{1,30}$";
+            Regex myregn = new Regex(tempName, RegexOptions.IgnoreCase);
+            return myregn.IsMatch(name);
+        }
+
+        private void txtName_Validating(object sender, CancelEventArgs e)
+        {
+            if (!isValidName(txtName.Text))
+            {
+                MessageBox.Show("Invalid name. Must be a name 1-30 characters in length(a-z only).");
+                txtName.Focus();
+                txtName.SelectAll();
+            }
+        }
+
+        //city validation
+        public bool isValidCity(string city)
+        {
+            string tempCity;
+            tempCity = @"^[A-Za-z\s\-]";
+            Regex myregc = new Regex(tempCity, RegexOptions.IgnoreCase);
+            return myregc.IsMatch(city);
+        }
+
+        private void txtCity_Validating(object sender, CancelEventArgs e)
+        {
+            if(!isValidCity(txtCity.Text))
+            {
+                MessageBox.Show("Please enter a city.");
+                txtCity.Focus();
+                txtCity.SelectAll();
+            }
+        }
+
+
     }
+
     class variables
     {
         public static int selectedCar = 0;
