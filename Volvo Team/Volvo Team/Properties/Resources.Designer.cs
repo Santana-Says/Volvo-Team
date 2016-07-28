@@ -313,6 +313,16 @@ namespace Volvo_Team.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Volvo_Splash {
+            get {
+                object obj = ResourceManager.GetObject("Volvo Splash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap volvo1 {
             get {
                 object obj = ResourceManager.GetObject("volvo1", resourceCulture);

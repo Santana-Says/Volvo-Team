@@ -28,17 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.picBoxInventory = new System.Windows.Forms.PictureBox();
-            this.picBoxTrade = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.picBoxSplash = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picBoxInventory = new System.Windows.Forms.PictureBox();
+            this.picBoxTrade = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxSplash)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxInventory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTrade)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(469, 332);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 60);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "VIEW OUR INVENTORY";
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(294, 332);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(129, 60);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "TRADE-IN EVENT";
+            // 
+            // picBoxSplash
+            // 
+            this.picBoxSplash.Image = global::Volvo_Team.Properties.Resources.Volvo_Splash;
+            this.picBoxSplash.InitialImage = null;
+            this.picBoxSplash.Location = new System.Drawing.Point(-3, -1);
+            this.picBoxSplash.Name = "picBoxSplash";
+            this.picBoxSplash.Size = new System.Drawing.Size(890, 599);
+            this.picBoxSplash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxSplash.TabIndex = 11;
+            this.picBoxSplash.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -50,6 +87,16 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Volvo_Team.Properties.Resources.volvo2;
+            this.pictureBox2.Location = new System.Drawing.Point(-3, 13);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(890, 304);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
             // 
             // picBoxInventory
             // 
@@ -75,57 +122,36 @@
             this.picBoxTrade.TabStop = false;
             this.picBoxTrade.Click += new System.EventHandler(this.picBoxTrade_Click);
             // 
-            // pictureBox2
+            // timer1
             // 
-            this.pictureBox2.Image = global::Volvo_Team.Properties.Resources.volvo2;
-            this.pictureBox2.Location = new System.Drawing.Point(-3, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(890, 304);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(469, 332);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 60);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "VIEW OUR INVENTORY";
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(294, 332);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 60);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "TRADE-IN EVENT";
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 3000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(884, 597);
+            this.Controls.Add(this.picBoxSplash);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picBoxInventory);
             this.Controls.Add(this.picBoxTrade);
+            this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomePage";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.HomePage_FormClosed);
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxSplash)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxInventory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTrade)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -138,6 +164,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox picBoxSplash;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

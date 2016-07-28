@@ -17,6 +17,11 @@ namespace Volvo_Team
             InitializeComponent();
         }
 
+        private void splashScreen()
+        {
+
+        }
+
         private void picBoxTrade_Click(object sender, EventArgs e)
         {
             Sales salesForm = new Sales();
@@ -35,6 +40,12 @@ namespace Volvo_Team
         private void HomePage_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            picBoxSplash.Hide();
+            timer1.Stop();
         }
     }
 }
