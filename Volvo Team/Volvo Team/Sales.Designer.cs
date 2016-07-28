@@ -522,9 +522,9 @@
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(59, 161);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(90, 25);
+            this.label16.Size = new System.Drawing.Size(79, 25);
             this.label16.TabIndex = 12;
-            this.label16.Text = "Engines";
+            this.label16.Text = "Engine";
             // 
             // tabTrade
             // 
@@ -791,7 +791,7 @@
             this.radioBtnB3.Size = new System.Drawing.Size(138, 20);
             this.radioBtnB3.TabIndex = 8;
             this.radioBtnB3.TabStop = true;
-            this.radioBtnB3.Text = "Rear-ciew Camera";
+            this.radioBtnB3.Text = "Rear-view Camera";
             this.radioBtnB3.UseVisualStyleBackColor = true;
             // 
             // radioBtnB4
@@ -814,10 +814,10 @@
             this.radioBtnB2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioBtnB2.Location = new System.Drawing.Point(65, 188);
             this.radioBtnB2.Name = "radioBtnB2";
-            this.radioBtnB2.Size = new System.Drawing.Size(169, 20);
+            this.radioBtnB2.Size = new System.Drawing.Size(166, 20);
             this.radioBtnB2.TabIndex = 5;
             this.radioBtnB2.TabStop = true;
-            this.radioBtnB2.Text = "Aluminium Alloy Wheels";
+            this.radioBtnB2.Text = "Aluminum Alloy Wheels";
             this.radioBtnB2.UseVisualStyleBackColor = true;
             // 
             // radioBtnB1
@@ -879,7 +879,7 @@
             this.radioBtnA3.Size = new System.Drawing.Size(138, 20);
             this.radioBtnA3.TabIndex = 6;
             this.radioBtnA3.TabStop = true;
-            this.radioBtnA3.Text = "Rear-ciew Camera";
+            this.radioBtnA3.Text = "Rear-view Camera";
             this.radioBtnA3.UseVisualStyleBackColor = true;
             // 
             // radioBtnA2
@@ -1265,9 +1265,9 @@
             this.lblTaxText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTaxText.Location = new System.Drawing.Point(423, 384);
             this.lblTaxText.Name = "lblTaxText";
-            this.lblTaxText.Size = new System.Drawing.Size(36, 20);
+            this.lblTaxText.Size = new System.Drawing.Size(34, 20);
             this.lblTaxText.TabIndex = 33;
-            this.lblTaxText.Text = "Tag";
+            this.lblTaxText.Text = "Tax";
             // 
             // lblTag
             // 
