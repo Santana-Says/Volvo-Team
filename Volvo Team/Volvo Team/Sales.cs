@@ -62,7 +62,11 @@ namespace Volvo_Team
             Random myRandom = new Random();
 
             //generate a random number between 1 and 10000
+<<<<<<< HEAD
+            variables.account = myRandom.Next(1000000,9999999);
+=======
             variables.account = myRandom.Next(1, 10000);
+>>>>>>> origin/Erika
         }        
 
         //show first car in inventory
@@ -281,6 +285,7 @@ namespace Volvo_Team
         private void button1_Click(object sender, EventArgs e)
         {
             tradeInVal();
+            variables.name = txtName.Text;
             if (cash.Checked == true)
             {
                 variables.promo = 750.0;
@@ -300,6 +305,10 @@ namespace Volvo_Team
                 tabControlSales.SelectedTab = tabAccount;
             }
             
+<<<<<<< HEAD
+            
+=======
+>>>>>>> origin/Erika
         }
         
         //Zip validation
