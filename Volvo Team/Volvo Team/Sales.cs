@@ -8,11 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.IO;
 
 namespace Volvo_Team
 {
     public partial class Sales: Form
     {
+        //declare an instance of a customer
+        customer CurrentCust = new customer();
+
+        //declare a list of cds
+        List<customer> CustomerList = new List<customer>();
+
         // variables to be use
         public int CurrentCar = 1;
 
@@ -280,30 +287,9 @@ namespace Volvo_Team
         //Quote to MyAccount
         private void button1_Click(object sender, EventArgs e)
         {
-            tradeInVal();
-            variables.name = txtName.Text;
-            if (cash.Checked == true)
-            {
-                variables.promo = 750.0;
-                variables.intrate = 0.0;
-            }
-            if (finance.Checked == true)
-            {
-                variables.promo = 0.0;
-                variables.intrate = 0.07;
-            }
-            if (txtName.Text=="" || txtSAddress.Text=="" || txtCity.Text=="" || cbState.SelectedItem==null || txtZip.Text=="" || cash.Checked==false && finance.Checked==false)
-            {
-                MessageBox.Show("Please fill out the customer information form completely.");
-            }
-            else
-            {
-                tabControlSales.SelectedTab = tabAccount;
-            }
-            
-            
+
         }
-        
+
         //Zip validation
         public bool IsValidZip(string zip)
         {

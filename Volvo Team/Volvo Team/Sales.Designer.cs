@@ -90,10 +90,13 @@
             this.lblPackageA2 = new System.Windows.Forms.Label();
             this.lblPackageA = new System.Windows.Forms.Label();
             this.tabQuote = new System.Windows.Forms.TabPage();
+            this.listBoxCustDb = new System.Windows.Forms.ListBox();
+            this.buttonViewAcc = new System.Windows.Forms.Button();
+            this.buttonExistingCust = new System.Windows.Forms.Button();
             this.gbxPayment = new System.Windows.Forms.GroupBox();
             this.finance = new System.Windows.Forms.RadioButton();
             this.cash = new System.Windows.Forms.RadioButton();
-            this.buttonAccount = new System.Windows.Forms.Button();
+            this.buttonAddCust = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtZip = new System.Windows.Forms.TextBox();
@@ -146,6 +149,7 @@
             this.picBoxMyAcc = new System.Windows.Forms.PictureBox();
             this.eventLog1 = new System.Diagnostics.EventLog();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControlSales.SuspendLayout();
             this.tabInventory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxArrowR)).BeginInit();
@@ -931,8 +935,12 @@
             // tabQuote
             // 
             this.tabQuote.BackColor = System.Drawing.Color.Snow;
+            this.tabQuote.Controls.Add(this.button1);
+            this.tabQuote.Controls.Add(this.listBoxCustDb);
+            this.tabQuote.Controls.Add(this.buttonViewAcc);
+            this.tabQuote.Controls.Add(this.buttonExistingCust);
             this.tabQuote.Controls.Add(this.gbxPayment);
-            this.tabQuote.Controls.Add(this.buttonAccount);
+            this.tabQuote.Controls.Add(this.buttonAddCust);
             this.tabQuote.Controls.Add(this.label2);
             this.tabQuote.Controls.Add(this.txtPhone);
             this.tabQuote.Controls.Add(this.txtZip);
@@ -955,6 +963,38 @@
             this.tabQuote.TabIndex = 2;
             this.tabQuote.Text = "Quote";
             // 
+            // listBoxCustDb
+            // 
+            this.listBoxCustDb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxCustDb.FormattingEnabled = true;
+            this.listBoxCustDb.ItemHeight = 25;
+            this.listBoxCustDb.Location = new System.Drawing.Point(477, 40);
+            this.listBoxCustDb.Name = "listBoxCustDb";
+            this.listBoxCustDb.Size = new System.Drawing.Size(373, 254);
+            this.listBoxCustDb.Sorted = true;
+            this.listBoxCustDb.TabIndex = 44;
+            this.listBoxCustDb.Visible = false;
+            // 
+            // buttonViewAcc
+            // 
+            this.buttonViewAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonViewAcc.Location = new System.Drawing.Point(671, 459);
+            this.buttonViewAcc.Name = "buttonViewAcc";
+            this.buttonViewAcc.Size = new System.Drawing.Size(82, 47);
+            this.buttonViewAcc.TabIndex = 43;
+            this.buttonViewAcc.Text = "Load Account";
+            this.buttonViewAcc.UseVisualStyleBackColor = true;
+            // 
+            // buttonExistingCust
+            // 
+            this.buttonExistingCust.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExistingCust.Location = new System.Drawing.Point(567, 459);
+            this.buttonExistingCust.Name = "buttonExistingCust";
+            this.buttonExistingCust.Size = new System.Drawing.Size(82, 47);
+            this.buttonExistingCust.TabIndex = 42;
+            this.buttonExistingCust.Text = "Existing Customer";
+            this.buttonExistingCust.UseVisualStyleBackColor = true;
+            // 
             // gbxPayment
             // 
             this.gbxPayment.Controls.Add(this.finance);
@@ -973,7 +1013,7 @@
             // finance
             // 
             this.finance.AutoSize = true;
-            this.finance.Location = new System.Drawing.Point(138, 37);
+            this.finance.Location = new System.Drawing.Point(185, 37);
             this.finance.Margin = new System.Windows.Forms.Padding(2);
             this.finance.Name = "finance";
             this.finance.Size = new System.Drawing.Size(120, 24);
@@ -986,7 +1026,7 @@
             // 
             this.cash.AutoSize = true;
             this.cash.ForeColor = System.Drawing.Color.YellowGreen;
-            this.cash.Location = new System.Drawing.Point(15, 37);
+            this.cash.Location = new System.Drawing.Point(62, 37);
             this.cash.Margin = new System.Windows.Forms.Padding(2);
             this.cash.Name = "cash";
             this.cash.Size = new System.Drawing.Size(58, 24);
@@ -995,16 +1035,15 @@
             this.cash.Text = "Cash";
             this.cash.UseVisualStyleBackColor = true;
             // 
-            // buttonAccount
+            // buttonAddCust
             // 
-            this.buttonAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAccount.Location = new System.Drawing.Point(370, 467);
-            this.buttonAccount.Name = "buttonAccount";
-            this.buttonAccount.Size = new System.Drawing.Size(145, 55);
-            this.buttonAccount.TabIndex = 40;
-            this.buttonAccount.Text = "Continue";
-            this.buttonAccount.UseVisualStyleBackColor = true;
-            this.buttonAccount.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAddCust.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAddCust.Location = new System.Drawing.Point(463, 459);
+            this.buttonAddCust.Name = "buttonAddCust";
+            this.buttonAddCust.Size = new System.Drawing.Size(82, 47);
+            this.buttonAddCust.TabIndex = 40;
+            this.buttonAddCust.Text = "Add Customer";
+            this.buttonAddCust.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -1627,6 +1666,16 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(775, 459);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(82, 47);
+            this.button1.TabIndex = 45;
+            this.button1.Text = "View Quote";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Sales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1774,7 +1823,7 @@
         private System.Windows.Forms.Label lblQuoteFinish;
         private System.Windows.Forms.Label lblQuotePackage;
         private System.Windows.Forms.Label lblQuoteMSRP;
-        private System.Windows.Forms.Button buttonAccount;
+        private System.Windows.Forms.Button buttonAddCust;
         private System.Windows.Forms.Label lblInterValue;
         private System.Windows.Forms.Label lblInter;
         private System.Windows.Forms.GroupBox gbxPayment;
@@ -1791,5 +1840,9 @@
         private System.Windows.Forms.Label lblTaxText;
         private System.Windows.Forms.Label lblTag;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button buttonViewAcc;
+        private System.Windows.Forms.Button buttonExistingCust;
+        private System.Windows.Forms.ListBox listBoxCustDb;
+        private System.Windows.Forms.Button button1;
     }
 }
