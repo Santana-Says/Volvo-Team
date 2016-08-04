@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CarClass.cs" />
+    <Compile Include="customer.cs" />
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
