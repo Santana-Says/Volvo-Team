@@ -522,11 +522,7 @@
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(59, 161);
             this.label16.Name = "label16";
-<<<<<<< HEAD
             this.label16.Size = new System.Drawing.Size(79, 25);
-=======
-            this.label16.Size = new System.Drawing.Size(90, 25);
->>>>>>> origin/Erika
             this.label16.TabIndex = 12;
             this.label16.Text = "Engine";
             // 
@@ -818,11 +814,7 @@
             this.radioBtnB2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioBtnB2.Location = new System.Drawing.Point(65, 188);
             this.radioBtnB2.Name = "radioBtnB2";
-<<<<<<< HEAD
             this.radioBtnB2.Size = new System.Drawing.Size(166, 20);
-=======
-            this.radioBtnB2.Size = new System.Drawing.Size(169, 20);
->>>>>>> origin/Erika
             this.radioBtnB2.TabIndex = 5;
             this.radioBtnB2.TabStop = true;
             this.radioBtnB2.Text = "Aluminum Alloy Wheels";
@@ -1273,15 +1265,9 @@
             this.lblTaxText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTaxText.Location = new System.Drawing.Point(423, 384);
             this.lblTaxText.Name = "lblTaxText";
-<<<<<<< HEAD
             this.lblTaxText.Size = new System.Drawing.Size(34, 20);
             this.lblTaxText.TabIndex = 33;
             this.lblTaxText.Text = "Tax";
-=======
-            this.lblTaxText.Size = new System.Drawing.Size(36, 20);
-            this.lblTaxText.TabIndex = 33;
-            this.lblTaxText.Text = "Tag";
->>>>>>> origin/Erika
             // 
             // lblTag
             // 
