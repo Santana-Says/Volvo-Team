@@ -146,6 +146,8 @@
             this.picBoxMyAcc = new System.Windows.Forms.PictureBox();
             this.eventLog1 = new System.Diagnostics.EventLog();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnSaveRecord = new System.Windows.Forms.Button();
+            this.btnViewRecords = new System.Windows.Forms.Button();
             this.tabControlSales.SuspendLayout();
             this.tabInventory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxArrowR)).BeginInit();
@@ -1207,6 +1209,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Snow;
+            this.groupBox1.Controls.Add(this.btnViewRecords);
+            this.groupBox1.Controls.Add(this.btnSaveRecord);
             this.groupBox1.Controls.Add(this.lblTaxValue);
             this.groupBox1.Controls.Add(this.lblTaxText);
             this.groupBox1.Controls.Add(this.lblTag);
@@ -1627,6 +1631,28 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
+            // btnSaveRecord
+            // 
+            this.btnSaveRecord.AutoSize = true;
+            this.btnSaveRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveRecord.Location = new System.Drawing.Point(30, 406);
+            this.btnSaveRecord.Name = "btnSaveRecord";
+            this.btnSaveRecord.Size = new System.Drawing.Size(111, 30);
+            this.btnSaveRecord.TabIndex = 35;
+            this.btnSaveRecord.Text = "Save Record";
+            this.btnSaveRecord.UseVisualStyleBackColor = true;
+            // 
+            // btnViewRecords
+            // 
+            this.btnViewRecords.AutoSize = true;
+            this.btnViewRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewRecords.Location = new System.Drawing.Point(188, 406);
+            this.btnViewRecords.Name = "btnViewRecords";
+            this.btnViewRecords.Size = new System.Drawing.Size(117, 30);
+            this.btnViewRecords.TabIndex = 36;
+            this.btnViewRecords.Text = "View Records";
+            this.btnViewRecords.UseVisualStyleBackColor = true;
+            // 
             // Sales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1791,5 +1817,7 @@
         private System.Windows.Forms.Label lblTaxText;
         private System.Windows.Forms.Label lblTag;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnViewRecords;
+        private System.Windows.Forms.Button btnSaveRecord;
     }
 }
