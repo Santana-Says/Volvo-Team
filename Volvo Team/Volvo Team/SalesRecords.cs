@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace Volvo_Team
 {
-    public partial class Form1: Form
+    public partial class SalesRecords: Form
     {
-        public Form1()
+        public SalesRecords()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            HomePage homeForm = new HomePage();
+            Sales.ActiveForm.Hide();
+            homeForm.Show();
+        }
+
+        private void SalesRecords_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

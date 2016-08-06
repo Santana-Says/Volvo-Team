@@ -183,6 +183,16 @@ namespace Volvo_Team.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Button_Employee_Login {
+            get {
+                object obj = ResourceManager.GetObject("Button-Employee-Login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cust_info {
             get {
                 object obj = ResourceManager.GetObject("cust info", resourceCulture);

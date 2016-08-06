@@ -44,8 +44,16 @@ namespace Volvo_Team
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            picBoxSplash.BringToFront();
             picBoxSplash.Hide();
             timer1.Stop();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            SalesRecords recordsForm = new SalesRecords();
+            HomePage.ActiveForm.Hide();
+            recordsForm.Show();
         }
     }
 }
