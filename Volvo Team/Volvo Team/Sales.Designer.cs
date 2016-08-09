@@ -1065,6 +1065,7 @@
             // cbState
             // 
             this.cbState.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbState.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cbState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cbState.FormattingEnabled = true;
             this.cbState.Items.AddRange(new object[] {
