@@ -41,7 +41,7 @@ namespace Volvo_Team
                 //declare an array to be used for possible delimiters
                 char[] sep = new char[1]; //the only delimiter in this file is a ,
 
-                sep[0] = ','; //assign comma as delimiter
+                sep[0] = '/'; //assign comma as delimiter
 
                 //array of fields once the data is split
                 string[] fields = new string[30]; //size 3 for the three fields

@@ -282,7 +282,26 @@ namespace Volvo_Team
         //Quote to MyAccount
         private void button1_Click(object sender, EventArgs e)
         {
-
+            tradeInVal();
+            variables.name = txtName.Text;
+            if (cash.Checked == true)
+            {
+                variables.promo = 750.0;
+                variables.intrate = 0.0;
+            }
+            if (finance.Checked == true)
+            {
+                variables.promo = 0.0;
+                variables.intrate = 0.07;
+            }
+            if (txtName.Text == "" || txtSAddress.Text == "" || txtCity.Text == "" || cbState.SelectedItem == null || txtZip.Text == "" || cash.Checked == false && finance.Checked == false)
+            {
+                MessageBox.Show("Please fill out the customer information form completely.");
+            }
+            else
+            {
+                tabControlSales.SelectedTab = tabAccount;
+            }
         }
 
         //Zip validation
@@ -445,16 +464,15 @@ namespace Volvo_Team
             {
                 t3 = "false";
             }
-
+            if (radioBtnP1.Checked == true)
+            {
+                t4 = "false";
+            }
             if (radioBtnP2.Checked == true)
             {
                 t4 = "true";
             }
 
-            if (radioBtnP1.Checked == true)
-            {
-                t4 = "false";
-            }
             //declare a filestream (file pointer)
             FileStream outfile = new FileStream("customers.txt", FileMode.Append);
 
@@ -462,7 +480,7 @@ namespace Volvo_Team
             StreamWriter writer = new StreamWriter(outfile);
 
             //write to file
-            writer.WriteLine(txtName.Text + "," + txtSAddress.Text + "," + txtCity.Text + "," + variables.sState + "," + txtCity.Text + "," + txtPhone.Text + "," + t1 + "," + t2 + "," + t3 + "," + t4 + "," + lblTaxValue.Text + "," + lblTag.Text + "," + lblQuoteTradeNum.Text + "," + lblQuotePromoNum.Text + "," + lblQuoteMSRPNum.Text + "," + lblQuotePackageNum.Text + "," + lblQuoteFinishNum.Text + "," + lblInterValue.Text + "," + variables.selectedCar + "," + lblAccountNum.Text + "," + lblModelName.Text + "," + lblEngineInfo.Text + "," + lblMSRPInfo.Text + "," + lblFuelInfo.Text + "," + lblCargoInfo.Text + "," + lblMpgHwInfo.Text + "," + lblMpgCityInfo.Text + "," + lblSeatInfo.Text + "," + lblHPInfo.Text + "," + lblCylinderInfo);
+            writer.WriteLine(txtName.Text + "/" + txtSAddress.Text + "/" + txtCity.Text + "/" + cbState.Text + "/" + txtZip.Text + "/" + txtPhone.Text + "/" + t1 + "/" + t2 + "/" + t3 + "/" + t4 + "/" + variables.taxTotal + "/" + variables.tag + "/" + variables.trade + "/" + variables.promo + "/" + variables.msrp + "/" + variables.package + "/" + variables.finish + "/" + variables.inter + "/" + variables.selectedCar + "/" + variables.account + "/" + lblModelName.Text + "/" + lblEngineInfo.Text + "/" + variables.msrp + "/" + lblFuelInfo.Text + "/" + lblCargoInfo.Text + "/" + lblMpgHwInfo.Text + "/" + lblMpgCityInfo.Text + "/" + lblSeatInfo.Text + "/" + lblHPInfo.Text + "/" + lblCylinderInfo.Text);
             
             //close writer
             writer.Close();
