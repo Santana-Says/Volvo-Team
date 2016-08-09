@@ -39,7 +39,7 @@ namespace Volvo_Team
                 StreamReader reader = new StreamReader(infile);
 
                 //declare an array to be used for possible delimiters
-                char[] sep = new char[1]; //the only delimiter in this file is a ,
+                char[] sep = new char[1]; //the only delimiter in this file is a '/'
 
                 sep[0] = '/'; //assign comma as delimiter
 
@@ -143,7 +143,7 @@ namespace Volvo_Team
 
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void picBoxBanner_Click(object sender, EventArgs e)
         {
             HomePage homeForm = new HomePage();
             Sales.ActiveForm.Hide();
