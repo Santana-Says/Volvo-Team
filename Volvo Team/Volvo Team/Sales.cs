@@ -287,7 +287,26 @@ namespace Volvo_Team
         //Quote to MyAccount
         private void button1_Click(object sender, EventArgs e)
         {
-
+            tradeInVal();
+            variables.name = txtName.Text;
+            if (cash.Checked == true)
+            {
+                variables.promo = 750.0;
+                variables.intrate = 0.0;
+            }
+            if (finance.Checked == true)
+            {
+                variables.promo = 0.0;
+                variables.intrate = 0.07;
+            }
+            if (txtName.Text == "" || txtSAddress.Text == "" || txtCity.Text == "" || cbState.SelectedItem == null || txtZip.Text == "" || cash.Checked == false && finance.Checked == false)
+            {
+                MessageBox.Show("Please fill out the customer information form completely.");
+            }
+            else
+            {
+                tabControlSales.SelectedTab = tabAccount;
+            }
         }
 
         //Zip validation
@@ -418,7 +437,12 @@ namespace Volvo_Team
             }
         }
 
-
+        private void btnViewRecords_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            SalesRecords records = new SalesRecords();
+            records.Visible = true;
+        }
     }
 
     class variables
