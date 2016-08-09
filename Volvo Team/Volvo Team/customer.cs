@@ -11,7 +11,7 @@ namespace Volvo_Team
         protected internal string name, address, city, state, zip, phone;
 
         //default constructor
-        plublic customer()
+        public customer()
         {
             name = "name";
             address = "address";
