@@ -489,7 +489,13 @@ namespace Volvo_Team
             outfile.Close();
 
         }
-        
+
+        private void btnViewRecords_Click(object sender, EventArgs e)
+        {
+            SalesRecords recordsForm = new SalesRecords();
+            Sales.ActiveForm.Hide();
+            recordsForm.Show();
+        }
     }
 
     class variables
