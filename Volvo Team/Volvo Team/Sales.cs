@@ -14,12 +14,6 @@ namespace Volvo_Team
 {
     public partial class Sales: Form
     {
-        //declare an instance of a customer
-        customer CurrentCust = new customer();
-
-        //declare a list of cds
-        List<customer> CustomerList = new List<customer>();
-
         // variables to be use
         public int CurrentCar = 1;
 
@@ -213,6 +207,7 @@ namespace Volvo_Team
             lblTaxValue.Text = variables.taxTotal.ToString("C");
             lblTag.Text = variables.tag.ToString("C");
             lblTaxText.Text = ("Tax " + variables.taxRate * 100 + "%");
+            variables.sState = cbState.Text;
 
         }
 
@@ -437,16 +432,69 @@ namespace Volvo_Team
             }
         }
 
-        private void btnViewRecords_Click(object sender, EventArgs e)
+        private void btnSaveRecord_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            SalesRecords records = new SalesRecords();
-            records.Visible = true;
+            string t1 = "";
+            string t2 = "";
+            string t3 = "";
+            string t4 = "";
+            if(cash.Checked == true)
+            {
+                t1 = "false";
+            }
+            if (finance.Checked == true)
+            {
+                t1 = "true";
+            }
+
+            if(radioBtnA1.Checked == true)
+            {
+                t2 = "true";
+            }
+            if (radioBtnA1.Checked == false)
+            {
+                t2 = "false";
+            }
+
+            if (radioBtnB1.Checked == true)
+            {
+                t3 = "true";
+            }
+            if (radioBtnB1.Checked == false)
+            {
+                t3 = "false";
+            }
+            if (radioBtnP1.Checked == true)
+            {
+                t4 = "false";
+            }
+            if (radioBtnP2.Checked == true)
+            {
+                t4 = "true";
+            }
+
+            //declare a filestream (file pointer)
+            FileStream outfile = new FileStream("customers.txt", FileMode.Append);
+
+            //declare a stream writer
+            StreamWriter writer = new StreamWriter(outfile);
+
+            //write to file
+            writer.WriteLine(txtName.Text + "/" + txtSAddress.Text + "/" + txtCity.Text + "/" + cbState.Text + "/" + txtZip.Text + "/" + txtPhone.Text + "/" + t1 + "/" + t2 + "/" + t3 + "/" + t4 + "/" + variables.taxTotal + "/" + variables.tag + "/" + variables.trade + "/" + variables.promo + "/" + variables.msrp + "/" + variables.package + "/" + variables.finish + "/" + variables.inter + "/" + variables.selectedCar + "/" + variables.account + "/" + lblModelName.Text + "/" + lblEngineInfo.Text + "/" + variables.msrp + "/" + lblFuelInfo.Text + "/" + lblCargoInfo.Text + "/" + lblMpgHwInfo.Text + "/" + lblMpgCityInfo.Text + "/" + lblSeatInfo.Text + "/" + lblHPInfo.Text + "/" + lblCylinderInfo.Text);
+            
+            //close writer
+            writer.Close();
+
+            //close stream
+            outfile.Close();
+
         }
+        
     }
 
     class variables
     {
+        public static string sState = "";
         public static int selectedCar = 0;
         public static string name = "";
         public static double trade = 0.0;

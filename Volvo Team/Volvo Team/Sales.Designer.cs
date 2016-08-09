@@ -1263,6 +1263,7 @@
             this.btnViewRecords.TabIndex = 36;
             this.btnViewRecords.Text = "View Records";
             this.btnViewRecords.UseVisualStyleBackColor = true;
+            this.btnViewRecords.Click += new System.EventHandler(this.btnViewRecords_Click);
             // 
             // btnSaveRecord
             // 
