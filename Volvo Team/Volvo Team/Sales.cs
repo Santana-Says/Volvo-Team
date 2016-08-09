@@ -403,7 +403,7 @@ namespace Volvo_Team
         public bool isValidName(string name)
         {
             string tempName;
-            tempName = @"^[A-Z]{1,30}$";
+            tempName = @"^[A-Za-z.'\-\p{L}\p{Zs}\p{Lu}\p{Ll}\']+$";
             Regex myregn = new Regex(tempName, RegexOptions.IgnoreCase);
             return myregn.IsMatch(name);
         }
