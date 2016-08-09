@@ -412,7 +412,7 @@ namespace Volvo_Team
         {
             if (!isValidName(txtName.Text))
             {
-                MessageBox.Show("Invalid name. Must be a name 1-30 characters in length(a-z only).");
+                MessageBox.Show("Invalid name. Must be alphabetical.");
                 txtName.Focus();
                 txtName.SelectAll();
             }
