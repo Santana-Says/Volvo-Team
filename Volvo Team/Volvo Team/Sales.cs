@@ -432,7 +432,7 @@ namespace Volvo_Team
             }
         }
 
-        private void btnSaveRecord_Click(object sender, EventArgs e)
+        private void btnSaveRecord_Click_1(object sender, EventArgs e)
         {
             string t1 = "";
             string t2 = "";
@@ -490,7 +490,7 @@ namespace Volvo_Team
 
         }
 
-        private void btnViewRecords_Click(object sender, EventArgs e)
+        private void btnViewRecords_Click_1(object sender, EventArgs e)
         {
             SalesRecords recordsForm = new SalesRecords();
             Sales.ActiveForm.Hide();
