@@ -110,6 +110,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabAccount = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnViewRecords = new System.Windows.Forms.Button();
+            this.btnSaveRecord = new System.Windows.Forms.Button();
             this.lblTaxValue = new System.Windows.Forms.Label();
             this.lblTaxText = new System.Windows.Forms.Label();
             this.lblTag = new System.Windows.Forms.Label();
@@ -146,8 +148,6 @@
             this.picBoxMyAcc = new System.Windows.Forms.PictureBox();
             this.eventLog1 = new System.Diagnostics.EventLog();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnSaveRecord = new System.Windows.Forms.Button();
-            this.btnViewRecords = new System.Windows.Forms.Button();
             this.tabControlSales.SuspendLayout();
             this.tabInventory.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxArrowR)).BeginInit();
@@ -975,7 +975,7 @@
             // finance
             // 
             this.finance.AutoSize = true;
-            this.finance.Location = new System.Drawing.Point(138, 37);
+            this.finance.Location = new System.Drawing.Point(181, 36);
             this.finance.Margin = new System.Windows.Forms.Padding(2);
             this.finance.Name = "finance";
             this.finance.Size = new System.Drawing.Size(120, 24);
@@ -988,7 +988,7 @@
             // 
             this.cash.AutoSize = true;
             this.cash.ForeColor = System.Drawing.Color.YellowGreen;
-            this.cash.Location = new System.Drawing.Point(15, 37);
+            this.cash.Location = new System.Drawing.Point(58, 36);
             this.cash.Margin = new System.Windows.Forms.Padding(2);
             this.cash.Name = "cash";
             this.cash.Size = new System.Drawing.Size(58, 24);
@@ -1064,6 +1064,7 @@
             // 
             // cbState
             // 
+            this.cbState.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cbState.FormattingEnabled = true;
             this.cbState.Items.AddRange(new object[] {
@@ -1250,6 +1251,28 @@
             this.groupBox1.Size = new System.Drawing.Size(670, 482);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // btnViewRecords
+            // 
+            this.btnViewRecords.AutoSize = true;
+            this.btnViewRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewRecords.Location = new System.Drawing.Point(188, 406);
+            this.btnViewRecords.Name = "btnViewRecords";
+            this.btnViewRecords.Size = new System.Drawing.Size(117, 30);
+            this.btnViewRecords.TabIndex = 36;
+            this.btnViewRecords.Text = "View Records";
+            this.btnViewRecords.UseVisualStyleBackColor = true;
+            // 
+            // btnSaveRecord
+            // 
+            this.btnSaveRecord.AutoSize = true;
+            this.btnSaveRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveRecord.Location = new System.Drawing.Point(30, 406);
+            this.btnSaveRecord.Name = "btnSaveRecord";
+            this.btnSaveRecord.Size = new System.Drawing.Size(111, 30);
+            this.btnSaveRecord.TabIndex = 35;
+            this.btnSaveRecord.Text = "Save Record";
+            this.btnSaveRecord.UseVisualStyleBackColor = true;
             // 
             // lblTaxValue
             // 
@@ -1630,28 +1653,6 @@
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // btnSaveRecord
-            // 
-            this.btnSaveRecord.AutoSize = true;
-            this.btnSaveRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveRecord.Location = new System.Drawing.Point(30, 406);
-            this.btnSaveRecord.Name = "btnSaveRecord";
-            this.btnSaveRecord.Size = new System.Drawing.Size(111, 30);
-            this.btnSaveRecord.TabIndex = 35;
-            this.btnSaveRecord.Text = "Save Record";
-            this.btnSaveRecord.UseVisualStyleBackColor = true;
-            // 
-            // btnViewRecords
-            // 
-            this.btnViewRecords.AutoSize = true;
-            this.btnViewRecords.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewRecords.Location = new System.Drawing.Point(188, 406);
-            this.btnViewRecords.Name = "btnViewRecords";
-            this.btnViewRecords.Size = new System.Drawing.Size(117, 30);
-            this.btnViewRecords.TabIndex = 36;
-            this.btnViewRecords.Text = "View Records";
-            this.btnViewRecords.UseVisualStyleBackColor = true;
             // 
             // Sales
             // 

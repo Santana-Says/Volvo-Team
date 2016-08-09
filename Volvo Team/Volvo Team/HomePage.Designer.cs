@@ -32,14 +32,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.picBoxRecords = new System.Windows.Forms.PictureBox();
+            this.picBoxBanner = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.picBoxInventory = new System.Windows.Forms.PictureBox();
             this.picBoxTrade = new System.Windows.Forms.PictureBox();
             this.picBoxSplash = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxRecords)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxBanner)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxInventory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTrade)).BeginInit();
@@ -74,26 +74,27 @@
             this.timer1.Interval = 3000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pictureBox1
+            // picBoxRecords
             // 
-            this.pictureBox1.Image = global::Volvo_Team.Properties.Resources.Button_Employee_Login;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, 38);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(126, 41);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.picBoxRecords.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBoxRecords.Image = global::Volvo_Team.Properties.Resources.Button_Employee_Login;
+            this.picBoxRecords.Location = new System.Drawing.Point(-3, 38);
+            this.picBoxRecords.Name = "picBoxRecords";
+            this.picBoxRecords.Size = new System.Drawing.Size(126, 41);
+            this.picBoxRecords.TabIndex = 12;
+            this.picBoxRecords.TabStop = false;
+            this.picBoxRecords.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox4
+            // picBoxBanner
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.pictureBox4.Image = global::Volvo_Team.Properties.Resources.volvo_logo_scaled;
-            this.pictureBox4.Location = new System.Drawing.Point(-3, -1);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(890, 33);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
+            this.picBoxBanner.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.picBoxBanner.Image = global::Volvo_Team.Properties.Resources.volvo_logo_scaled;
+            this.picBoxBanner.Location = new System.Drawing.Point(-3, -1);
+            this.picBoxBanner.Name = "picBoxBanner";
+            this.picBoxBanner.Size = new System.Drawing.Size(890, 33);
+            this.picBoxBanner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBoxBanner.TabIndex = 8;
+            this.picBoxBanner.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -147,8 +148,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(884, 597);
             this.Controls.Add(this.picBoxSplash);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.picBoxRecords);
+            this.Controls.Add(this.picBoxBanner);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -160,8 +161,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomePage";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.HomePage_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxRecords)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxBanner)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxInventory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTrade)).EndInit();
@@ -172,7 +173,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox picBoxBanner;
         private System.Windows.Forms.PictureBox picBoxInventory;
         private System.Windows.Forms.PictureBox picBoxTrade;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -180,7 +181,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox picBoxSplash;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picBoxRecords;
     }
 }
 

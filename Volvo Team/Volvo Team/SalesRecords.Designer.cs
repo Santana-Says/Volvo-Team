@@ -447,9 +447,8 @@
             this.lblNameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblNameTxt.Location = new System.Drawing.Point(177, 161);
             this.lblNameTxt.Name = "lblNameTxt";
-            this.lblNameTxt.Size = new System.Drawing.Size(51, 20);
+            this.lblNameTxt.Size = new System.Drawing.Size(0, 20);
             this.lblNameTxt.TabIndex = 62;
-            this.lblNameTxt.Text = "label1";
             // 
             // lblSAddressTxt
             // 
@@ -457,9 +456,8 @@
             this.lblSAddressTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblSAddressTxt.Location = new System.Drawing.Point(177, 215);
             this.lblSAddressTxt.Name = "lblSAddressTxt";
-            this.lblSAddressTxt.Size = new System.Drawing.Size(51, 20);
+            this.lblSAddressTxt.Size = new System.Drawing.Size(0, 20);
             this.lblSAddressTxt.TabIndex = 63;
-            this.lblSAddressTxt.Text = "label2";
             // 
             // lblCityTxt
             // 
@@ -467,9 +465,8 @@
             this.lblCityTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblCityTxt.Location = new System.Drawing.Point(177, 274);
             this.lblCityTxt.Name = "lblCityTxt";
-            this.lblCityTxt.Size = new System.Drawing.Size(51, 20);
+            this.lblCityTxt.Size = new System.Drawing.Size(0, 20);
             this.lblCityTxt.TabIndex = 64;
-            this.lblCityTxt.Text = "label5";
             // 
             // lblStateTxt
             // 
@@ -477,9 +474,8 @@
             this.lblStateTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblStateTxt.Location = new System.Drawing.Point(177, 333);
             this.lblStateTxt.Name = "lblStateTxt";
-            this.lblStateTxt.Size = new System.Drawing.Size(60, 20);
+            this.lblStateTxt.Size = new System.Drawing.Size(0, 20);
             this.lblStateTxt.TabIndex = 65;
-            this.lblStateTxt.Text = "label12";
             // 
             // lblZipNum
             // 
@@ -487,9 +483,8 @@
             this.lblZipNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblZipNum.Location = new System.Drawing.Point(177, 391);
             this.lblZipNum.Name = "lblZipNum";
-            this.lblZipNum.Size = new System.Drawing.Size(60, 20);
+            this.lblZipNum.Size = new System.Drawing.Size(0, 20);
             this.lblZipNum.TabIndex = 66;
-            this.lblZipNum.Text = "label13";
             // 
             // lblPhoneNum
             // 
@@ -497,9 +492,8 @@
             this.lblPhoneNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblPhoneNum.Location = new System.Drawing.Point(177, 451);
             this.lblPhoneNum.Name = "lblPhoneNum";
-            this.lblPhoneNum.Size = new System.Drawing.Size(60, 20);
+            this.lblPhoneNum.Size = new System.Drawing.Size(0, 20);
             this.lblPhoneNum.TabIndex = 67;
-            this.lblPhoneNum.Text = "label14";
             // 
             // listBoxCustomers
             // 
