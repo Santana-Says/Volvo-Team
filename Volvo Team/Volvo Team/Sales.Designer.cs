@@ -975,7 +975,7 @@
             // finance
             // 
             this.finance.AutoSize = true;
-            this.finance.Location = new System.Drawing.Point(138, 37);
+            this.finance.Location = new System.Drawing.Point(181, 36);
             this.finance.Margin = new System.Windows.Forms.Padding(2);
             this.finance.Name = "finance";
             this.finance.Size = new System.Drawing.Size(120, 24);
@@ -988,7 +988,7 @@
             // 
             this.cash.AutoSize = true;
             this.cash.ForeColor = System.Drawing.Color.YellowGreen;
-            this.cash.Location = new System.Drawing.Point(15, 37);
+            this.cash.Location = new System.Drawing.Point(58, 36);
             this.cash.Margin = new System.Windows.Forms.Padding(2);
             this.cash.Name = "cash";
             this.cash.Size = new System.Drawing.Size(58, 24);
@@ -1064,6 +1064,7 @@
             // 
             // cbState
             // 
+            this.cbState.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cbState.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cbState.FormattingEnabled = true;
             this.cbState.Items.AddRange(new object[] {
@@ -1261,7 +1262,6 @@
             this.btnViewRecords.TabIndex = 36;
             this.btnViewRecords.Text = "View Records";
             this.btnViewRecords.UseVisualStyleBackColor = true;
-            this.btnViewRecords.Click += new System.EventHandler(this.btnViewRecords_Click);
             // 
             // btnSaveRecord
             // 
