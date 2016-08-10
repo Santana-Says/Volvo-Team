@@ -11,8 +11,8 @@ namespace Volvo_Team
         public CarClass car;
         protected internal string name, address, city, state, zip, phone;
         protected internal bool payment, addon1, addon2, paint;
-        protected internal int qCar, cAccount;
-        protected internal double aTax, aTag, aTrade, aPromo, aMsrp, aPackage, aFinish, aInter;
+        protected internal int qCar, cAccountNum;
+        protected internal double aTotal, aTax, aTag, aTrade, aPromo, aMsrp, aPackage, aFinish, aInterest;
 
         //default constructor
         public customer()
@@ -28,13 +28,13 @@ namespace Volvo_Team
             addon1 = false;
             addon2 = false;
             paint = false;
-            aTax = aTag = aTrade = aPromo = aMsrp = aPackage = aFinish=aInter = 0.0;
+            aTotal = aTax = aTag = aTrade = aPromo = aMsrp = aPackage = aFinish=aInterest = 0.0;
             qCar = 0;
-            cAccount = 0;
+            cAccountNum = 0;
         }
 
         //parameter constructor
-        public customer(string str1, string str2, string str3, string str4, string str5, string str6,bool b1, bool b2, bool b3, bool b4, double a1, double a2, double a3, double a4, double a5, double a6, double a7, double a8, int in1, int in2, string st1, string st2, double d1, double d2, double d3, int in3, int in4, int in5, int in6, int in7)
+        public customer(string str1, string str2, string str3, string str4, string str5, string str6,bool b1, bool b2, bool b3, bool b4, double a0, double a1, double a2, double a3, double a4, double a5, double a6, double a7, double a8, int in1, int in2, string st1, string st2, double d1, double d2, double d3, int in3, int in4, int in5, int in6, int in7)
         {
             name = str1;
             address = str2;
@@ -46,6 +46,7 @@ namespace Volvo_Team
             addon1 = b2;
             addon2 = b3;
             paint = b4;
+            aTotal = a0;
             aTax = a1;
             aTag = a2;
             aTrade = a3;
@@ -53,9 +54,9 @@ namespace Volvo_Team
             aMsrp = a5;
             aPackage = a6;
             aFinish = a7;
-            aInter = a8;
+            aInterest = a8;
             qCar = in1;
-            cAccount = in2;
+            cAccountNum = in2;
             car.Model = st1;
             car.Engine = st2;
             car.MSRP = d1;
@@ -170,6 +171,11 @@ namespace Volvo_Team
             get { return aTag; }
             set { aTag = value; }
         }
+        public double total
+        {
+            get { return aTotal; }
+            set { aTotal = value; }
+        }
         public double taxes
         {
             get { return aTax; }
@@ -202,8 +208,8 @@ namespace Volvo_Team
         }
         public double inter
         {
-            get { return aInter; }
-            set { aInter = value; }
+            get { return aInterest; }
+            set { aInterest = value; }
         }
         public int cCar
         {
@@ -212,8 +218,8 @@ namespace Volvo_Team
         }
         public int account
         {
-            get { return cAccount; }
-            set { cAccount = value; }
+            get { return cAccountNum; }
+            set { cAccountNum = value; }
         }
 
     }

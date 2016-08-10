@@ -16,7 +16,7 @@ namespace Volvo_Team
         //declare an instance of a customer
         customer CurrentCust = new customer();
 
-        //declare a list of cds
+        //declare a list of customers
         List<customer> CustomerList = new List<customer>();
         int count = 0;
 
@@ -24,6 +24,7 @@ namespace Volvo_Team
         {
             InitializeComponent();
             loadRecords();
+            CustomerInfo();
         }
 
         public void loadRecords()
@@ -55,7 +56,7 @@ namespace Volvo_Team
 
                 while (line1 != null)
                 {
-                    //declare a temporary CD
+                    //declare a temporary customer
                     customer tempCust = new customer();
 
                     //split data and store the split data into fields array
@@ -84,7 +85,7 @@ namespace Volvo_Team
                     {
                         b4 = true;
                     }
-                    //store each element in tempCD
+                    //store each element in tempCust
                     tempCust.Name = fields[0];
                     tempCust.Address = fields[1];
                     tempCust.City = fields[2];
@@ -95,26 +96,27 @@ namespace Volvo_Team
                     tempCust.add1 = b2;
                     tempCust.add2 = b3;
                     tempCust.finish = b4;
-                    tempCust.taxes = Convert.ToDouble(fields[10]);
-                    tempCust.tag = Convert.ToDouble(fields[11]);
-                    tempCust.tradein = Convert.ToDouble(fields[12]);
-                    tempCust.promo = Convert.ToDouble(fields[13]);
-                    tempCust.price = Convert.ToDouble(fields[14]);
-                    tempCust.added = Convert.ToDouble(fields[15]);
-                    tempCust.fin = Convert.ToDouble(fields[16]);
-                    tempCust.inter = Convert.ToDouble(fields[17]);
-                    tempCust.cCar = Convert.ToInt32(fields[18]);
-                    tempCust.account = Convert.ToInt32(fields[19]);
-                    tempCust.car.Model = fields[20];
-                    tempCust.car.Engine = fields[21];
-                    tempCust.car.MSRP = Convert.ToDouble(fields[22]);
-                    tempCust.car.FCapacity = Convert.ToDouble(fields[23]);
-                    tempCust.car.CCapacity = Convert.ToDouble(fields[24]);
-                    tempCust.car.High = Convert.ToInt32(fields[25]);
-                    tempCust.car.City = Convert.ToInt32(fields[26]);
-                    tempCust.car.Seat = Convert.ToInt32(fields[27]);
-                    tempCust.car.Horse = Convert.ToInt32(fields[28]);
-                    tempCust.car.cylinders = Convert.ToInt32(fields[29]);
+                    tempCust.aTotal = Convert.ToDouble(fields[10]);
+                    tempCust.taxes = Convert.ToDouble(fields[11]);
+                    tempCust.tag = Convert.ToDouble(fields[12]);
+                    tempCust.tradein = Convert.ToDouble(fields[13]);
+                    tempCust.aPromo = Convert.ToDouble(fields[14]);
+                    tempCust.aMsrp = Convert.ToDouble(fields[15]);
+                    tempCust.aPackage = Convert.ToDouble(fields[16]);
+                    tempCust.aFinish = Convert.ToDouble(fields[17]);
+                    tempCust.aInterest = Convert.ToDouble(fields[18]);
+                    tempCust.cCar = Convert.ToInt32(fields[19]);
+                    tempCust.cAccountNum = Convert.ToInt32(fields[20]);
+                    tempCust.car.Model = fields[21];
+                    tempCust.car.Engine = fields[22];
+                    tempCust.car.MSRP = Convert.ToDouble(fields[23]);
+                    tempCust.car.FCapacity = Convert.ToDouble(fields[24]);
+                    tempCust.car.CCapacity = Convert.ToDouble(fields[25]);
+                    tempCust.car.High = Convert.ToInt32(fields[26]);
+                    tempCust.car.City = Convert.ToInt32(fields[27]);
+                    tempCust.car.Seat = Convert.ToInt32(fields[28]);
+                    tempCust.car.Horse = Convert.ToInt32(fields[29]);
+                    tempCust.car.cylinders = Convert.ToInt32(fields[30]);
                     
 
                     //add tempCD to back end CDList
@@ -155,12 +157,46 @@ namespace Volvo_Team
             Application.Exit();
         }
 
-        private void buttonLoadCust_Click(object sender, EventArgs e)
+        public void buttonLoadCust_Click(object sender, EventArgs e)
         {
-            for(int i = 0; i < CustomerList.Count; i++)
+            if (CustomerList.Count > 0)
+            {
+                lblNameTxt.Text = CustomerList[listBoxCustomers.SelectedIndex].Name;
+                lblSAddressTxt.Text = CustomerList[listBoxCustomers.SelectedIndex].Address;
+                lblCityTxt.Text = CustomerList[listBoxCustomers.SelectedIndex].City;
+                lblStateTxt.Text = CustomerList[listBoxCustomers.SelectedIndex].State;
+                lblZipNum.Text = CustomerList[listBoxCustomers.SelectedIndex].Zip;
+                lblPhoneNum.Text = CustomerList[listBoxCustomers.SelectedIndex].Phone;
+
+                lblQuoteMSRPNum.Text = CustomerList[listBoxCustomers.SelectedIndex].car.MSRP.ToString("C");
+                lblQuotePackageNum.Text = CustomerList[listBoxCustomers.SelectedIndex].aPackage.ToString("C");
+                lblQuoteFinishNum.Text = CustomerList[listBoxCustomers.SelectedIndex].aFinish.ToString("C");
+                lblQuoteTradeNum.Text = CustomerList[listBoxCustomers.SelectedIndex].tradein.ToString("C");
+                lblQuotePromoNum.Text = CustomerList[listBoxCustomers.SelectedIndex].aPromo.ToString("C");
+                lblInterValue.Text = CustomerList[listBoxCustomers.SelectedIndex].aInterest.ToString("C");
+                lblTagNum.Text = CustomerList[listBoxCustomers.SelectedIndex].tag.ToString("C");
+                lblTaxNum.Text = CustomerList[listBoxCustomers.SelectedIndex].aTax.ToString("C");
+                lblQuoteEstNum.Text = CustomerList[listBoxCustomers.SelectedIndex].aTotal.ToString("C");
+
+                for (int i = 1; i < 5; i++)
+                {
+                    if (CustomerList[listBoxCustomers.SelectedIndex].cCar == i)
+                        picBoxCar.Image = Image.FromFile("../../Resources/" + CustomerList[listBoxCustomers.SelectedIndex].cCar + "-angle.jpg");
+                }
+            }
+        }
+
+        private void CustomerInfo()
+        {
+            for (int i = 0; i < CustomerList.Count; i++)
             {
                 listBoxCustomers.Items.Add(CustomerList[i].Name);
             }
+
+            listBoxCustomers.SelectedIndex = 0;
+
+            
         }
+
     }
 }
