@@ -199,9 +199,9 @@ namespace Volvo_Team
             // calculate taxes
             variables.taxTotal = stotal1 * variables.taxRate;
             //calculate total price of the car
-            finalprice = stotal1 - variables.promo  + variables.inter + variables.tag + variables.taxTotal;
+            variables.carTotal = stotal1 - variables.promo  + variables.inter + variables.tag + variables.taxTotal;
             Stotal.Text = stotal.ToString("C");
-            lblQuoteEstNum.Text = finalprice.ToString("C");
+            lblQuoteEstNum.Text = variables.carTotal.ToString("C");
             lblStotal1.Text = stotal1.ToString("C");
             lblInterValue.Text = variables.inter.ToString("C");
             lblTaxValue.Text = variables.taxTotal.ToString("C");
@@ -480,13 +480,16 @@ namespace Volvo_Team
             StreamWriter writer = new StreamWriter(outfile);
 
             //write to file
-            writer.WriteLine(txtName.Text + "/" + txtSAddress.Text + "/" + txtCity.Text + "/" + cbState.Text + "/" + txtZip.Text + "/" + txtPhone.Text + "/" + t1 + "/" + t2 + "/" + t3 + "/" + t4 + "/" + variables.taxTotal + "/" + variables.tag + "/" + variables.trade + "/" + variables.promo + "/" + variables.msrp + "/" + variables.package + "/" + variables.finish + "/" + variables.inter + "/" + variables.selectedCar + "/" + variables.account + "/" + lblModelName.Text + "/" + lblEngineInfo.Text + "/" + variables.msrp + "/" + lblFuelInfo.Text + "/" + lblCargoInfo.Text + "/" + lblMpgHwInfo.Text + "/" + lblMpgCityInfo.Text + "/" + lblSeatInfo.Text + "/" + lblHPInfo.Text + "/" + lblCylinderInfo.Text);
+            writer.WriteLine(txtName.Text + "/" + txtSAddress.Text + "/" + txtCity.Text + "/" + cbState.Text + "/" + txtZip.Text + "/" + txtPhone.Text + "/" + t1 + "/" + t2 + "/" + t3 + "/" + t4 + "/" + variables.carTotal + "/" + variables.taxTotal + "/" + variables.tag + "/" + variables.trade + "/" + variables.promo + "/" + variables.msrp + "/" + variables.package + "/" + variables.finish + "/" + variables.inter + "/" + variables.selectedCar + "/" + variables.account + "/" + lblModelName.Text + "/" + lblEngineInfo.Text + "/" + variables.msrp + "/" + lblFuelInfo.Text + "/" + lblCargoInfo.Text + "/" + lblMpgHwInfo.Text + "/" + lblMpgCityInfo.Text + "/" + lblSeatInfo.Text + "/" + lblHPInfo.Text + "/" + lblCylinderInfo.Text);
             
             //close writer
             writer.Close();
 
             //close stream
             outfile.Close();
+
+            //disable button so only one save occurs per customer
+            btnSaveRecord.Enabled = false;
 
         }
 
@@ -517,5 +520,6 @@ namespace Volvo_Team
         public static double taxRate = 0.06;
         public static double taxTotal = 0.0;
         public static double tag = 325.0;
+        public static double carTotal = 0.0;
     }
 }
